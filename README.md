@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75cb430a-1092-4a4a-acca-2a47c17355e0/deploy-status)](https://app.netlify.com/sites/pandy-dev/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
