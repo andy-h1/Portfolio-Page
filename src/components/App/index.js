@@ -5,13 +5,13 @@ import { HomePage } from '../HomePage';
 import { CVPage } from '../CVPage';
 
 const App = () => (
-  <BrowserRouter>
-  <Header />
-  <Switch>
-    <Route exact path='/' component={HomePage} />
-    <Route path='/CV' component={CVPage} />
-  </Switch>
-  </BrowserRouter>
-)
+        <BrowserRouter>
+                <Header />
+                <Switch>
+                        <Route exact path="/" component={HomePage} />
+                        <Route path="/CV" component={CVPage} />
+                </Switch>
+        </BrowserRouter>
+);
 
-export default App; 
+export default App;
