@@ -1,10 +1,11 @@
 import React from 'react';
 import profile from '../../tokens/profile.jpg';
 import { ProjectList } from '../ProjectList';
+import * as S from './styles';
 
 export const HomePage = () => (
-        <div>
-                <img src={profile} alt="andy" />
+        <S.GridWrapper>
+                <S.Image src={profile} alt="andy" />
                 <p>
                         Hey! Welcome to my website that I've built in React. Currently I am working as tech recruiter at
                         Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
@@ -16,5 +17,5 @@ export const HomePage = () => (
                         skills in everything front-end.
                 </p>
                 <ProjectList />
-        </div>
+        </S.GridWrapper>
 );
