@@ -7,12 +7,14 @@ import * as S from './styles';
 
 const App = () => (
         <BrowserRouter>
-                <S.GlobalStyle />
-                <Header />
-                <Switch>
-                        <Route exact path="/" component={HomePage} />
-                        <Route path="/cv" component={CVPage} />
-                </Switch>
+                <S.Wrapper>
+                        <S.GlobalStyle />
+                        <Header />
+                        <Switch>
+                                <Route exact path="/" component={HomePage} />
+                                <Route path="/cv" component={CVPage} />
+                        </Switch>
+                </S.Wrapper>
         </BrowserRouter>
 );
 
