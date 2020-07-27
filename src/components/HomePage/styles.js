@@ -18,10 +18,14 @@ export const FlexWrapper = styled.div`
 
 export const GridWrapper = styled.div`
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: max-content;
-        justify-items: space-between;
-        align-items: space-around;
+        max-width: 280px;
+
+        @media (min-width: 600px) {
+                grid-column-gap: 1rem;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: max-content;
+                max-width: none;
+        }
 `;
 
 export const Text = styled.p`
