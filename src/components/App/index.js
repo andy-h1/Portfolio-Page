@@ -7,8 +7,8 @@ import * as S from './styles';
 
 const App = () => (
         <BrowserRouter>
+                <S.GlobalStyle />
                 <S.Wrapper>
-                        <S.GlobalStyle />
                         <Header />
                         <Switch>
                                 <Route exact path="/" component={HomePage} />

@@ -1,7 +1,8 @@
 import React from 'react';
+import * as S from './styles';
 
 export const ProjectList = () => (
-        <div>
+        <S.Wrapper>
                 <p>Keep tuned, this is where I'll add my projects!</p>
-        </div>
+        </S.Wrapper>
 );
