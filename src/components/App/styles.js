@@ -1,11 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Varta&display=swap'); */
+
 body {
     margin: 0 auto;
     background-color: #FBFBFB;
-    font-family: sans-serif;
+    font-family: 'Varta', sans-serif;
 }
 `;
 
