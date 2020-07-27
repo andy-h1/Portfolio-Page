@@ -1,7 +1,7 @@
-import arrowsgroup from '../../tokens/arrowsgroup.jpg';
-import clearscore from '../../tokens/clearscore.png';
-import deliveroo from '../../tokens/deliveroo.png';
-import nhs from '../../tokens/nhs.png';
+import arrowsgroup from '../../tokens/companyLogos/arrowsgroup.jpg';
+import clearscore from '../../tokens/companyLogos/clearscore.png';
+import deliveroo from '../../tokens/companyLogos/deliveroo.png';
+import nhs from '../../tokens/companyLogos/nhs.png';
 
 export default [
         {
@@ -12,6 +12,7 @@ export default [
                         'Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.',
                 ],
                 image: { deliveroo },
+                imageAlt: 'deliveroo',
                 jobTitle: 'Tech Recruiter',
                 website: 'www.deliveroo.co.uk',
         },
@@ -24,6 +25,7 @@ export default [
                         'During my time at ClearScore, I was heavily involved in interview training, building out the ClearScore brand and diversity hiring with over 65% of my hires being in this category.',
                 ],
                 image: { clearscore },
+                imageAlt: 'clearscore',
                 jobTitle: 'Talent Acquisition',
                 website: 'www.clearscore.com',
         },
@@ -35,6 +37,7 @@ export default [
                         'Working at Arrows Group gave me a thorough insight into how tech companies ran and the different specialities each company had. I was initially involved in hiring DevOps Engineers and transitioned into software engineering.',
                 ],
                 image: { arrowsgroup },
+                imageAlt: 'arrowsgroup',
                 jobTitle: 'Tech Recruiter',
                 website: 'www.arrowsgroup.co.uk',
         },
@@ -45,6 +48,7 @@ export default [
                         "After graduating from King's College London with a Bachelor in Paediatric Nursing, I embarked in a career as a neonatal nurse working for well-known hospitals across London.",
                 ],
                 image: { nhs },
+                imageAlt: 'nhs',
                 jobTitle: 'Neonatal Nurse',
                 website: 'www.nhs.uk',
         },
