@@ -1,14 +1,15 @@
 import React from 'react';
+import * as S from './styles';
 
-export const CVExperience = ({ dates, description, image, imageAlt, jobTitle, website }) => (
-        <li>
+export const CVExperience = ({ dates, description, image, imageAlt, imageHeight, imageWidth, jobTitle, website }) => (
+        <S.GridList>
                 <a href={website} target="_blank" rel="noopener noreferrer">
-                        <img src={image} alt={imageAlt} width="auto" height="60px" />
+                        <img src={image} alt={imageAlt} height={imageHeight} width={imageWidth} />
                 </a>
-                <h3>{jobTitle}</h3>
-                <h3>{dates}</h3>
+                <S.Title>{jobTitle}</S.Title>
+                <S.ItalicText>{dates}</S.ItalicText>
                 {description.map(paragraph => (
-                        <p key={paragraph}>{paragraph}</p>
+                        <S.Text key={paragraph}>{paragraph}</S.Text>
                 ))}
-        </li>
+        </S.GridList>
 );

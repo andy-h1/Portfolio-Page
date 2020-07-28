@@ -13,8 +13,10 @@ export default [
                 ],
                 image: deliveroo,
                 imageAlt: 'deliveroo',
+                imageHeight: 'auto',
+                imageWidth: '60px',
                 jobTitle: 'Tech Recruiter',
-                website: 'www.deliveroo.co.uk',
+                website: 'https://deliveroo.co.uk/',
         },
 
         {
@@ -26,8 +28,10 @@ export default [
                 ],
                 image: clearscore,
                 imageAlt: 'clearscore',
+                imageHeight: '25px',
+                imageWidth: 'auto',
                 jobTitle: 'Talent Acquisition',
-                website: 'www.clearscore.com',
+                website: 'https://www.clearscore.com/',
         },
 
         {
@@ -38,8 +42,10 @@ export default [
                 ],
                 image: arrowsgroup,
                 imageAlt: 'arrowsgroup',
+                imageHeight: '90px',
+                imageWidth: 'auto',
                 jobTitle: 'Tech Recruiter',
-                website: 'www.arrowsgroup.co.uk',
+                website: 'https://arrowsgroup.com/',
         },
 
         {
@@ -49,7 +55,9 @@ export default [
                 ],
                 image: nhs,
                 imageAlt: 'nhs',
+                imageHeight: '40px',
+                imageWidth: 'auto',
                 jobTitle: 'Neonatal Nurse',
-                website: 'www.nhs.uk',
+                website: 'https://www.nhs.uk/',
         },
 ];

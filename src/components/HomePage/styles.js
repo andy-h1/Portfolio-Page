@@ -18,7 +18,6 @@ export const FlexWrapper = styled.div`
 
 export const GridWrapper = styled.div`
         display: grid;
-        max-width: 280px;
 
         @media (min-width: 600px) {
                 grid-column-gap: 1rem;

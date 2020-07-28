@@ -1,10 +1,11 @@
 import React from 'react';
 import data from './data';
 import { CVExperience } from '../CVExperience';
+import * as S from './styles'
 
 export const CVPage = () => (
-        <div>
-                <ul>
+        <S.Wrapper>
+                <S.List>
                         {data.map(item => (
                                 <CVExperience
                                         key={item.imageAlt}
@@ -12,10 +13,12 @@ export const CVPage = () => (
                                         description={item.description}
                                         imageAlt={item.imageAlt}
                                         image={item.image}
+                                        imageHeight={item.imageHeight}
+                                        imageWidth={item.imageWidth}
                                         jobTitle={item.jobTitle}
                                         website={item.website}
                                 />
                         ))}
-                </ul>
-        </div>
+                </S.List>
+        </S.Wrapper>
 );
