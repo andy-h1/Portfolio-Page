@@ -1,4 +1,4 @@
-import arrowsgroup from '../../tokens/companyLogos/arrowsgroup.jpg';
+import arrowsgroup from '../../tokens/companyLogos/arrowsgroup.png';
 import clearscore from '../../tokens/companyLogos/clearscore.png';
 import deliveroo from '../../tokens/companyLogos/deliveroo.png';
 import nhs from '../../tokens/companyLogos/nhs.png';
@@ -11,7 +11,7 @@ export default [
                         'I have been involved in hiring across different levels of seniority but mostly focused on Senior/L6+.',
                         'Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.',
                 ],
-                image: { deliveroo },
+                image: deliveroo,
                 imageAlt: 'deliveroo',
                 jobTitle: 'Tech Recruiter',
                 website: 'www.deliveroo.co.uk',
@@ -24,7 +24,7 @@ export default [
                         'I was focused on hiring across all areas of the Engineering team, mainly focused in Mobile, Backend, QAs and Product Managers.',
                         'During my time at ClearScore, I was heavily involved in interview training, building out the ClearScore brand and diversity hiring with over 65% of my hires being in this category.',
                 ],
-                image: { clearscore },
+                image: clearscore,
                 imageAlt: 'clearscore',
                 jobTitle: 'Talent Acquisition',
                 website: 'www.clearscore.com',
@@ -36,7 +36,7 @@ export default [
                         'After working 4 years as a neonatal nurse, I wanted to pursue my interest in the world of tech and started this journey working as a Tech recruiter for Arrows Group.',
                         'Working at Arrows Group gave me a thorough insight into how tech companies ran and the different specialities each company had. I was initially involved in hiring DevOps Engineers and transitioned into software engineering.',
                 ],
-                image: { arrowsgroup },
+                image: arrowsgroup,
                 imageAlt: 'arrowsgroup',
                 jobTitle: 'Tech Recruiter',
                 website: 'www.arrowsgroup.co.uk',
@@ -47,7 +47,7 @@ export default [
                 description: [
                         "After graduating from King's College London with a Bachelor in Paediatric Nursing, I embarked in a career as a neonatal nurse working for well-known hospitals across London.",
                 ],
-                image: { nhs },
+                image: nhs,
                 imageAlt: 'nhs',
                 jobTitle: 'Neonatal Nurse',
                 website: 'www.nhs.uk',
