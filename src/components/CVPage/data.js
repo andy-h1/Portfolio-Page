@@ -1,7 +1,7 @@
-import arrowsgroup from '../../tokens/companyLogos/arrowsgroup.png';
-import clearscore from '../../tokens/companyLogos/clearscore.png';
-import deliveroo from '../../tokens/companyLogos/deliveroo.png';
-import nhs from '../../tokens/companyLogos/nhs.png';
+import arrowsgroup from '../../tokens/CompanyLogos/arrowsgroup.png';
+import clearscore from '../../tokens/CompanyLogos/clearscore.png';
+import deliveroo from '../../tokens/CompanyLogos/deliveroo.png';
+import nhs from '../../tokens/CompanyLogos/nhs.png';
 
 export default [
         {
