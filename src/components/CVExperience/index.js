@@ -1,4 +1,5 @@
 import React from 'react';
+import { arrayOf, string } from 'prop-types';
 import * as S from './styles';
 
 export const CVExperience = ({ dates, description, image, imageAlt, imageHeight, imageWidth, jobTitle, website }) => (
@@ -13,3 +14,14 @@ export const CVExperience = ({ dates, description, image, imageAlt, imageHeight,
                 ))}
         </S.GridList>
 );
+
+CVExperience.propTypes = {
+        dates: string.isRequired,
+        description: arrayOf(string).isRequired,
+        image: string.isRequired,
+        imageAlt: string.isRequired,
+        imageHeight: string.isRequired,
+        imageWidth: string.isRequired,
+        jobTitle: string.isRequired,
+        website: string.isRequired,
+};
