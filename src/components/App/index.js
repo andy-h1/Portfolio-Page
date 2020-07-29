@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from '../Header';
 import { HomePage } from '../HomePage';
 import { CVPage } from '../CVPage';
+import { WeatherPage } from '../WeatherPage';
 import * as S from './styles';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
                         <Switch>
                                 <Route exact path="/" component={HomePage} />
                                 <Route path="/cv" component={CVPage} />
+                                <Route path="/weather" component={WeatherPage} />
                         </Switch>
                 </S.Wrapper>
         </BrowserRouter>
