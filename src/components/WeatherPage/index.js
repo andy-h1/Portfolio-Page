@@ -3,8 +3,10 @@ import axios from 'axios';
 
 export const WeatherPage = () => {
         const [weatherData, setWeatherData] = useState();
+        const [city, setCity] = useState();
 
         console.log({ test: weatherData });
+
         useEffect(() => {
                 async function fetchData() {
                         // move API key to env vars
@@ -33,9 +35,16 @@ export const WeatherPage = () => {
                                                 Location: {weatherData.name}, {weatherData.sys.country}
                                         </p>
                                         <p>
-                                                The weather is currently {weatherData.main.temp} with{' '}
+                                                The weather is currently {weatherData.main.temp}°C with{' '}
                                                 {weatherData.weather[0].description}{' '}
                                         </p>
+                                        <p>Change location:</p>
+                                        <form>
+                                                <label>
+                                                        City: <input type="text" />
+                                                </label>
+                                                <input type="submit" />
+                                        </form>
                                 </div>
                         )}
                 </div>
