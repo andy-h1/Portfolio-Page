@@ -38,8 +38,8 @@ export const WeatherPage = () => {
     <>
       {weatherData && (
         <S.Wrapper>
-          <h1>Current Weather</h1>
-          <img
+          <S.Title>Current Weather</S.Title>
+          <S.Image
             src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
             alt={weatherData.weather[0].main}
           />

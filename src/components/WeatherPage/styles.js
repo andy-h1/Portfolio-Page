@@ -6,5 +6,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
+  justify-content: start;
+`;
 
+export const Image = styled.img`
+  width: 100px;
+  height: auto;
 `;
