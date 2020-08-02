@@ -5,6 +5,8 @@ export const WeatherPage = () => {
         const [weatherData, setWeatherData] = useState();
         const [city, setCity] = useState('Croydon');
         const [country, setCountry] = useState('GB');
+        const [units, setUnits] = useState('metric');
+        const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
         const handleCityChange = event => {
                 setCity(event.target.value);
         };
@@ -16,16 +18,15 @@ export const WeatherPage = () => {
 
         useEffect(() => {
                 async function fetchData() {
-                        // move API key to env vars
                         const { data } = await axios.get(
-                                `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&APPID=7fe63c086a813a868027767b80769bcf`
+                                `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&APPID=${API_KEY}`
                         );
                         const { weather, main, sys, name } = data;
                         setWeatherData({ weather, main, sys, name });
                 }
 
                 fetchData();
-        }, [city, country]);
+        }, [API_KEY, city, country]);
 
         return (
                 <div>
@@ -51,14 +52,12 @@ export const WeatherPage = () => {
                                                         type="text"
                                                         placeholder="Enter city"
                                                         name="city"
-                                                        value={city}
                                                         onChange={handleCityChange}
                                                 />
                                                 <input
                                                         type="text"
                                                         placeholder="Enter country"
                                                         name="country"
-                                                        value={country}
                                                         onChange={handleCountryChange}
                                                 />
                                                 <button type="submit">Get Weather</button>
