@@ -35,9 +35,9 @@ export const WeatherPage = () => {
   }, [API_KEY, city, country, unit]);
 
   return (
-    <S.Wrapper>
+    <>
       {weatherData && (
-        <div>
+        <S.Wrapper>
           <h1>Current Weather</h1>
           <img
             src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
@@ -90,8 +90,8 @@ export const WeatherPage = () => {
             </label>
             {/* <button type="submit">Get Weather</button> */}
           </form>
-        </div>
+        </S.Wrapper>
       )}
-    </S.Wrapper>
+    </>
   );
 };
