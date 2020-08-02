@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import * as S from './styles';
 
 export const WeatherPage = () => {
   const [weatherData, setWeatherData] = useState();
@@ -34,7 +35,7 @@ export const WeatherPage = () => {
   }, [API_KEY, city, country, unit]);
 
   return (
-    <div>
+    <S.Wrapper>
       {weatherData && (
         <div>
           <h1>Current Weather</h1>
@@ -75,7 +76,7 @@ export const WeatherPage = () => {
                 value="metric"
                 onChange={handleUnitChange}
               />
-              Celcius
+              Celsius
             </label>
             <label htmlFor="unitInput">
               <input
@@ -91,6 +92,6 @@ export const WeatherPage = () => {
           </form>
         </div>
       )}
-    </div>
+    </S.Wrapper>
   );
 };
