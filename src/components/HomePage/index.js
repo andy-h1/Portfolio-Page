@@ -8,7 +8,7 @@ export const HomePage = () => (
     <S.GridWrapper>
       <S.Image src={profile} alt="andy" />
       <S.Text>
-        Hey! Welcome to my website that I've built in React. Currently I am
+        Hey! Welcome to my website that I&apos;ve built in React. Currently I am
         working as a tech recruiter at Deliveroo but hoping to create enough
         React projects to make the move over to becoming a dev.
       </S.Text>
