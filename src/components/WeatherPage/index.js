@@ -40,7 +40,16 @@ export const WeatherPage = () => {
   return (
     <>
       <S.Title>Current Weather</S.Title>
-      {weatherData && <WeatherTracker details={weatherData} />}
+      {weatherData && (
+        <WeatherTracker
+          country={weatherData.sys.country}
+          image={weatherData.weather[0].icon}
+          weatherDesc={weatherData.weather[0].description}
+          imgAlt={weatherData.weather[0].main}
+          city={weatherData.name}
+          weatherTemp={weatherData.main.temp}
+        />
+      )}
       <S.Wrapper>
         <p>Change location:</p>
         <form>
