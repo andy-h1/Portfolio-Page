@@ -1,5 +1,6 @@
 import React from 'react';
 import { number, string } from 'prop-types';
+import { ChangeWeatherImage } from '../../utils';
 
 export const WeatherTracker = ({
   city,
@@ -11,8 +12,10 @@ export const WeatherTracker = ({
 }) => (
   <div>
     <img
-      src={`http://openweathermap.org/img/wn/${image}@2x.png`}
+      src={ChangeWeatherImage(image)}
       alt={imgAlt}
+      width="300px"
+      height="auto"
     />
     <p>
       Location: {city}, {country}

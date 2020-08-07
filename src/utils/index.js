@@ -12,7 +12,7 @@ import slightRainNight from '../tokens/weatherImages/slightRainNight.png';
 import snowing from '../tokens/weatherImages/snowing.png';
 import thunderstorm from '../tokens/weatherImages/thunderstorm.png';
 
-export const ChangeWeatherImage = () => {
+export const ChangeWeatherImage = (image) => {
   switch (image) {
     case '01d':
       return clearDay;

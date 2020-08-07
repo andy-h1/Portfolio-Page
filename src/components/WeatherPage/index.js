@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import * as S from './styles';
 import { WeatherTracker } from '../WeatherTracker';
@@ -22,13 +22,13 @@ export const WeatherPage = () => {
     setUnit(event.target.value);
   };
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
     );
     const { weather, main, sys, name } = data;
     setWeatherData({ weather, main, sys, name });
-  };
+  },[API_KEY, city, country, unit]);
 
   useEffect(() => {
     // only fetch data if no weatherData
