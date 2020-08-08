@@ -28,7 +28,7 @@ export const WeatherPage = () => {
     );
     const { weather, main, sys, name } = data;
     setWeatherData({ weather, main, sys, name });
-  },[API_KEY, city, country, unit]);
+  }, [API_KEY, city, country, unit]);
 
   useEffect(() => {
     // only fetch data if no weatherData
@@ -52,24 +52,24 @@ export const WeatherPage = () => {
       )}
       <S.Wrapper>
         <p>Change location:</p>
-        <form>
-          <label htmlFor="cityInput">
+        <S.Form>
+          <S.Label htmlFor="cityInput">
             <input
               type="text"
               placeholder="Enter city"
               name="city"
               onChange={handleCityChange}
             />
-          </label>
-          <label htmlFor="countryInput">
+          </S.Label>
+          <S.Label htmlFor="countryInput">
             <input
               type="text"
               placeholder="Enter country"
               name="country"
               onChange={handleCountryChange}
             />
-          </label>
-          <label htmlFor="unitInput">
+          </S.Label>
+          <S.Label htmlFor="unitInput">
             <input
               type="radio"
               name="units"
@@ -78,8 +78,8 @@ export const WeatherPage = () => {
               onChange={handleUnitChange}
             />
             Celsius
-          </label>
-          <label htmlFor="unitInput">
+          </S.Label>
+          <S.Label htmlFor="unitInput">
             <input
               type="radio"
               name="units"
@@ -88,11 +88,11 @@ export const WeatherPage = () => {
               onChange={handleUnitChange}
             />
             Fahrenheit
-          </label>
-          <button type="button" onClick={fetchData}>
+          </S.Label>
+          <S.Button type="button" onClick={fetchData}>
             Get Weather
-          </button>
-        </form>
+          </S.Button>
+        </S.Form>
       </S.Wrapper>
     </>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { number, string } from 'prop-types';
 import { ChangeWeatherImage } from '../../utils';
+import * as S from './styles';
 
 export const WeatherTracker = ({
   city,
@@ -10,7 +11,7 @@ export const WeatherTracker = ({
   weatherDesc,
   weatherTemp
 }) => (
-  <div>
+  <S.Wrapper>
     <img
       src={ChangeWeatherImage(image)}
       alt={imgAlt}
@@ -23,7 +24,7 @@ export const WeatherTracker = ({
     <p>
       The weather is currently {Math.round(weatherTemp)}° with {weatherDesc}{' '}
     </p>
-  </div>
+  </S.Wrapper>
 );
 
 WeatherTracker.propTypes = {
