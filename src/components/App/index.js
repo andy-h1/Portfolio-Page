@@ -7,17 +7,17 @@ import { WeatherPage } from '../WeatherPage';
 import * as S from './styles';
 
 const App = () => (
-        <BrowserRouter>
-                <S.GlobalStyle />
-                <S.Wrapper>
-                        <Header />
-                        <Switch>
-                                <Route exact path="/" component={HomePage} />
-                                <Route path="/cv" component={CVPage} />
-                                <Route path="/weather" component={WeatherPage} />
-                        </Switch>
-                </S.Wrapper>
-        </BrowserRouter>
+  <BrowserRouter>
+    <S.GlobalStyle />
+    <S.Wrapper>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/cv" component={CVPage} />
+        <Route path="/weather" component={WeatherPage} />
+      </Switch>
+    </S.Wrapper>
+  </BrowserRouter>
 );
 
 export default App;

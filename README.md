@@ -1,5 +1,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/75cb430a-1092-4a4a-acca-2a47c17355e0/deploy-status)](https://app.netlify.com/sites/pandy-dev/deploys)
 
+To Do:
+
+- [] add snapshot tests for every component
+- [] remove inline styles
+- [] handle errors
+- [] 404 page
+- [] write a test for `getWeatherImage`
+- [] render weather project on home page
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

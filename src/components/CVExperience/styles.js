@@ -24,6 +24,7 @@ export const Title = styled.h3`
 export const ItalicText = styled.h3`
   font-style: italic;
   font-weight: lighter;
+
   @media (min-width: 600px) {
     justify-self: end;
   }

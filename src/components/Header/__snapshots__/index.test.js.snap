@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render 1`] = `
+<header
+  class="sc-AxjAm fqzCa-d"
+>
+  <h1>
+    Andy Huynh
+  </h1>
+  <div
+    class="sc-AxirZ ewDShK"
+  >
+    <a
+      aria-current="page"
+      class="sc-AxiKw kMuZpu active"
+      href="/"
+    >
+      home
+    </a>
+    <a
+      class="sc-AxiKw kMuZpu"
+      href="/cv"
+    >
+      cv
+    </a>
+    <a
+      class="sc-AxhCb lgSYMh"
+      href="https://github.com/andy-h1"
+      target="_blank"
+    >
+      <img
+        alt="github"
+        src="github.webp"
+        width="32px"
+      />
+    </a>
+    <a
+      class="sc-AxhCb lgSYMh"
+      href="https://www.linkedin.com/in/andyhuynh1/"
+      target="_blank"
+    >
+      <img
+        alt="linkedin"
+        src="linkedin.png"
+        width="32px"
+      />
+    </a>
+    <a
+      class="sc-AxhCb lgSYMh"
+      href="https://twitter.com/andyh_1_"
+      target="_blank"
+    >
+      <img
+        alt="twitter"
+        src="twitter.png"
+        width="34px"
+      />
+    </a>
+  </div>
+</header>
+`;

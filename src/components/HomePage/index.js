@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../../tokens/profile.jpg';
 import { ProjectList } from '../ProjectList';
+import { WeatherTracker } from '../WeatherTracker';
 import * as S from './styles';
 
 export const HomePage = () => (
@@ -20,6 +21,16 @@ export const HomePage = () => (
         honing my skills in everything front-end.
       </S.Text>
     </S.GridWrapper>
+
     <ProjectList />
+
+    <WeatherTracker
+      country="united kingdom"
+      image="13d"
+      weatherDesc="facking hot"
+      imgAlt="sunshine"
+      city="london"
+      weatherTemp={34}
+    />
   </S.FlexWrapper>
 );

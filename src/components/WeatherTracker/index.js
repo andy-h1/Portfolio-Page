@@ -1,6 +1,6 @@
 import React from 'react';
 import { number, string } from 'prop-types';
-import { ChangeWeatherImage } from '../../utils';
+import { getWeatherImage } from '../../utils';
 import * as S from './styles';
 
 export const WeatherTracker = ({
@@ -13,7 +13,7 @@ export const WeatherTracker = ({
 }) => (
   <S.Wrapper>
     <img
-      src={ChangeWeatherImage(image)}
+      src={getWeatherImage(image)}
       alt={imgAlt}
       width="300px"
       height="auto"

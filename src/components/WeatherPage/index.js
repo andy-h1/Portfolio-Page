@@ -3,13 +3,15 @@ import axios from 'axios';
 import * as S from './styles';
 import { WeatherTracker } from '../WeatherTracker';
 
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
 export const WeatherPage = () => {
   const [weatherData, setWeatherData] = useState();
   const [city, setCity] = useState('Croydon');
   const [country, setCountry] = useState('GB');
   const [unit, setUnit] = useState('metric');
-  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
+  // in the future move to one function
   const handleCityChange = (event) => {
     setCity(event.target.value);
   };
@@ -23,12 +25,19 @@ export const WeatherPage = () => {
   };
 
   const fetchData = useCallback(async () => {
-    const { data } = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
-    );
-    const { weather, main, sys, name } = data;
-    setWeatherData({ weather, main, sys, name });
-  }, [API_KEY, city, country, unit]);
+    // try and fetch the data
+    try {
+      // if no issues then do below
+      const { data } = await axios.get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
+      );
+      const { weather, main, sys, name } = data;
+      setWeatherData({ weather, main, sys, name });
+    } catch (error) {
+      // something went wrong
+      console.log({ error: error.response.data.message });
+    }
+  }, [city, country, unit]);
 
   useEffect(() => {
     // only fetch data if no weatherData

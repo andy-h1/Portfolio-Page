@@ -12,8 +12,8 @@ import slightRainNight from '../tokens/weatherImages/slightRainNight.png';
 import snowing from '../tokens/weatherImages/snowing.png';
 import thunderstorm from '../tokens/weatherImages/thunderstorm.png';
 
-export const ChangeWeatherImage = (image) => {
-  switch (image) {
+export const getWeatherImage = (imageCode) => {
+  switch (imageCode) {
     case '01d':
       return clearDay;
     case '01n':
@@ -46,7 +46,7 @@ export const ChangeWeatherImage = (image) => {
     case '50n':
       return fog;
     default:
-      return 'loading';
+      return 'loading...';
   }
 };
 
