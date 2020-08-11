@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weather Tracker Component should render 1`] = `
+<div
+  class="sc-AxjAm iPShpD"
+>
+  <img
+    alt="sunny"
+    height="auto"
+    src="clearDay.png"
+    width="300px"
+  />
+  <p>
+    Location: 
+    London
+    , 
+    England
+  </p>
+  <p>
+    The weather is currently 
+    34
+    ° with 
+    clear sky
+     
+  </p>
+</div>
+`;
