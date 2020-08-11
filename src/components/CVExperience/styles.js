@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const GridList = styled.li`
+export const GridItem = styled.li`
   display: grid;
   place-items: center;
   border-bottom: 1px solid #e5e5e5;

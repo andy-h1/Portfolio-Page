@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from '.';
+import { CVPage } from '.';
 
-describe('App component', () => {
+describe('CV Page Component', () => {
   it('should render', () => {
-    const { container } = render(<App />);
+    const { container } = render(<CVPage />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

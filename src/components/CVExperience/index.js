@@ -12,7 +12,7 @@ export const CVExperience = ({
   jobTitle,
   website
 }) => (
-  <S.GridList>
+  <S.GridItem>
     <a href={website} target="_blank" rel="noopener noreferrer">
       <img src={image} alt={imageAlt} height={imageHeight} width={imageWidth} />
     </a>
@@ -21,7 +21,7 @@ export const CVExperience = ({
     {description.map((paragraph) => (
       <S.Text key={paragraph}>{paragraph}</S.Text>
     ))}
-  </S.GridList>
+  </S.GridItem>
 );
 
 CVExperience.propTypes = {

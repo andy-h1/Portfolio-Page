@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page Component shoulder render 1`] = `
+<div
+  class="sc-AxhUy ldQwUF"
+>
+  <div
+    class="sc-AxiKw ihfGGr"
+  >
+    <img
+      alt="andy"
+      class="sc-AxhCb eCSJvY"
+      src="profile.jpg"
+    />
+    <p
+      class="sc-AxgMl hdxWXp"
+    >
+      Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
+    </p>
+    <p
+      class="sc-AxgMl hdxWXp"
+    >
+      I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
+    </p>
+  </div>
+  <div
+    class="sc-AxjAm knCapn"
+  >
+    <p>
+      Keep tuned, this is where I'll add my projects!
+    </p>
+  </div>
+  <div
+    class="sc-AxirZ irWokw"
+  >
+    <img
+      alt="sunshine"
+      height="auto"
+      src="snowing.png"
+      width="300px"
+    />
+    <p>
+      Location: 
+      london
+      , 
+      united kingdom
+    </p>
+    <p>
+      The weather is currently 
+      34
+      ° with 
+      facking hot
+       
+    </p>
+  </div>
+</div>
+`;

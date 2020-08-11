@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CV Page Component should render 1`] = `
+<ul
+  class="sc-AxhUy hFLisE"
+>
+  <li
+    class="sc-AxjAm dPRGBU"
+  >
+    <a
+      href="https://deliveroo.co.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="deliveroo"
+        height="auto"
+        src="deliveroo.png"
+        width="60px"
+      />
+    </a>
+    <h3
+      class="sc-AxirZ fDOJrF"
+    >
+      Tech Recruiter
+    </h3>
+    <h3
+      class="sc-AxiKw gyIrqT"
+    >
+      Nov 2018 - Present
+    </h3>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      I joined the Deliveroo recruitment team focused on hiring Product Managers, Product Marketing Managers and Software Engineers. When I joined we were around 20+ in the team and now have grown to over 60+ internationally
+    </p>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      I have been involved in hiring across different levels of seniority but mostly focused on Senior/L6+.
+    </p>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.
+    </p>
+  </li>
+  <li
+    class="sc-AxjAm dPRGBU"
+  >
+    <a
+      href="https://www.clearscore.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="clearscore"
+        height="25px"
+        src="clearscore.png"
+        width="auto"
+      />
+    </a>
+    <h3
+      class="sc-AxirZ fDOJrF"
+    >
+      Talent Acquisition
+    </h3>
+    <h3
+      class="sc-AxiKw gyIrqT"
+    >
+      Jan 2018 - Oct 2018
+    </h3>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      When I joined ClearScore, I was 1 out of 3 recruiters in the team. We grew the team from 100 employees to over 200 internationally when I left.
+    </p>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      I was focused on hiring across all areas of the Engineering team, mainly focused in Mobile, Backend, QAs and Product Managers.
+    </p>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      During my time at ClearScore, I was heavily involved in interview training, building out the ClearScore brand and diversity hiring with over 65% of my hires being in this category.
+    </p>
+  </li>
+  <li
+    class="sc-AxjAm dPRGBU"
+  >
+    <a
+      href="https://arrowsgroup.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="arrowsgroup"
+        height="90px"
+        src="arrowsgroup.png"
+        width="auto"
+      />
+    </a>
+    <h3
+      class="sc-AxirZ fDOJrF"
+    >
+      Tech Recruiter
+    </h3>
+    <h3
+      class="sc-AxiKw gyIrqT"
+    >
+      April 2016 - Jan 2018
+    </h3>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      After working 4 years as a neonatal nurse, I wanted to pursue my interest in the world of tech and started this journey working as a Tech recruiter for Arrows Group.
+    </p>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      Working at Arrows Group gave me a thorough insight into how tech companies ran and the different specialities each company had. I was initially involved in hiring DevOps Engineers and transitioned into software engineering.
+    </p>
+  </li>
+  <li
+    class="sc-AxjAm dPRGBU"
+  >
+    <a
+      href="https://www.nhs.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="nhs"
+        height="40px"
+        src="nhs.png"
+        width="auto"
+      />
+    </a>
+    <h3
+      class="sc-AxirZ fDOJrF"
+    >
+      Neonatal Nurse
+    </h3>
+    <h3
+      class="sc-AxiKw gyIrqT"
+    >
+      Jun 2012 - March 2016
+    </h3>
+    <p
+      class="sc-AxhCb ldYzEm"
+    >
+      After graduating from King's College London with a Bachelor in Paediatric Nursing, I embarked in a career as a neonatal nurse working for well-known hospitals across London.
+    </p>
+  </li>
+</ul>
+`;

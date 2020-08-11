@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render 1`] = `
+<div
+  class="sc-fzoLag fYSbSE"
+>
+  <header
+    class="sc-AxjAm fqzCa-d"
+  >
+    <h1>
+      Andy Huynh
+    </h1>
+    <div
+      class="sc-AxirZ ewDShK"
+    >
+      <a
+        aria-current="page"
+        class="sc-AxiKw kMuZpu active"
+        href="/"
+      >
+        home
+      </a>
+      <a
+        class="sc-AxiKw kMuZpu"
+        href="/cv"
+      >
+        cv
+      </a>
+      <a
+        class="sc-AxhCb lgSYMh"
+        href="https://github.com/andy-h1"
+        target="_blank"
+      >
+        <img
+          alt="github"
+          src="github.webp"
+          width="32px"
+        />
+      </a>
+      <a
+        class="sc-AxhCb lgSYMh"
+        href="https://www.linkedin.com/in/andyhuynh1/"
+        target="_blank"
+      >
+        <img
+          alt="linkedin"
+          src="linkedin.png"
+          width="32px"
+        />
+      </a>
+      <a
+        class="sc-AxhCb lgSYMh"
+        href="https://twitter.com/andyh_1_"
+        target="_blank"
+      >
+        <img
+          alt="twitter"
+          src="twitter.png"
+          width="34px"
+        />
+      </a>
+    </div>
+  </header>
+  <div
+    class="sc-AxmLO gLIbAf"
+  >
+    <div
+      class="sc-AxheI eriRaW"
+    >
+      <img
+        alt="andy"
+        class="sc-Axmtr gyzlIm"
+        src="profile.jpg"
+      />
+      <p
+        class="sc-fzozJi kJUtWM"
+      >
+        Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
+      </p>
+      <p
+        class="sc-fzozJi kJUtWM"
+      >
+        I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
+      </p>
+    </div>
+    <div
+      class="sc-AxhUy jeqEtF"
+    >
+      <p>
+        Keep tuned, this is where I'll add my projects!
+      </p>
+    </div>
+    <div
+      class="sc-AxgMl bKFcdD"
+    >
+      <img
+        alt="sunshine"
+        height="auto"
+        src="snowing.png"
+        width="300px"
+      />
+      <p>
+        Location: 
+        london
+        , 
+        united kingdom
+      </p>
+      <p>
+        The weather is currently 
+        34
+        ° with 
+        facking hot
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
