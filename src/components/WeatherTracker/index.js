@@ -9,13 +9,14 @@ export const WeatherTracker = ({
   image,
   imgAlt,
   weatherDesc,
-  weatherTemp
+  weatherTemp,
+  width
 }) => (
   <S.Wrapper>
     <img
       src={getWeatherImage(image)}
       alt={imgAlt}
-      width="300px"
+      width={width}
       height="auto"
     />
     <p>
@@ -33,5 +34,10 @@ WeatherTracker.propTypes = {
   image: string.isRequired,
   imgAlt: string.isRequired,
   weatherDesc: string.isRequired,
-  weatherTemp: number.isRequired
+  weatherTemp: number.isRequired,
+  width: string
+};
+
+WeatherTracker.defaultProps = {
+  width: '300px'
 };

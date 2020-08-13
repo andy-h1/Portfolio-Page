@@ -9,6 +9,7 @@ import * as S from './styles';
 const App = () => (
   <BrowserRouter>
     <S.GlobalStyle />
+
     <S.Wrapper>
       <Header />
       <Switch>

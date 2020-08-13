@@ -11,9 +11,9 @@ Common Scripts:
 
 To Do:
 
-- [] add snapshot tests for every component
-- [] remove inline styles
-- [] handle errors
-- [] 404 page
-- [] write a test for `getWeatherImage`
-- [] render weather project on home page
+- add snapshot tests for every component
+- remove inline styles
+- handle errors
+- 404 page
+- write a test for `getWeatherImage`
+- render weather project on home page
