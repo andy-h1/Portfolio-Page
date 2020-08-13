@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pills Component should render 1`] = `
+<ul
+  class="sc-AxjAm iQwMNU"
+>
+  <li
+    class="sc-AxirZ ikOfEZ"
+  >
+    react
+  </li>
+  <li
+    class="sc-AxirZ ikOfEZ"
+  >
+    styled-components
+  </li>
+  <li
+    class="sc-AxirZ ikOfEZ"
+  >
+    jest
+  </li>
+  <li
+    class="sc-AxirZ ikOfEZ"
+  >
+    react-testing-library
+  </li>
+</ul>
+`;

@@ -2,56 +2,86 @@
 
 exports[`Home Page Component shoulder render 1`] = `
 <div
-  class="sc-AxhUy ldQwUF"
+  class="sc-fzpans dXqmnw"
 >
   <div
-    class="sc-AxiKw ihfGGr"
+    class="sc-fzozJi cAxcmN"
   >
     <img
       alt="andy"
-      class="sc-AxhCb eCSJvY"
+      class="sc-fzoLsD eFbuQw"
       src="profile.jpg"
     />
     <p
-      class="sc-AxgMl hdxWXp"
+      class="sc-fzplWN dwpfSL"
     >
       Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
     </p>
     <p
-      class="sc-AxgMl hdxWXp"
+      class="sc-fzplWN dwpfSL"
     >
       I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
     </p>
   </div>
   <div
-    class="sc-AxjAm knCapn"
+    class="sc-AxjAm bfLLc"
   >
-    <p>
-      Keep tuned, this is where I'll add my projects!
-    </p>
-  </div>
-  <div
-    class="sc-AxirZ irWokw"
-  >
-    <img
-      alt="sunshine"
-      height="auto"
-      src="snowing.png"
-      width="300px"
-    />
-    <p>
-      Location: 
-      london
-      , 
-      united kingdom
-    </p>
-    <p>
-      The weather is currently 
-      34
-      ° with 
-      facking hot
-       
-    </p>
+    <h2>
+      Projects
+    </h2>
+    <div
+      class="sc-AxirZ gzBYRi"
+    >
+      <a
+        class="sc-AxiKw gvEbZZ"
+        href="/weather"
+      >
+        Weather App
+      </a>
+      <p
+        class="sc-AxhCb dXMftt"
+      >
+        I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+      </p>
+      <div
+        class="sc-AxhUy gPETpu"
+      >
+        <ul
+          class="sc-Axmtr iEWLzZ"
+        >
+          <li
+            class="sc-AxmLO hHqwkm"
+          >
+            react
+          </li>
+          <li
+            class="sc-AxmLO hHqwkm"
+          >
+            styled-components
+          </li>
+          <li
+            class="sc-AxmLO hHqwkm"
+          >
+            jest
+          </li>
+          <li
+            class="sc-AxmLO hHqwkm"
+          >
+            react-testing-library
+          </li>
+        </ul>
+      </div>
+      <a
+        class="sc-AxgMl bgcSYW"
+        href="/weather"
+      >
+        <img
+          alt="cloudy"
+          class="sc-AxheI enaueQ"
+          src="lightCloudsDay.png"
+        />
+      </a>
+    </div>
   </div>
 </div>
 `;

@@ -2,7 +2,7 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fzoLag fYSbSE"
+  class="sc-fzqNqU fAkhJu"
 >
   <header
     class="sc-AxjAm fqzCa-d"
@@ -62,56 +62,86 @@ exports[`App component should render 1`] = `
     </div>
   </header>
   <div
-    class="sc-AxmLO gLIbAf"
+    class="sc-fznZeY kqJPHA"
   >
     <div
-      class="sc-AxheI eriRaW"
+      class="sc-fznyAO bqEPqi"
     >
       <img
         alt="andy"
-        class="sc-Axmtr gyzlIm"
+        class="sc-fznKkj eHCaOU"
         src="profile.jpg"
       />
       <p
-        class="sc-fzozJi kJUtWM"
+        class="sc-fzokOt kfmNbB"
       >
         Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
       </p>
       <p
-        class="sc-fzozJi kJUtWM"
+        class="sc-fzokOt kfmNbB"
       >
         I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
       </p>
     </div>
     <div
-      class="sc-AxhUy jeqEtF"
+      class="sc-AxhUy lncTq"
     >
-      <p>
-        Keep tuned, this is where I'll add my projects!
-      </p>
-    </div>
-    <div
-      class="sc-AxgMl bKFcdD"
-    >
-      <img
-        alt="sunshine"
-        height="auto"
-        src="snowing.png"
-        width="300px"
-      />
-      <p>
-        Location: 
-        london
-        , 
-        united kingdom
-      </p>
-      <p>
-        The weather is currently 
-        34
-        ° with 
-        facking hot
-         
-      </p>
+      <h2>
+        Projects
+      </h2>
+      <div
+        class="sc-AxgMl gyQol"
+      >
+        <a
+          class="sc-AxheI bPimFc"
+          href="/weather"
+        >
+          Weather App
+        </a>
+        <p
+          class="sc-Axmtr caVgFr"
+        >
+          I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+        </p>
+        <div
+          class="sc-AxmLO dqigLw"
+        >
+          <ul
+            class="sc-fzpans iyRDUn"
+          >
+            <li
+              class="sc-fzplWN eYqMPM"
+            >
+              react
+            </li>
+            <li
+              class="sc-fzplWN eYqMPM"
+            >
+              styled-components
+            </li>
+            <li
+              class="sc-fzplWN eYqMPM"
+            >
+              jest
+            </li>
+            <li
+              class="sc-fzplWN eYqMPM"
+            >
+              react-testing-library
+            </li>
+          </ul>
+        </div>
+        <a
+          class="sc-fzozJi dOEoan"
+          href="/weather"
+        >
+          <img
+            alt="cloudy"
+            class="sc-fzoLsD jxJCwx"
+            src="lightCloudsDay.png"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </div>

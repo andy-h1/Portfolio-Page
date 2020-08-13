@@ -2,33 +2,63 @@
 
 exports[`Project List Component should render 1`] = `
 <div
-  class="sc-AxjAm knCapn"
+  class="sc-AxjAm bfLLc"
 >
   <h2>
-    Project List
+    Projects
   </h2>
   <div
-    class="sc-AxirZ irWokw"
+    class="sc-AxirZ gzBYRi"
   >
-    <img
-      alt="sunshine"
-      height="auto"
-      src="clearDay.png"
-      width="300px"
-    />
-    <p>
-      Location: 
-      London
-      , 
-      United Kingdom
+    <a
+      class="sc-AxiKw gvEbZZ"
+      href="/weather"
+    >
+      Weather App
+    </a>
+    <p
+      class="sc-AxhCb dXMftt"
+    >
+      I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
     </p>
-    <p>
-      The weather is currently 
-      34
-      ° with 
-      sunny
-       
-    </p>
+    <div
+      class="sc-AxhUy gPETpu"
+    >
+      <ul
+        class="sc-Axmtr iEWLzZ"
+      >
+        <li
+          class="sc-AxmLO hHqwkm"
+        >
+          react
+        </li>
+        <li
+          class="sc-AxmLO hHqwkm"
+        >
+          styled-components
+        </li>
+        <li
+          class="sc-AxmLO hHqwkm"
+        >
+          jest
+        </li>
+        <li
+          class="sc-AxmLO hHqwkm"
+        >
+          react-testing-library
+        </li>
+      </ul>
+    </div>
+    <a
+      class="sc-AxgMl bgcSYW"
+      href="/weather"
+    >
+      <img
+        alt="cloudy"
+        class="sc-AxheI enaueQ"
+        src="lightCloudsDay.png"
+      />
+    </a>
   </div>
 </div>
 `;

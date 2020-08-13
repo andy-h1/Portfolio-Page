@@ -30,7 +30,6 @@ export const ProjectList = () => (
       <S.PageLink to="/weather">
         <S.Image src={lightCloudsDay} alt="cloudy" />
       </S.PageLink>
-
     </S.GridWrapper>
   </S.Wrapper>
 );
