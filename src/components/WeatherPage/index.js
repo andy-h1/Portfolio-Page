@@ -52,7 +52,7 @@ export const WeatherPage = () => {
   }, [fetchData, weatherData]);
 
   return (
-    <>
+    <S.Wrapper>
       <S.Title>Current Weather</S.Title>
       {isLoading && <h3>Loading...</h3>}
       {isError && <h3>{isError}</h3>}
@@ -67,50 +67,48 @@ export const WeatherPage = () => {
           weatherTemp={weatherData.main.temp}
         />
       )}
-      <S.Wrapper>
-        <p>Change location:</p>
-        <S.Form>
-          <S.Label htmlFor="cityInput">
-            <input
-              type="text"
-              placeholder="Enter city"
-              name="city"
-              onChange={handleCityChange}
-            />
-          </S.Label>
-          <S.Label htmlFor="countryInput">
-            <input
-              type="text"
-              placeholder="Enter country"
-              name="country"
-              onChange={handleCountryChange}
-            />
-          </S.Label>
-          <S.Label htmlFor="unitInput">
-            <input
-              type="radio"
-              name="units"
-              checked={unit === 'metric'}
-              value="metric"
-              onChange={handleUnitChange}
-            />
-            Celsius
-          </S.Label>
-          <S.Label htmlFor="unitInput">
-            <input
-              type="radio"
-              name="units"
-              checked={unit === 'imperial'}
-              value="imperial"
-              onChange={handleUnitChange}
-            />
-            Fahrenheit
-          </S.Label>
-          <S.Button type="button" onClick={fetchData}>
-            Get Weather
-          </S.Button>
-        </S.Form>
-      </S.Wrapper>
-    </>
+      <p>Change location:</p>
+      <S.Form>
+        <S.Label htmlFor="cityInput">
+          <input
+            type="text"
+            placeholder="Enter city"
+            name="city"
+            onChange={handleCityChange}
+          />
+        </S.Label>
+        <S.Label htmlFor="countryInput">
+          <input
+            type="text"
+            placeholder="Enter country"
+            name="country"
+            onChange={handleCountryChange}
+          />
+        </S.Label>
+        <S.Label htmlFor="unitInput">
+          <input
+            type="radio"
+            name="units"
+            checked={unit === 'metric'}
+            value="metric"
+            onChange={handleUnitChange}
+          />
+          Celsius
+        </S.Label>
+        <S.Label htmlFor="unitInput">
+          <input
+            type="radio"
+            name="units"
+            checked={unit === 'imperial'}
+            value="imperial"
+            onChange={handleUnitChange}
+          />
+          Fahrenheit
+        </S.Label>
+        <S.Button type="button" onClick={fetchData}>
+          Get Weather
+        </S.Button>
+      </S.Form>
+    </S.Wrapper>
   );
 };

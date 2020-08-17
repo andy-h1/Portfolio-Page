@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h2`
@@ -17,6 +22,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   padding: 0 0 1rem 0;
+  max-width: 300px;
 `;
 
 export const Button = styled.button`
@@ -25,5 +31,5 @@ export const Button = styled.button`
   color: white;
   border-radius: 8px;
   padding: 0.5rem 0;
-  max-width: 250px;
+  max-width: 300px;
 `;
