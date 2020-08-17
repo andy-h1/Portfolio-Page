@@ -10,6 +10,8 @@ export const WeatherPage = () => {
   const [city, setCity] = useState('Croydon');
   const [country, setCountry] = useState('GB');
   const [unit, setUnit] = useState('metric');
+  const [isLoading, setisLoading] = useState(true);
+  const [isError, setisError] = useState('');
 
   // in the future move to one function
   const handleCityChange = (event) => {
@@ -33,8 +35,11 @@ export const WeatherPage = () => {
       );
       const { weather, main, sys, name } = data;
       setWeatherData({ weather, main, sys, name });
+      setisLoading(false);
     } catch (error) {
       // something went wrong
+      setisLoading(false);
+      setisError('Sorry there is a problem getting your weather');
       console.log({ error: error.response.data.message });
     }
   }, [city, country, unit]);
@@ -49,7 +54,10 @@ export const WeatherPage = () => {
   return (
     <>
       <S.Title>Current Weather</S.Title>
-      {weatherData && (
+      {isLoading && <h3>Loading...</h3>}
+      {isError && <h3>{isError}</h3>}
+
+      {!isError && weatherData && (
         <WeatherTracker
           country={weatherData.sys.country}
           image={weatherData.weather[0].icon}
