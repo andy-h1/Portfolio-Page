@@ -40,7 +40,7 @@ export const WeatherPage = () => {
       // something went wrong
       setisLoading(false);
       setisError('Sorry there is a problem getting your weather');
-      console.log({ error: error.response.data.message });
+      // console.log({ error: error.response.data.message });
     }
   }, [city, country, unit]);
 
@@ -54,11 +54,12 @@ export const WeatherPage = () => {
   return (
     <S.Wrapper>
       <S.Title>Current Weather</S.Title>
-      {isLoading && <h3>Loading...</h3>}
-      {isError && <h3>{isError}</h3>}
+      {isLoading && <h3 data-testid="loading">Loading...</h3>}
+      {isError && <h3 data-testid="error">{isError}</h3>}
 
       {!isError && weatherData && (
         <WeatherTracker
+          data-testid="resolved"
           country={weatherData.sys.country}
           image={weatherData.weather[0].icon}
           weatherDesc={weatherData.weather[0].description}
