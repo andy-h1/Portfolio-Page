@@ -8,52 +8,52 @@ exports[`Header component should render 1`] = `
     Andy Huynh
   </h1>
   <div
-    class="sc-AxirZ ewDShK"
+    class="sc-AxirZ fwueYp"
   >
     <a
       aria-current="page"
-      class="sc-AxiKw kMuZpu active"
+      class="sc-AxiKw fJvbGR active"
       href="/"
     >
       home
     </a>
     <a
-      class="sc-AxiKw kMuZpu"
+      class="sc-AxiKw fJvbGR"
       href="/cv"
     >
       cv
     </a>
     <a
-      class="sc-AxhCb lgSYMh"
+      class="sc-AxhCb ZIbpj"
       href="https://github.com/andy-h1"
       target="_blank"
     >
       <img
         alt="github"
+        class="sc-AxhUy btVqoO"
         src="github.webp"
-        width="32px"
       />
     </a>
     <a
-      class="sc-AxhCb lgSYMh"
+      class="sc-AxhCb ZIbpj"
       href="https://www.linkedin.com/in/andyhuynh1/"
       target="_blank"
     >
       <img
         alt="linkedin"
+        class="sc-AxhUy btVqoO"
         src="linkedin.png"
-        width="32px"
       />
     </a>
     <a
-      class="sc-AxhCb lgSYMh"
+      class="sc-AxhCb ZIbpj"
       href="https://twitter.com/andyh_1_"
       target="_blank"
     >
       <img
         alt="twitter"
+        class="sc-AxhUy btVqoO"
         src="twitter.png"
-        width="34px"
       />
     </a>
   </div>
