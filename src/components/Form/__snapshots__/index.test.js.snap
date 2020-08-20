@@ -8,37 +8,52 @@ exports[`Form Component should render 1`] = `
   <form
     class="sc-AxjAm cJLYyV"
   >
-    <label>
+    <label
+      for="name"
+    >
       Name:
       <input
+        id="name"
         placeholder="Enter full name"
         type="text"
       />
     </label>
-    <label>
+    <label
+      for="age"
+    >
       Age:
       <input
+        id="age"
         placeholder="Enter age"
         type="number"
       />
     </label>
-    <label>
+    <label
+      for="email"
+    >
       Email:
       <input
+        id="email"
         placeholder="Enter email address"
         type="email"
       />
     </label>
-    <label>
+    <label
+      for="password"
+    >
       Password:
       <input
+        id="password"
         placeholder="Enter password"
         type="password"
       />
     </label>
-    <label>
+    <label
+      for="password"
+    >
       Retype Password:
       <input
+        id="password"
         placeholder="Enter password"
         type="password"
       />
