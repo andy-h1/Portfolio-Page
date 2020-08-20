@@ -5,7 +5,7 @@ exports[`App component should render 1`] = `
   class="sc-fznMAR kXa-dwJ"
 >
   <button
-    class="sc-AxjAm ficYbt"
+    class="sc-AxjAm hChaqK"
   >
     <div
       class="sc-AxirZ enBJRq"
@@ -49,7 +49,18 @@ exports[`App component should render 1`] = `
         <img
           alt="github"
           class="sc-Axmtr NwoaV"
-          src="github.webp"
+          src="github.png"
+        />
+      </a>
+      <a
+        class="sc-AxheI bxwfqP"
+        href="https://twitter.com/andyh_1_"
+        target="_blank"
+      >
+        <img
+          alt="twitter"
+          class="sc-Axmtr NwoaV"
+          src="twitter.svg"
         />
       </a>
       <a
@@ -61,17 +72,6 @@ exports[`App component should render 1`] = `
           alt="linkedin"
           class="sc-Axmtr NwoaV"
           src="linkedin.png"
-        />
-      </a>
-      <a
-        class="sc-AxheI bxwfqP"
-        href="https://twitter.com/andyh_1_"
-        target="_blank"
-      >
-        <img
-          alt="twitter"
-          class="sc-Axmtr NwoaV"
-          src="twitter.png"
         />
       </a>
     </div>

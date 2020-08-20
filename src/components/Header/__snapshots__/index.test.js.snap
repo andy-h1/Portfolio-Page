@@ -33,7 +33,18 @@ exports[`Header component should render 1`] = `
       <img
         alt="github"
         class="sc-AxgMl dewwFw"
-        src="github.webp"
+        src="github.png"
+      />
+    </a>
+    <a
+      class="sc-AxhUy famNCz"
+      href="https://twitter.com/andyh_1_"
+      target="_blank"
+    >
+      <img
+        alt="twitter"
+        class="sc-AxgMl dewwFw"
+        src="twitter.svg"
       />
     </a>
     <a
@@ -45,17 +56,6 @@ exports[`Header component should render 1`] = `
         alt="linkedin"
         class="sc-AxgMl dewwFw"
         src="linkedin.png"
-      />
-    </a>
-    <a
-      class="sc-AxhUy famNCz"
-      href="https://twitter.com/andyh_1_"
-      target="_blank"
-    >
-      <img
-        alt="twitter"
-        class="sc-AxgMl dewwFw"
-        src="twitter.png"
       />
     </a>
   </div>
