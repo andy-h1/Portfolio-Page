@@ -1,15 +1,18 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import { bool, func } from 'prop-types';
 import github from '../../tokens/Icons/github.webp';
 import linkedin from '../../tokens/Icons/linkedin.png';
 import twitter from '../../tokens/Icons/twitter.png';
 import * as S from './styles';
 
-export const Header = ({ open }) => {
+export const Header = ({ open, setOpen }) => {
+  const handleClickChange = () => {
+    setOpen(!open);
+  };
   return (
     <S.Header>
-      <h1>Andy Huynh</h1>
-      <S.Wrapper open={open}>
+      <S.Title>Andy Huynh</S.Title>
+      <S.Wrapper open={open} onClick={handleClickChange}>
         <S.PageLink to="/">home</S.PageLink>
         <S.PageLink to="/cv">cv</S.PageLink>
         <S.Link href="https://github.com/andy-h1" target="_blank">
@@ -27,5 +30,6 @@ export const Header = ({ open }) => {
 };
 
 Header.propTypes = {
-  open: bool.isRequired
+  open: bool.isRequired,
+  setOpen: func.isRequired
 };

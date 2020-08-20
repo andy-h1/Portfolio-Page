@@ -19,6 +19,7 @@ export const Image = styled.img`
   width: 300px;
   object-fit: cover;
   grid-row: 1 / 3;
+  margin: 0 0 1rem 0;
 
   @media (min-width: 600px) {
     justify-self: start;
@@ -34,4 +35,8 @@ export const FlexWrapper = styled.div`
 
 export const Text = styled.p`
   margin: 1rem 0 0;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 `;

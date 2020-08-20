@@ -30,17 +30,17 @@ exports[`CV Page Component should render 1`] = `
       Nov 2018 - Present
     </h3>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       I joined the Deliveroo recruitment team focused on hiring Product Managers, Product Marketing Managers and Software Engineers. When I joined we were around 20+ in the team and now have grown to over 60+ internationally
     </p>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       I have been involved in hiring across different levels of seniority but mostly focused on Senior/L6+.
     </p>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.
     </p>
@@ -71,17 +71,17 @@ exports[`CV Page Component should render 1`] = `
       Jan 2018 - Oct 2018
     </h3>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       When I joined ClearScore, I was 1 out of 3 recruiters in the team. We grew the team from 100 employees to over 200 internationally when I left.
     </p>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       I was focused on hiring across all areas of the Engineering team, mainly focused in Mobile, Backend, QAs and Product Managers.
     </p>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       During my time at ClearScore, I was heavily involved in interview training, building out the ClearScore brand and diversity hiring with over 65% of my hires being in this category.
     </p>
@@ -112,12 +112,12 @@ exports[`CV Page Component should render 1`] = `
       April 2016 - Jan 2018
     </h3>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       After working 4 years as a neonatal nurse, I wanted to pursue my interest in the world of tech and started this journey working as a Tech recruiter for Arrows Group.
     </p>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       Working at Arrows Group gave me a thorough insight into how tech companies ran and the different specialities each company had. I was initially involved in hiring DevOps Engineers and transitioned into software engineering.
     </p>
@@ -148,7 +148,7 @@ exports[`CV Page Component should render 1`] = `
       Jun 2012 - March 2016
     </h3>
     <p
-      class="sc-AxhCb ldYzEm"
+      class="sc-AxhCb bOmpDp"
     >
       After graduating from King's College London with a Bachelor in Paediatric Nursing, I embarked in a career as a neonatal nurse working for well-known hospitals across London.
     </p>

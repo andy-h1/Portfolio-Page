@@ -35,7 +35,7 @@ export const ProjectLink = styled(NavLink)`
 
   :hover {
     color: #17a589;
-    text-decoration: underline;
+    transform: scale(1.05);
   }
 
   @media (min-width: 600px) {

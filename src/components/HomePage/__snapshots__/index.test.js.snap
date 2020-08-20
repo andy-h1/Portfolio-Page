@@ -9,16 +9,16 @@ exports[`Home Page Component shoulder render 1`] = `
   >
     <img
       alt="andy"
-      class="sc-fzoLsD eFbuQw"
+      class="sc-fzoLsD gmhubC"
       src="profile.jpg"
     />
     <p
-      class="sc-fzplWN dwpfSL"
+      class="sc-fzplWN grMOQI"
     >
       Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
     </p>
     <p
-      class="sc-fzplWN dwpfSL"
+      class="sc-fzplWN grMOQI"
     >
       I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
     </p>
@@ -33,7 +33,7 @@ exports[`Home Page Component shoulder render 1`] = `
       class="sc-AxirZ gzBYRi"
     >
       <a
-        class="sc-AxiKw gvEbZZ"
+        class="sc-AxiKw UfQqe"
         href="/weather"
       >
         Weather App

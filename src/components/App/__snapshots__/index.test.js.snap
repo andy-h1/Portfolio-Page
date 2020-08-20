@@ -2,7 +2,7 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fznxKY bZfBhJ"
+  class="sc-fznMAR kXa-dwJ"
 >
   <button
     class="sc-AxjAm ficYbt"
@@ -18,139 +18,141 @@ exports[`App component should render 1`] = `
     />
   </button>
   <header
-    class="sc-AxiKw ehaXya"
+    class="sc-AxiKw bWDRCp"
   >
-    <h1>
+    <h1
+      class="sc-AxhCb gsaGzK"
+    >
       Andy Huynh
     </h1>
     <div
-      class="sc-AxhCb QzpQN"
+      class="sc-AxhUy eraUCz"
     >
       <a
         aria-current="page"
-        class="sc-AxhUy YccYI active"
+        class="sc-AxgMl kKEAbt active"
         href="/"
       >
         home
       </a>
       <a
-        class="sc-AxhUy YccYI"
+        class="sc-AxgMl kKEAbt"
         href="/cv"
       >
         cv
       </a>
       <a
-        class="sc-AxgMl lcLbiA"
+        class="sc-AxheI bxwfqP"
         href="https://github.com/andy-h1"
         target="_blank"
       >
         <img
           alt="github"
-          class="sc-AxheI dmLVfm"
+          class="sc-Axmtr NwoaV"
           src="github.webp"
         />
       </a>
       <a
-        class="sc-AxgMl lcLbiA"
+        class="sc-AxheI bxwfqP"
         href="https://www.linkedin.com/in/andyhuynh1/"
         target="_blank"
       >
         <img
           alt="linkedin"
-          class="sc-AxheI dmLVfm"
+          class="sc-Axmtr NwoaV"
           src="linkedin.png"
         />
       </a>
       <a
-        class="sc-AxgMl lcLbiA"
+        class="sc-AxheI bxwfqP"
         href="https://twitter.com/andyh_1_"
         target="_blank"
       >
         <img
           alt="twitter"
-          class="sc-AxheI dmLVfm"
+          class="sc-Axmtr NwoaV"
           src="twitter.png"
         />
       </a>
     </div>
   </header>
   <div
-    class="sc-fzqNJr iDqmoz"
+    class="sc-fzoyAV htCWhR"
   >
     <div
-      class="sc-fzokOt gjyups"
+      class="sc-fzqBZW iQibxd"
     >
       <img
         alt="andy"
-        class="sc-fzqBZW gNnHfa"
+        class="sc-fzqNJr ejzvVN"
         src="profile.jpg"
       />
       <p
-        class="sc-fzoyAV hyhNBv"
+        class="sc-fzoLag hoFkdU"
       >
         Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
       </p>
       <p
-        class="sc-fzoyAV hyhNBv"
+        class="sc-fzoLag hoFkdU"
       >
         I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
       </p>
     </div>
     <div
-      class="sc-Axmtr eeHBWR"
+      class="sc-AxmLO cogIUM"
     >
       <h2>
         Projects
       </h2>
       <div
-        class="sc-AxmLO ccpurx"
+        class="sc-fzozJi icGoeg"
       >
         <a
-          class="sc-fzozJi beanqP"
+          class="sc-fzoLsD ftsMbS"
           href="/weather"
         >
           Weather App
         </a>
         <p
-          class="sc-fzoLsD dRjVBB"
+          class="sc-fzpans exDSPl"
         >
           I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
         </p>
         <div
-          class="sc-fzpans clWNGT"
+          class="sc-fzplWN gBWGGu"
         >
           <ul
-            class="sc-fznKkj flVIML"
+            class="sc-fznZeY eBZJPn"
           >
             <li
-              class="sc-fznZeY vAefZ"
+              class="sc-fzokOt lgxNnS"
             >
               react
             </li>
             <li
-              class="sc-fznZeY vAefZ"
+              class="sc-fzokOt lgxNnS"
             >
               styled-components
             </li>
             <li
-              class="sc-fznZeY vAefZ"
+              class="sc-fzokOt lgxNnS"
             >
               jest
             </li>
             <li
-              class="sc-fznZeY vAefZ"
+              class="sc-fzokOt lgxNnS"
             >
               react-testing-library
             </li>
           </ul>
         </div>
         <a
-          class="sc-fzplWN LsSjQ"
+          class="sc-fznyAO GiwHo"
           href="/weather"
         >
           <img
             alt="cloudy"
-            class="sc-fznyAO kbQtAk"
+            class="sc-fznKkj kmJeUh"
             src="lightCloudsDay.png"
           />
         </a>

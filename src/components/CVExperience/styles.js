@@ -31,6 +31,8 @@ export const ItalicText = styled.h3`
 `;
 
 export const Text = styled.p`
+  text-align: center;
+
   @media (min-width: 600px) {
     grid-row-start: 2 / 3;
     grid-column: span 3;

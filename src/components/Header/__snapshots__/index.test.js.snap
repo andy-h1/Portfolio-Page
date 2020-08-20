@@ -2,57 +2,59 @@
 
 exports[`Header component should render 1`] = `
 <header
-  class="sc-AxjAm fqzCa-d"
+  class="sc-AxjAm eulKPO"
 >
-  <h1>
+  <h1
+    class="sc-AxirZ hJCReq"
+  >
     Andy Huynh
   </h1>
   <div
-    class="sc-AxirZ fwueYp"
+    class="sc-AxiKw cUMxlS"
   >
     <a
       aria-current="page"
-      class="sc-AxiKw fJvbGR active"
+      class="sc-AxhCb biVdMa active"
       href="/"
     >
       home
     </a>
     <a
-      class="sc-AxiKw fJvbGR"
+      class="sc-AxhCb biVdMa"
       href="/cv"
     >
       cv
     </a>
     <a
-      class="sc-AxhCb ZIbpj"
+      class="sc-AxhUy famNCz"
       href="https://github.com/andy-h1"
       target="_blank"
     >
       <img
         alt="github"
-        class="sc-AxhUy btVqoO"
+        class="sc-AxgMl dewwFw"
         src="github.webp"
       />
     </a>
     <a
-      class="sc-AxhCb ZIbpj"
+      class="sc-AxhUy famNCz"
       href="https://www.linkedin.com/in/andyhuynh1/"
       target="_blank"
     >
       <img
         alt="linkedin"
-        class="sc-AxhUy btVqoO"
+        class="sc-AxgMl dewwFw"
         src="linkedin.png"
       />
     </a>
     <a
-      class="sc-AxhCb ZIbpj"
+      class="sc-AxhUy famNCz"
       href="https://twitter.com/andyh_1_"
       target="_blank"
     >
       <img
         alt="twitter"
-        class="sc-AxhUy btVqoO"
+        class="sc-AxgMl dewwFw"
         src="twitter.png"
       />
     </a>
