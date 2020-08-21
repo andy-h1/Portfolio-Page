@@ -8,5 +8,5 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   padding: 1rem;
-  width: max-content;
+  width: 50%;
 `;
