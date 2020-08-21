@@ -12,7 +12,7 @@ export const WeatherTracker = ({
   weatherTemp,
   width
 }) => (
-  <S.Wrapper>
+  <S.Wrapper data-testid="weatherTracker">
     <img
       src={getWeatherImage(image)}
       alt={imgAlt}

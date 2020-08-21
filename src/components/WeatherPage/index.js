@@ -33,6 +33,7 @@ export const WeatherPage = () => {
       const { data } = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
       );
+      console.log('HELLO', data);
       const { weather, main, sys, name } = data;
       setWeatherData({ weather, main, sys, name });
       setisLoading(false);
@@ -59,7 +60,6 @@ export const WeatherPage = () => {
 
       {!isError && weatherData && (
         <WeatherTracker
-          data-testid="resolved"
           country={weatherData.sys.country}
           image={weatherData.weather[0].icon}
           weatherDesc={weatherData.weather[0].description}

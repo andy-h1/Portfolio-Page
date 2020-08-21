@@ -1,28 +1,28 @@
 import React from 'react';
-// import axiosMock from 'axios';
-import { render } from '@testing-library/react';
+import axiosMock from 'axios';
+import { render, cleanup, waitFor } from '@testing-library/react';
 import { WeatherPage } from '.';
 
-// afterEach(cleanup);
+afterEach(cleanup);
 
-// jest.mock('axios');
+jest.mock('axios');
 
-// const mockData = {
-//   main: {
-//     temp: 27.9
-//   },
-//   name: 'London',
-//   sys: {
-//     country: 'GB'
-//   },
-//   weather: [
-//     {
-//       description: 'few clouds',
-//       icon: '02d',
-//       main: 'Clouds'
-//     }
-//   ]
-// };
+const mockData = {
+  main: {
+    temp: 27.9
+  },
+  name: 'London',
+  sys: {
+    country: 'GB'
+  },
+  weather: [
+    {
+      description: 'few clouds',
+      icon: '02d',
+      main: 'Clouds'
+    }
+  ]
+};
 
 describe('Weather Page Component', () => {
   it('should render', () => {
@@ -30,11 +30,11 @@ describe('Weather Page Component', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  // it('should fetch and return weather data', async () => {
-  //   axiosMock.get.mockResolvedValue(mockData);
-  //   const { getByTestId } = render(<WeatherPage />);
-  //   await waitForElement(() => expect(getByTestId('resolved')));
-  // });
+  it('should fetch and return weather data', async () => {
+    axiosMock.get.mockResolvedValue({ data: mockData });
+    const { getByTestId } = render(<WeatherPage />);
+    await waitFor(() => expect(getByTestId('weatherTracker')));
+  });
 });
 
 // mock an API call to OpenWeather API

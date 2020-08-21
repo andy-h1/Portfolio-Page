@@ -90,3 +90,4 @@ export const Form = () => {
 // Retype password - must match password
 // Submit - connect to firebase
 // Email verification sent?
+// Form validation

@@ -3,6 +3,7 @@
 exports[`Weather Tracker Component should render 1`] = `
 <div
   class="sc-AxjAm bzOPxR"
+  data-testid="weatherTracker"
 >
   <img
     alt="sunny"
