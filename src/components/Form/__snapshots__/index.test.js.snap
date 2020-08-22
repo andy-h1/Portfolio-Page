@@ -28,6 +28,7 @@ exports[`Form Component should render 1`] = `
         id="age"
         max="60"
         min="18"
+        name=""
         placeholder="25"
         type="number"
       />
@@ -49,6 +50,7 @@ exports[`Form Component should render 1`] = `
       Password:
       <input
         id="password"
+        name=""
         placeholder="******"
         type="password"
       />
