@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import firebase from '../../firebase';
+import { FormTracker } from '../FormTracker';
 import * as S from './styles';
 
 export const Form = () => {
@@ -7,6 +8,7 @@ export const Form = () => {
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [userList, setUserList] = useState([]);
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -29,6 +31,21 @@ export const Form = () => {
       });
   };
 
+  useEffect(() => {
+    firebase
+      .firestore()
+      .collection('users')
+      .onSnapshot((snapshot) => {
+        const newUserList = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        setUserList(newUserList);
+        console.log(newUserList);
+      });
+  }, []);
+
   const handleAgeChange = (event) => {
     setAge(event.target.value);
   };
@@ -47,6 +64,14 @@ export const Form = () => {
 
   return (
     <div>
+      {userList.map((user) => (
+        <FormTracker
+          key={user.id}
+          age={user.age}
+          email={user.email}
+          name={user.name}
+        />
+      ))}
       <h2>Sign Up Form</h2>
       <S.Form onSubmit={handleClick}>
         <label htmlFor="name">
