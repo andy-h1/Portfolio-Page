@@ -1,15 +1,32 @@
 import React, { useState } from 'react';
+import firebase from '../../firebase';
 import * as S from './styles';
 
 export const Form = () => {
   const [name, setName] = useState('');
-  const [age, setAge] = useState();
+  const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState('');
 
-  const handleButtonClick = (event) => {
+  const handleClick = (event) => {
     event.preventDefault();
-    console.log('CLICKED');
+    console.log({ name, age, email, password });
+
+    firebase
+      .firestore()
+      .collection('users')
+      .add({
+        name,
+        age,
+        email,
+        password
+      })
+      .then(() => {
+        setName('');
+        setAge('');
+        setEmail('');
+        setPassword('');
+      });
   };
 
   const handleAgeChange = (event) => {
@@ -31,7 +48,7 @@ export const Form = () => {
   return (
     <div>
       <h2>Sign Up Form</h2>
-      <S.Form>
+      <S.Form onSubmit={handleClick}>
         <label htmlFor="name">
           Name:
           <input
@@ -75,9 +92,7 @@ export const Form = () => {
             onChange={handlePasswordChange}
           />
         </label>
-        <button type="submit" onClick={handleButtonClick}>
-          Register
-        </button>
+        <button type="submit">Register</button>
       </S.Form>
     </div>
   );
