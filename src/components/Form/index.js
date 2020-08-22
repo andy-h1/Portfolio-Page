@@ -67,6 +67,7 @@ export const Form = () => {
       {userList.map((user) => (
         <FormTracker
           key={user.id}
+          id={user.id}
           age={user.age}
           email={user.email}
           name={user.name}
