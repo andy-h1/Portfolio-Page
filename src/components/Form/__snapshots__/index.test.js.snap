@@ -6,7 +6,7 @@ exports[`Form Component should render 1`] = `
     Sign Up Form
   </h2>
   <form
-    class="sc-AxjAm cJLYyV"
+    class="sc-AxjAm fZqwlG"
   >
     <label
       for="name"
