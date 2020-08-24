@@ -124,11 +124,14 @@ export const Form = () => {
   );
 };
 
-// Name - must be no longer than 100 characters
-// Email - must be a valid email address
+// Name - capitalize name
 // Age - can only be between 18-60
 // Password - must include capital letter, number and be 8 characters long
 // Retype password - must match password
-// Submit - connect to firebase
 // Email verification sent?
 // Form validation
+
+// Update data on Firestore - option to edit on user card
+// Empty update state that takes in the changes
+// Pushes the changes to Firestore
+// Re-render the updated changes
