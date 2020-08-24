@@ -61,5 +61,8 @@ exports[`Form Component should render 1`] = `
       Register
     </button>
   </form>
+  <h3>
+    User List
+  </h3>
 </div>
 `;
