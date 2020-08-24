@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { number, string } from 'prop-types';
 import firebase from '../../firebase';
 
-export const FormTracker = ({ age, email, id, name }) => {
+export const UserList = ({ age, email, id, name }) => {
   const [edit, setEdit] = useState(true);
   const [updateName, setUpdateName] = useState();
 
-  const handleClick = () => {
+  const handleDeleteClick = () => {
     firebase.firestore().collection('users').doc(id).delete();
   };
 
@@ -24,10 +24,8 @@ export const FormTracker = ({ age, email, id, name }) => {
     setEdit(!edit);
   };
 
-  console.log(id);
   return (
     <div>
-      <h3>User</h3>
       <ul>
         <li>Name: {name}</li>
         <li>Email: {email}</li>
@@ -41,14 +39,14 @@ export const FormTracker = ({ age, email, id, name }) => {
       <button type="button" onClick={handleEditClick}>
         Edit
       </button>
-      <button type="button" onClick={handleClick}>
+      <button type="button" onClick={handleDeleteClick}>
         x
       </button>
     </div>
   );
 };
 
-FormTracker.propTypes = {
+UserList.propTypes = {
   age: number.isRequired,
   email: string.isRequired,
   id: string.isRequired,

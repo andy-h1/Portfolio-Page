@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase from '../../firebase';
-import { FormTracker } from '../FormTracker';
+import { UserList } from '../UserList';
 import * as S from './styles';
 
 export const Form = () => {
@@ -64,15 +64,6 @@ export const Form = () => {
 
   return (
     <div>
-      {userList.map((user) => (
-        <FormTracker
-          key={user.id}
-          id={user.id}
-          age={user.age}
-          email={user.email}
-          name={user.name}
-        />
-      ))}
       <h2>Sign Up Form</h2>
       <S.Form onSubmit={handleClick}>
         <label htmlFor="name">
@@ -120,6 +111,17 @@ export const Form = () => {
         </label>
         <button type="submit">Register</button>
       </S.Form>
+      <h3>User List</h3>
+      {userList &&
+        userList.map((user) => (
+          <UserList
+            key={user.id}
+            id={user.id}
+            age={user.age}
+            email={user.email}
+            name={user.name}
+          />
+        ))}
     </div>
   );
 };
