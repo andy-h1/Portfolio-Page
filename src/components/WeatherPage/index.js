@@ -71,7 +71,7 @@ export const WeatherPage = () => {
       <p>Change location:</p>
       <S.Form>
         <S.Label htmlFor="cityInput">
-          <input
+          <S.Input
             type="text"
             placeholder="Enter city"
             name="city"
@@ -79,7 +79,7 @@ export const WeatherPage = () => {
           />
         </S.Label>
         <S.Label htmlFor="countryInput">
-          <input
+          <S.Input
             type="text"
             placeholder="Enter country"
             name="country"

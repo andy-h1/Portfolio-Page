@@ -21,9 +21,19 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-  padding: 10px;
   margin: 10px 0;
   width: 100%;
+`;
+
+export const Input = styled.input`
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  width: 300px;
+  font-family: inherit;
+  font-size: inherit;
 `;
 
 export const Button = styled.button`
@@ -33,4 +43,6 @@ export const Button = styled.button`
   border-radius: 8px;
   padding: 0.5rem 0;
   max-width: 300px;
+  font-family: inherit;
+  font-size: inherit;
 `;

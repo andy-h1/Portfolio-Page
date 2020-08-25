@@ -66,50 +66,40 @@ export const Form = () => {
     <div>
       <h2>Sign Up Form</h2>
       <S.Form onSubmit={handleClick}>
-        <S.Label htmlFor="name">
-          Name:
-          <input
-            id="name"
-            name={name}
-            type="text"
-            placeholder="John Doe"
-            onChange={handleNameChange}
-            required
-          />
-        </S.Label>
-        <S.Label htmlFor="age">
-          Age:
-          <input
-            id="age"
-            name={age}
-            type="number"
-            placeholder="25"
-            min="18"
-            max="60"
-            onChange={handleAgeChange}
-          />
-        </S.Label>
-        <S.Label htmlFor="email">
-          Email:
-          <input
-            id="email"
-            name={email}
-            type="email"
-            placeholder="johndoe@gmail.com"
-            onChange={handleEmailChange}
-          />
-        </S.Label>
-        <S.Label htmlFor="password">
-          Password:
-          <input
-            id="password"
-            name={password}
-            type="password"
-            placeholder="******"
-            onChange={handlePasswordChange}
-          />
-        </S.Label>
-        <button type="submit">Register</button>
+        <S.Input
+          id="name"
+          name={name}
+          type="text"
+          placeholder="Username"
+          onChange={handleNameChange}
+          required
+        />
+        <S.Input
+          id="age"
+          name={age}
+          type="number"
+          placeholder="Age"
+          min="18"
+          max="60"
+          onChange={handleAgeChange}
+        />
+        <S.Input
+          id="email"
+          name={email}
+          type="email"
+          placeholder="Email Address"
+          onChange={handleEmailChange}
+          required
+        />
+        <S.Input
+          id="password"
+          name={password}
+          type="password"
+          placeholder="Password"
+          onChange={handlePasswordChange}
+          required
+        />
+        <S.Button type="submit">Register</S.Button>
       </S.Form>
       <h3>User List</h3>
       {userList &&
