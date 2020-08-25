@@ -23,6 +23,7 @@ export const Button = styled.button`
   border: none;
   color: white;
   border-radius: 8px;
+  margin: 10px 0;
   padding: 0.5rem 0;
   max-width: 50%;
   font-family: inherit;
@@ -32,6 +33,7 @@ export const Button = styled.button`
 export const PasswordWrapper = styled.div`
   display: flex;
   position: relative;
+  z-index: 0;
 `;
 
 export const ShowPasswordButton = styled.button`
@@ -45,5 +47,4 @@ export const ShowPasswordButton = styled.button`
   height: 32px;
   width: 32px;
   object-fit: contain;
-  z-index: 2;
 `;

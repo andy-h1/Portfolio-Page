@@ -68,7 +68,7 @@ export const Form = () => {
   };
 
   return (
-    <div>
+    <>
       <h2>Sign Up Form</h2>
       <S.Form onSubmit={handleClick}>
         <S.Input
@@ -120,7 +120,7 @@ export const Form = () => {
             name={user.name}
           />
         ))}
-    </div>
+    </>
   );
 };
 

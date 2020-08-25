@@ -6,8 +6,15 @@ export const Burger = ({ open, setOpen }) => {
   const handleClickChange = () => {
     setOpen(!open);
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      console.log('Key pressed');
+      handleClickChange();
+    }
+  };
   return (
-    <S.Burger open={open} onClick={handleClickChange}>
+    <S.Burger open={open} onClick={handleClickChange} onKeyDown={handleKeyDown}>
       <S.Div open={open} />
       <S.Div open={open} />
       <S.Div open={open} />
