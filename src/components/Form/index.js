@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase from '../../firebase';
-import { UserList } from '../UserList';
+import { UserCard } from '../UserCard';
 import * as S from './styles';
 
 export const Form = () => {
@@ -66,7 +66,7 @@ export const Form = () => {
     <div>
       <h2>Sign Up Form</h2>
       <S.Form onSubmit={handleClick}>
-        <label htmlFor="name">
+        <S.Label htmlFor="name">
           Name:
           <input
             id="name"
@@ -76,8 +76,8 @@ export const Form = () => {
             onChange={handleNameChange}
             required
           />
-        </label>
-        <label htmlFor="age">
+        </S.Label>
+        <S.Label htmlFor="age">
           Age:
           <input
             id="age"
@@ -88,8 +88,8 @@ export const Form = () => {
             max="60"
             onChange={handleAgeChange}
           />
-        </label>
-        <label htmlFor="email">
+        </S.Label>
+        <S.Label htmlFor="email">
           Email:
           <input
             id="email"
@@ -98,8 +98,8 @@ export const Form = () => {
             placeholder="johndoe@gmail.com"
             onChange={handleEmailChange}
           />
-        </label>
-        <label htmlFor="password">
+        </S.Label>
+        <S.Label htmlFor="password">
           Password:
           <input
             id="password"
@@ -108,13 +108,13 @@ export const Form = () => {
             placeholder="******"
             onChange={handlePasswordChange}
           />
-        </label>
+        </S.Label>
         <button type="submit">Register</button>
       </S.Form>
       <h3>User List</h3>
       {userList &&
         userList.map((user) => (
-          <UserList
+          <UserCard
             key={user.id}
             id={user.id}
             age={user.age}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { number, string } from 'prop-types';
 import firebase from '../../firebase';
 
-export const UserList = ({ age, email, id, name }) => {
+export const UserCard = ({ age, email, id, name }) => {
   const [edit, setEdit] = useState(true);
   const [updateName, setUpdateName] = useState();
 
@@ -46,7 +46,7 @@ export const UserList = ({ age, email, id, name }) => {
   );
 };
 
-UserList.propTypes = {
+UserCard.propTypes = {
   age: number.isRequired,
   email: string.isRequired,
   id: string.isRequired,

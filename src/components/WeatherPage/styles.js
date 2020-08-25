@@ -21,8 +21,9 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-  padding: 0 0 1rem 0;
-  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
 `;
 
 export const Button = styled.button`

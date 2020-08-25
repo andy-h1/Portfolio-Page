@@ -13,5 +13,6 @@ To Do:
 
 - remove inline styles
 - 404 page
-- write a test for `getWeatherImage`
-- build form component
+- Add styled components to both Form and FormTracker
+- Create function where you can update all fields, not just name
+- Build inline editable UI 
