@@ -6,56 +6,51 @@ exports[`Form Component should render 1`] = `
     Sign Up Form
   </h2>
   <form
-    class="sc-AxjAm fZqwlG"
+    class="sc-AxjAm jllRZs"
   >
-    <label
-      for="name"
+    <input
+      class="sc-AxirZ oyLju"
+      id="name"
+      name=""
+      placeholder="Username"
+      required=""
+      type="text"
+    />
+    <input
+      class="sc-AxirZ oyLju"
+      id="age"
+      max="60"
+      min="18"
+      name=""
+      placeholder="Age"
+      type="number"
+    />
+    <input
+      class="sc-AxirZ oyLju"
+      id="email"
+      name=""
+      placeholder="Email Address"
+      required=""
+      type="email"
+    />
+    <div
+      class="sc-AxhCb fXOnEk"
     >
-      Name:
       <input
-        id="name"
-        name=""
-        placeholder="John Doe"
-        required=""
-        type="text"
-      />
-    </label>
-    <label
-      for="age"
-    >
-      Age:
-      <input
-        id="age"
-        max="60"
-        min="18"
-        name=""
-        placeholder="25"
-        type="number"
-      />
-    </label>
-    <label
-      for="email"
-    >
-      Email:
-      <input
-        id="email"
-        name=""
-        placeholder="johndoe@gmail.com"
-        type="email"
-      />
-    </label>
-    <label
-      for="password"
-    >
-      Password:
-      <input
+        class="sc-AxirZ oyLju"
         id="password"
         name=""
-        placeholder="******"
+        placeholder="Password"
+        required=""
         type="password"
       />
-    </label>
+      <button
+        class="sc-AxhUy hdmunR"
+        type="button"
+      />
+    </div>
     <button
+      class="sc-AxiKw bYGUFw"
       type="submit"
     >
       Register

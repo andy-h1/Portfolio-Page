@@ -35,6 +35,9 @@ export const PasswordWrapper = styled.div`
 `;
 
 export const ShowPasswordButton = styled.button`
+  background-image: url(${passwordIcon});
+  background-color: white;
+  border: none;
   position: absolute;
   top: 25%;
   right: 3%;
@@ -42,8 +45,5 @@ export const ShowPasswordButton = styled.button`
   height: 32px;
   width: 32px;
   object-fit: contain;
-  border: none;
-  background-image: url(${passwordIcon});
-  background-color: white;
   z-index: 2;
 `;
