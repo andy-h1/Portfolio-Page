@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 16px;
 
   @media (max-width: 600px) {
     justify-content: center;
@@ -41,7 +42,8 @@ export const Button = styled.button`
   border: none;
   color: white;
   border-radius: 8px;
-  padding: 0.5rem 0;
+  margin: 10px 0;
+  padding: 10px;
   max-width: 300px;
   font-family: inherit;
   font-size: inherit;

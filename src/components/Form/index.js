@@ -8,7 +8,12 @@ export const Form = () => {
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
+
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -91,14 +96,17 @@ export const Form = () => {
           onChange={handleEmailChange}
           required
         />
-        <S.Input
-          id="password"
-          name={password}
-          type="password"
-          placeholder="Password"
-          onChange={handlePasswordChange}
-          required
-        />
+        <S.PasswordWrapper>
+          <S.Input
+            id="password"
+            name={password}
+            type={showPassword ? 'text' : 'password'}
+            placeholder="Password"
+            onChange={handlePasswordChange}
+            required
+          />
+          <S.ShowPasswordButton type="button" onClick={togglePassword} />
+        </S.PasswordWrapper>
         <S.Button type="submit">Register</S.Button>
       </S.Form>
       <h3>User List</h3>

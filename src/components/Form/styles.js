@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 
 export const Form = styled.form`
   display: flex;
@@ -12,7 +13,7 @@ export const Input = styled.input`
   margin: 10px 0;
   border: 0;
   border-bottom: 1px solid #eee;
-  width: 300px;
+  width: 100%;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -23,7 +24,26 @@ export const Button = styled.button`
   color: white;
   border-radius: 8px;
   padding: 0.5rem 0;
-  max-width: 300px;
+  max-width: 50%;
   font-family: inherit;
   font-size: inherit;
+`;
+
+export const PasswordWrapper = styled.div`
+  display: flex;
+  position: relative;
+`;
+
+export const ShowPasswordButton = styled.button`
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  border: none;
+  background-image: url(${passwordIcon});
+  background-color: white;
+  z-index: 2;
 `;
