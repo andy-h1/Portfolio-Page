@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Card component should render 1`] = `
+<div>
+  <ul>
+    <li>
+      Name: 
+      usernameTest
+    </li>
+    <li>
+      Email: 
+      test@gmail.com
+    </li>
+    <li>
+      Age: 
+      25
+    </li>
+  </ul>
+  <input
+    disabled=""
+    type="text"
+  />
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+  <button
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    type="button"
+  >
+    x
+  </button>
+</div>
+`;

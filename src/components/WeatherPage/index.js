@@ -55,6 +55,7 @@ export const WeatherPage = () => {
   return (
     <S.Wrapper>
       <S.Title>Current Weather</S.Title>
+
       {isLoading && <h3 data-testid="loading">Loading...</h3>}
       {isError && <h3 data-testid="error">{isError}</h3>}
 
@@ -68,7 +69,9 @@ export const WeatherPage = () => {
           weatherTemp={weatherData.main.temp}
         />
       )}
+
       <p>Change location:</p>
+
       <S.Form>
         <S.Label htmlFor="cityInput">
           <S.Input

@@ -8,21 +8,26 @@ import * as S from './styles';
 export const Header = ({ open }) => (
   <S.Header>
     <S.Title>Andy Huynh</S.Title>
+
     <S.Wrapper open={open}>
       <S.PageLink to="/">home</S.PageLink>
       <S.PageLink to="/cv">cv</S.PageLink>
+
       <S.Link href="https://github.com/andy-h1" target="_blank">
         <S.Image src={github} alt="github" />
       </S.Link>
+
       <S.Link href="https://twitter.com/andyh_1_" target="_blank">
         <S.Image src={twitter} alt="twitter" />
       </S.Link>
+
       <S.Link href="https://www.linkedin.com/in/andyhuynh1/" target="_blank">
         <S.Image src={linkedin} alt="linkedin" />
       </S.Link>
     </S.Wrapper>
   </S.Header>
 );
+
 Header.propTypes = {
   open: bool.isRequired
 };

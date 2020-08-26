@@ -52,3 +52,6 @@ UserCard.propTypes = {
   id: string.isRequired,
   name: string.isRequired
 };
+
+// onClick toggle edit state
+// show input field otherwise return user card
