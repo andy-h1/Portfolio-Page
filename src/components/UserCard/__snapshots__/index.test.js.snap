@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`User Card component should render 1`] = `
-<div>
+<div
+  class="sc-AxjAm ckPHgQ"
+>
   <ul
-    class="sc-AxhCb ldGDrt"
+    class="sc-AxhUy CnrnL"
   >
     <li>
       Name: 
@@ -19,25 +21,25 @@ exports[`User Card component should render 1`] = `
     </li>
   </ul>
   <span
-    class="sc-AxirZ hlnYRa"
+    class="sc-AxiKw cZpmuP"
   >
     <button
-      class="sc-AxiKw jakAjd"
+      class="sc-AxhCb jtyclr"
       type="submit"
     >
       Submit
     </button>
     <button
-      class="sc-AxiKw jakAjd"
+      class="sc-AxhCb jtyclr"
       type="button"
     >
       Edit
     </button>
     <button
-      class="sc-AxiKw jakAjd"
+      class="sc-AxhCb jtyclr"
       type="button"
     >
-      x
+      X
     </button>
   </span>
 </div>
