@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { number, string } from 'prop-types';
 import firebase from '../../firebase';
+import * as S from './styles';
 
 export const UserCard = ({ age, email, id, name }) => {
-  const [edit, setEdit] = useState(true);
+  const [edit, setEdit] = useState(false);
   const [updateName, setUpdateName] = useState();
+  const [updateEmail, setUpdateEmail] = useState();
+  const [updateAge, setUpdateAge] = useState();
 
   const handleDeleteClick = () => {
     firebase.firestore().collection('users').doc(id).delete();
@@ -12,12 +15,22 @@ export const UserCard = ({ age, email, id, name }) => {
 
   const handleUpdate = () => {
     firebase.firestore().collection('users').doc(id).update({
-      name: updateName
+      name: updateName,
+      email: updateEmail,
+      age: updateAge
     });
   };
 
   const handleUpdateName = (event) => {
     setUpdateName(event.target.value);
+  };
+
+  const handleUpdateEmail = (event) => {
+    setUpdateEmail(event.target.value);
+  };
+
+  const handleUpdateAge = (event) => {
+    setUpdateAge(event.target.value);
   };
 
   const handleEditClick = () => {
@@ -26,22 +39,34 @@ export const UserCard = ({ age, email, id, name }) => {
 
   return (
     <div>
-      <ul>
-        <li>Name: {name}</li>
-        <li>Email: {email}</li>
-        <li>Age: {age}</li>
-      </ul>
-
-      <input type="text" disabled={edit} onChange={handleUpdateName} />
-      <button type="submit" onClick={handleUpdate}>
-        Submit
-      </button>
-      <button type="button" onClick={handleEditClick}>
-        Edit
-      </button>
-      <button type="button" onClick={handleDeleteClick}>
-        x
-      </button>
+      {edit ? (
+        <div>
+          <S.Input
+            type="text"
+            placeholder="Username"
+            onChange={handleUpdateName}
+          />
+          <S.Input type="text" placeholder="Age" onChange={handleUpdateEmail} />
+          <S.Input type="text" placeholder="Email" onChange={handleUpdateAge} />
+        </div>
+      ) : (
+        <S.List>
+          <li>Name: {name}</li>
+          <li>Email: {email}</li>
+          <li>Age: {age}</li>
+        </S.List>
+      )}
+      <S.ButtonWrapper>
+        <S.Button type="submit" onClick={handleUpdate}>
+          Submit
+        </S.Button>
+        <S.Button type="button" onClick={handleEditClick}>
+          Edit
+        </S.Button>
+        <S.Button type="button" onClick={handleDeleteClick}>
+          x
+        </S.Button>
+      </S.ButtonWrapper>
     </div>
   );
 };
