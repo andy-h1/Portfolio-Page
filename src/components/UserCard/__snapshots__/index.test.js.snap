@@ -2,7 +2,9 @@
 
 exports[`User Card component should render 1`] = `
 <div>
-  <ul>
+  <ul
+    class="sc-AxhCb bKMcPW"
+  >
     <li>
       Name: 
       usernameTest
@@ -16,24 +18,27 @@ exports[`User Card component should render 1`] = `
       25
     </li>
   </ul>
-  <input
-    disabled=""
-    type="text"
-  />
-  <button
-    type="submit"
+  <span
+    class="sc-AxirZ hlnYRa"
   >
-    Submit
-  </button>
-  <button
-    type="button"
-  >
-    Edit
-  </button>
-  <button
-    type="button"
-  >
-    x
-  </button>
+    <button
+      class="sc-AxiKw jakAjd"
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      class="sc-AxiKw jakAjd"
+      type="button"
+    >
+      Edit
+    </button>
+    <button
+      class="sc-AxiKw jakAjd"
+      type="button"
+    >
+      x
+    </button>
+  </span>
 </div>
 `;

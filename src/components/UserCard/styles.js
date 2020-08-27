@@ -29,6 +29,8 @@ export const Button = styled.button`
 
 export const List = styled.ul`
   list-style: none;
+  font-family: inherit;
+  font-size: inherit;
   padding: 0;
   margin: 0;
 `;
