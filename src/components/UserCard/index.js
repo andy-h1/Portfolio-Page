@@ -38,7 +38,7 @@ export const UserCard = ({ age, email, id, name }) => {
   };
 
   return (
-    <div>
+    <S.UserCardWrapper>
       {edit ? (
         <div>
           <S.Input
@@ -46,8 +46,8 @@ export const UserCard = ({ age, email, id, name }) => {
             placeholder="Username"
             onChange={handleUpdateName}
           />
-          <S.Input type="text" placeholder="Age" onChange={handleUpdateEmail} />
           <S.Input type="text" placeholder="Email" onChange={handleUpdateAge} />
+          <S.Input type="text" placeholder="Age" onChange={handleUpdateEmail} />
         </div>
       ) : (
         <S.List>
@@ -64,10 +64,10 @@ export const UserCard = ({ age, email, id, name }) => {
           Edit
         </S.Button>
         <S.Button type="button" onClick={handleDeleteClick}>
-          x
+          X
         </S.Button>
       </S.ButtonWrapper>
-    </div>
+    </S.UserCardWrapper>
   );
 };
 

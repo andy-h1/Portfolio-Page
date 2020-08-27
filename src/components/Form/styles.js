@@ -36,6 +36,16 @@ export const PasswordWrapper = styled.div`
   z-index: 0;
 `;
 
+export const UserCardWrapper = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+
+  @media (min-width: 597px) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+`;
+
 export const ShowPasswordButton = styled.button`
   background-image: url(${passwordIcon});
   background-color: white;

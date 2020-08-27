@@ -110,17 +110,19 @@ export const Form = () => {
         <S.Button type="submit">Register</S.Button>
       </S.Form>
 
-      <h3>User List</h3>
-      {userList &&
-        userList.map((user) => (
-          <UserCard
-            key={user.id}
-            id={user.id}
-            age={user.age}
-            email={user.email}
-            name={user.name}
-          />
-        ))}
+      <h2>User List</h2>
+      <S.UserCardWrapper>
+        {userList &&
+          userList.map((user) => (
+            <UserCard
+              key={user.id}
+              id={user.id}
+              age={user.age}
+              email={user.email}
+              name={user.name}
+            />
+          ))}
+      </S.UserCardWrapper>
     </>
   );
 };

@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     background-color: #FBFBFB;
     font-family: 'Varta', sans-serif;
+    box-sizing: border-box;
 }
 `;
 
