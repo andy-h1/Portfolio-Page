@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   margin: 4rem 0;
@@ -11,15 +11,9 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const GridWrapper = styled.div`
-  display: grid;
-  place-items: center;
-
-  @media (min-width: 600px) {
-    grid-column-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(50px, auto) 1fr 1fr;
-    max-width: none;
+export const Title = styled.h2`
+  @media (min-width: 597px) {
+    margin: 1rem;
   }
 `;
 
@@ -28,16 +22,40 @@ export const ProjectLink = styled(NavLink)`
   color: initial;
   cursor: pointer;
   text-decoration: none;
-  text-transform: capitalize;
-  font-weight: bolder;
-  font-size: 1.17em;
+  transition: all 0.2s ease-in-out;
+`;
+
+export const GridWrapper = styled.div`
+  display: grid;
+  place-items: center;
+  padding: 1rem;
   transition: all 0.2s ease-in-out;
 
   :hover {
-    color: #17a589;
-    transform: scale(1.05);
+    background: #f9f9f9;
+    border: 1px solid #c9c9c9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
   }
 
+  @media (max-width: 597px) {
+    background: #f9f9f9;
+    border: 1px solid #c9c9c9;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 597px) {
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(50px, auto) 1fr 1fr;
+    max-width: none;
+  }
+`;
+
+export const ProjectTitle = styled.h3`
   @media (min-width: 600px) {
     justify-self: start;
   }
@@ -57,9 +75,7 @@ export const PillsWrapper = styled.div`
   }
 `;
 
-export const PageLink = styled(Link)`
-  cursor: pointer;
-
+export const ImageWrapper = styled.span`
   @media (min-width: 600px) {
     grid-area: 1 / col2-start / last-line / 2;
   }

@@ -57,7 +57,7 @@ export const UserCard = ({ age, email, id, name }) => {
         </S.List>
       )}
       <S.ButtonWrapper>
-        <S.Button type="submit" onClick={handleUpdate}>
+        <S.Button type={edit ? 'submit' : 'hidden'} onClick={handleUpdate}>
           Submit
         </S.Button>
         <S.Button type="button" onClick={handleEditClick}>

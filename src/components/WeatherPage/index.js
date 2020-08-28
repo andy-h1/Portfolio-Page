@@ -89,7 +89,7 @@ export const WeatherPage = () => {
             onChange={handleCountryChange}
           />
         </S.Label>
-        <S.Label htmlFor="unitInput">
+        <S.UnitInput htmlFor="unitInput">
           <input
             type="radio"
             name="units"
@@ -98,8 +98,8 @@ export const WeatherPage = () => {
             onChange={handleUnitChange}
           />
           Celsius
-        </S.Label>
-        <S.Label htmlFor="unitInput">
+        </S.UnitInput>
+        <S.UnitInput htmlFor="unitInput">
           <input
             type="radio"
             name="units"
@@ -108,7 +108,7 @@ export const WeatherPage = () => {
             onChange={handleUnitChange}
           />
           Fahrenheit
-        </S.Label>
+        </S.UnitInput>
         <S.Button type="button" onClick={fetchData}>
           Get Weather
         </S.Button>

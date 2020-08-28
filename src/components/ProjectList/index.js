@@ -5,31 +5,32 @@ import { Pills } from '../Pills';
 
 export const ProjectList = () => (
   <S.Wrapper>
-    <h2>Projects</h2>
+    <S.Title>Projects</S.Title>
+    <S.ProjectLink to="/weather">
+      <S.GridWrapper>
+        <S.ProjectTitle>Weather App</S.ProjectTitle>
 
-    <S.GridWrapper>
-      <S.ProjectLink to="/weather">Weather App</S.ProjectLink>
+        <S.Text>
+          I built this weather app using OpenWeatherMap API to get the current
+          weather data in your location. It has been built with React using
+          styled-components.
+        </S.Text>
 
-      <S.Text>
-        I built this weather app using OpenWeatherMap API to get the current
-        weather data in your location. It has been built with React using
-        styled-components.
-      </S.Text>
+        <S.PillsWrapper>
+          <Pills
+            items={[
+              'react',
+              'styled-components',
+              'jest',
+              'react-testing-library'
+            ]}
+          />
+        </S.PillsWrapper>
 
-      <S.PillsWrapper>
-        <Pills
-          items={[
-            'react',
-            'styled-components',
-            'jest',
-            'react-testing-library'
-          ]}
-        />
-      </S.PillsWrapper>
-
-      <S.PageLink to="/weather">
-        <S.Image src={lightCloudsDay} alt="cloudy" />
-      </S.PageLink>
-    </S.GridWrapper>
+        <S.ImageWrapper>
+          <S.Image src={lightCloudsDay} alt="cloudy" />
+        </S.ImageWrapper>
+      </S.GridWrapper>
+    </S.ProjectLink>
   </S.Wrapper>
 );
