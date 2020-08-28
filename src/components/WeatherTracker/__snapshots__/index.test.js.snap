@@ -2,27 +2,100 @@
 
 exports[`Weather Tracker Component should render 1`] = `
 <div
-  class="sc-AxjAm bzOPxR"
+  class="sc-AxjAm jMqLJl"
   data-testid="weatherTracker"
 >
   <img
     alt="sunny"
+    class="sc-AxirZ bcWlmz"
     height="auto"
     src="clearDay.png"
-    width="300px"
+    width="250px"
   />
-  <p>
-    Location: 
-    London
-    , 
-    England
-  </p>
-  <p>
-    The weather is currently 
-    34
-    ° with 
-    clear sky
-     
-  </p>
+  <table
+    class="sc-AxiKw hwcIqX"
+  >
+    <tbody>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Current Date:
+        </th>
+         
+        <td>
+          8/29/2020
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Time of Weather:
+        </th>
+        <td>
+          12:07:09 AM
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Location:
+        </th>
+         
+        <td>
+          London
+          , 
+          England
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Current Temperature:
+        </th>
+         
+        <td>
+          34
+          °
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Feels like:
+        </th>
+        <td>
+          36
+          °
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Forecast:
+        </th>
+         
+        <td>
+          clear sky
+        </td>
+      </tr>
+      <tr>
+        <th
+          class="sc-AxhCb jRGsGb"
+        >
+          Wind speed:
+        </th>
+         
+        <td>
+          1
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;

@@ -2,22 +2,13 @@
 
 exports[`Weather Page Component should render 1`] = `
 <div
-  class="sc-AxjAm jFllak"
+  class="sc-AxjAm VCnzh"
 >
   <h2
     class="sc-AxirZ jCgDWR"
   >
-    Current Weather
+    Weather Page
   </h2>
-  <h3
-    data-testid="loading"
-  >
-    Loading...
-  </h3>
-  
-  <p>
-    Change location:
-  </p>
   <form
     class="sc-AxiKw bhiawi"
   >

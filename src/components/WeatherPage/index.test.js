@@ -8,8 +8,10 @@ afterEach(cleanup);
 jest.mock('axios');
 
 const mockData = {
+  dt: 1598656029,
   main: {
-    temp: 27.9
+    temp: 27.9,
+    feels_like: 25.9
   },
   name: 'London',
   sys: {
@@ -21,7 +23,10 @@ const mockData = {
       icon: '02d',
       main: 'Clouds'
     }
-  ]
+  ],
+  wind: {
+    speed: 5.0
+  }
 };
 
 describe('Weather Page Component', () => {

@@ -7,8 +7,11 @@ const props = {
   country: 'England',
   image: '01d',
   imgAlt: 'sunny',
+  timeStamp: 1598656029,
   weatherDesc: 'clear sky',
-  weatherTemp: 34
+  weatherTemp: 34,
+  weatherTempFeelsLike: 36,
+  wind: 1.0
 };
 
 describe('Weather Tracker Component', () => {
