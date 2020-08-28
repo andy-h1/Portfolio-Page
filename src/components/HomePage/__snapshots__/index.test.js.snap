@@ -2,23 +2,23 @@
 
 exports[`Home Page Component shoulder render 1`] = `
 <div
-  class="sc-fzpans dXqmnw"
+  class="sc-fznyAO eTnCUx"
 >
   <div
-    class="sc-fzozJi cAxcmN"
+    class="sc-fzpans cHmVsv"
   >
     <img
       alt="andy"
-      class="sc-fzoLsD gmhubC"
+      class="sc-fzplWN fYfXpL"
       src="profile.jpg"
     />
     <p
-      class="sc-fzplWN grMOQI"
+      class="sc-fznKkj jikosJ"
     >
       Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
     </p>
     <p
-      class="sc-fzplWN grMOQI"
+      class="sc-fznKkj jikosJ"
     >
       I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
     </p>
@@ -26,62 +26,67 @@ exports[`Home Page Component shoulder render 1`] = `
   <div
     class="sc-AxjAm bfLLc"
   >
-    <h2>
+    <h2
+      class="sc-AxirZ dDfKVJ"
+    >
       Projects
     </h2>
-    <div
-      class="sc-AxirZ gzBYRi"
+    <a
+      class="sc-AxiKw dcQGjx"
+      href="/weather"
     >
-      <a
-        class="sc-AxiKw UfQqe"
-        href="/weather"
-      >
-        Weather App
-      </a>
-      <p
-        class="sc-AxhCb dXMftt"
-      >
-        I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
-      </p>
       <div
-        class="sc-AxhUy gPETpu"
+        class="sc-AxhCb bwLjdt"
       >
-        <ul
-          class="sc-Axmtr iEWLzZ"
+        <h3
+          class="sc-AxhUy iAIcNb"
         >
-          <li
-            class="sc-AxmLO hHqwkm"
+          Weather App
+        </h3>
+        <p
+          class="sc-AxgMl eOWHjm"
+        >
+          I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+        </p>
+        <div
+          class="sc-AxheI fpnsVe"
+        >
+          <ul
+            class="sc-fzozJi KOIfl"
           >
-            react
-          </li>
-          <li
-            class="sc-AxmLO hHqwkm"
-          >
-            styled-components
-          </li>
-          <li
-            class="sc-AxmLO hHqwkm"
-          >
-            jest
-          </li>
-          <li
-            class="sc-AxmLO hHqwkm"
-          >
-            react-testing-library
-          </li>
-        </ul>
+            <li
+              class="sc-fzoLsD jdDHst"
+            >
+              react
+            </li>
+            <li
+              class="sc-fzoLsD jdDHst"
+            >
+              styled-components
+            </li>
+            <li
+              class="sc-fzoLsD jdDHst"
+            >
+              jest
+            </li>
+            <li
+              class="sc-fzoLsD jdDHst"
+            >
+              react-testing-library
+            </li>
+          </ul>
+        </div>
+        <span
+          class="sc-Axmtr hAhsOL"
+        >
+          <img
+            alt="cloudy"
+            class="sc-AxmLO cLbVyG"
+            src="lightCloudsDay.png"
+          />
+        </span>
       </div>
-      <a
-        class="sc-AxgMl bgcSYW"
-        href="/weather"
-      >
-        <img
-          alt="cloudy"
-          class="sc-AxheI enaueQ"
-          src="lightCloudsDay.png"
-        />
-      </a>
-    </div>
+    </a>
   </div>
 </div>
 `;

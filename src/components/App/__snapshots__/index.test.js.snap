@@ -2,7 +2,7 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fzoant bUnHhZ"
+  class="sc-fzqMAW cJfpOH"
 >
   <button
     class="sc-AxjAm hChaqK"
@@ -21,7 +21,7 @@ exports[`App component should render 1`] = `
     class="sc-AxiKw bWDRCp"
   >
     <h1
-      class="sc-AxhCb gsaGzK"
+      class="sc-AxhCb pvvCP"
     >
       Andy Huynh
     </h1>
@@ -77,23 +77,23 @@ exports[`App component should render 1`] = `
     </div>
   </header>
   <div
-    class="sc-fzoyAV htCWhR"
+    class="sc-fzoXzr eoVayP"
   >
     <div
-      class="sc-fzqBZW iQibxd"
+      class="sc-fzoyAV fkPjvm"
     >
       <img
         alt="andy"
-        class="sc-fzqNJr ejzvVN"
+        class="sc-fzoLag lnwdvn"
         src="profile.jpg"
       />
       <p
-        class="sc-fzoLag hoFkdU"
+        class="sc-fzpjYC fXVSSF"
       >
         Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
       </p>
       <p
-        class="sc-fzoLag hoFkdU"
+        class="sc-fzpjYC fXVSSF"
       >
         I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
       </p>
@@ -101,62 +101,67 @@ exports[`App component should render 1`] = `
     <div
       class="sc-AxmLO cogIUM"
     >
-      <h2>
+      <h2
+        class="sc-fzozJi fyTWVX"
+      >
         Projects
       </h2>
-      <div
-        class="sc-fzozJi icGoeg"
+      <a
+        class="sc-fzoLsD ktWQkN"
+        href="/weather"
       >
-        <a
-          class="sc-fzoLsD ftsMbS"
-          href="/weather"
-        >
-          Weather App
-        </a>
-        <p
-          class="sc-fzpans exDSPl"
-        >
-          I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
-        </p>
         <div
-          class="sc-fzplWN gBWGGu"
+          class="sc-fzpans fDfmGF"
         >
-          <ul
-            class="sc-fznZeY eBZJPn"
+          <h3
+            class="sc-fzplWN deeuWP"
           >
-            <li
-              class="sc-fzokOt lgxNnS"
+            Weather App
+          </h3>
+          <p
+            class="sc-fznyAO jJDWHw"
+          >
+            I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+          </p>
+          <div
+            class="sc-fznKkj eyhugD"
+          >
+            <ul
+              class="sc-fzqBZW fqLkBl"
             >
-              react
-            </li>
-            <li
-              class="sc-fzokOt lgxNnS"
-            >
-              styled-components
-            </li>
-            <li
-              class="sc-fzokOt lgxNnS"
-            >
-              jest
-            </li>
-            <li
-              class="sc-fzokOt lgxNnS"
-            >
-              react-testing-library
-            </li>
-          </ul>
+              <li
+                class="sc-fzqNJr esqzSy"
+              >
+                react
+              </li>
+              <li
+                class="sc-fzqNJr esqzSy"
+              >
+                styled-components
+              </li>
+              <li
+                class="sc-fzqNJr esqzSy"
+              >
+                jest
+              </li>
+              <li
+                class="sc-fzqNJr esqzSy"
+              >
+                react-testing-library
+              </li>
+            </ul>
+          </div>
+          <span
+            class="sc-fznZeY bpLweZ"
+          >
+            <img
+              alt="cloudy"
+              class="sc-fzokOt ggXsHW"
+              src="lightCloudsDay.png"
+            />
+          </span>
         </div>
-        <a
-          class="sc-fznyAO GiwHo"
-          href="/weather"
-        >
-          <img
-            alt="cloudy"
-            class="sc-fznKkj kmJeUh"
-            src="lightCloudsDay.png"
-          />
-        </a>
-      </div>
+      </a>
     </div>
   </div>
 </div>

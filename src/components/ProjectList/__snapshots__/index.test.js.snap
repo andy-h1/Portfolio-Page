@@ -4,61 +4,66 @@ exports[`Project List Component should render 1`] = `
 <div
   class="sc-AxjAm bfLLc"
 >
-  <h2>
+  <h2
+    class="sc-AxirZ dDfKVJ"
+  >
     Projects
   </h2>
-  <div
-    class="sc-AxirZ gzBYRi"
+  <a
+    class="sc-AxiKw dcQGjx"
+    href="/weather"
   >
-    <a
-      class="sc-AxiKw UfQqe"
-      href="/weather"
-    >
-      Weather App
-    </a>
-    <p
-      class="sc-AxhCb dXMftt"
-    >
-      I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
-    </p>
     <div
-      class="sc-AxhUy gPETpu"
+      class="sc-AxhCb bwLjdt"
     >
-      <ul
-        class="sc-Axmtr iEWLzZ"
+      <h3
+        class="sc-AxhUy iAIcNb"
       >
-        <li
-          class="sc-AxmLO hHqwkm"
+        Weather App
+      </h3>
+      <p
+        class="sc-AxgMl eOWHjm"
+      >
+        I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+      </p>
+      <div
+        class="sc-AxheI fpnsVe"
+      >
+        <ul
+          class="sc-fzozJi KOIfl"
         >
-          react
-        </li>
-        <li
-          class="sc-AxmLO hHqwkm"
-        >
-          styled-components
-        </li>
-        <li
-          class="sc-AxmLO hHqwkm"
-        >
-          jest
-        </li>
-        <li
-          class="sc-AxmLO hHqwkm"
-        >
-          react-testing-library
-        </li>
-      </ul>
+          <li
+            class="sc-fzoLsD jdDHst"
+          >
+            react
+          </li>
+          <li
+            class="sc-fzoLsD jdDHst"
+          >
+            styled-components
+          </li>
+          <li
+            class="sc-fzoLsD jdDHst"
+          >
+            jest
+          </li>
+          <li
+            class="sc-fzoLsD jdDHst"
+          >
+            react-testing-library
+          </li>
+        </ul>
+      </div>
+      <span
+        class="sc-Axmtr hAhsOL"
+      >
+        <img
+          alt="cloudy"
+          class="sc-AxmLO cLbVyG"
+          src="lightCloudsDay.png"
+        />
+      </span>
     </div>
-    <a
-      class="sc-AxgMl bgcSYW"
-      href="/weather"
-    >
-      <img
-        alt="cloudy"
-        class="sc-AxheI enaueQ"
-        src="lightCloudsDay.png"
-      />
-    </a>
-  </div>
+  </a>
 </div>
 `;

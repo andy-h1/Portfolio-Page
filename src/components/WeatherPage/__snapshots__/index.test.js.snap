@@ -2,7 +2,7 @@
 
 exports[`Weather Page Component should render 1`] = `
 <div
-  class="sc-AxjAm eCRCHK"
+  class="sc-AxjAm jFllak"
 >
   <h2
     class="sc-AxirZ jCgDWR"
@@ -26,7 +26,7 @@ exports[`Weather Page Component should render 1`] = `
       for="cityInput"
     >
       <input
-        class="sc-AxhUy fRCQcQ"
+        class="sc-AxgMl eaiYi"
         name="city"
         placeholder="Enter city"
         type="text"
@@ -37,14 +37,14 @@ exports[`Weather Page Component should render 1`] = `
       for="countryInput"
     >
       <input
-        class="sc-AxhUy fRCQcQ"
+        class="sc-AxgMl eaiYi"
         name="country"
         placeholder="Enter country"
         type="text"
       />
     </label>
     <label
-      class="sc-AxhCb fmuXyx"
+      class="sc-AxhUy enhySx"
       for="unitInput"
     >
       <input
@@ -56,7 +56,7 @@ exports[`Weather Page Component should render 1`] = `
       Celsius
     </label>
     <label
-      class="sc-AxhCb fmuXyx"
+      class="sc-AxhUy enhySx"
       for="unitInput"
     >
       <input
@@ -67,7 +67,7 @@ exports[`Weather Page Component should render 1`] = `
       Fahrenheit
     </label>
     <button
-      class="sc-AxgMl hrRccM"
+      class="sc-AxheI fzLXlG"
       type="button"
     >
       Get Weather

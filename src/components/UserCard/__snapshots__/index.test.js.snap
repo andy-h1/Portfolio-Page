@@ -25,7 +25,7 @@ exports[`User Card component should render 1`] = `
   >
     <button
       class="sc-AxhCb jtyclr"
-      type="submit"
+      type="hidden"
     >
       Submit
     </button>
