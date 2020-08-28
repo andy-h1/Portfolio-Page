@@ -33,9 +33,9 @@ export const WeatherPage = () => {
       const { data } = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
       );
-      console.log('HELLO', data);
-      const { weather, main, sys, name } = data;
-      setWeatherData({ weather, main, sys, name });
+      console.log(data);
+      const { weather, main, sys, name, wind, dt } = data;
+      setWeatherData({ weather, main, sys, name, wind, dt });
       setisLoading(false);
     } catch (error) {
       // something went wrong
@@ -53,66 +53,72 @@ export const WeatherPage = () => {
   }, [fetchData, weatherData]);
 
   return (
-    <S.Wrapper>
-      <S.Title>Current Weather</S.Title>
+    <>
+      <S.Wrapper>
+        <S.Title>Weather Page</S.Title>
+
+        <S.Form>
+          <S.Label htmlFor="cityInput">
+            <S.Input
+              type="text"
+              placeholder="Enter city"
+              name="city"
+              onChange={handleCityChange}
+            />
+          </S.Label>
+          <S.Label htmlFor="countryInput">
+            <S.Input
+              type="text"
+              placeholder="Enter country"
+              name="country"
+              onChange={handleCountryChange}
+            />
+          </S.Label>
+          <S.UnitInput htmlFor="unitInput">
+            <input
+              type="radio"
+              name="units"
+              checked={unit === 'metric'}
+              value="metric"
+              onChange={handleUnitChange}
+            />
+            Celsius
+          </S.UnitInput>
+          <S.UnitInput htmlFor="unitInput">
+            <input
+              type="radio"
+              name="units"
+              checked={unit === 'imperial'}
+              value="imperial"
+              onChange={handleUnitChange}
+            />
+            Fahrenheit
+          </S.UnitInput>
+          <S.Button type="button" onClick={fetchData}>
+            Get Weather
+          </S.Button>
+        </S.Form>
+      </S.Wrapper>
 
       {isLoading && <h3 data-testid="loading">Loading...</h3>}
       {isError && <h3 data-testid="error">{isError}</h3>}
 
       {!isError && weatherData && (
         <WeatherTracker
+          city={weatherData.name}
           country={weatherData.sys.country}
           image={weatherData.weather[0].icon}
-          weatherDesc={weatherData.weather[0].description}
           imgAlt={weatherData.weather[0].main}
-          city={weatherData.name}
+          timeStamp={weatherData.dt}
+          weatherDesc={weatherData.weather[0].description}
           weatherTemp={weatherData.main.temp}
+          weatherTempFeelsLike={weatherData.main.feels_like}
+          wind={weatherData.wind.speed}
+          unit={unit}
         />
       )}
-
-      <p>Change location:</p>
-
-      <S.Form>
-        <S.Label htmlFor="cityInput">
-          <S.Input
-            type="text"
-            placeholder="Enter city"
-            name="city"
-            onChange={handleCityChange}
-          />
-        </S.Label>
-        <S.Label htmlFor="countryInput">
-          <S.Input
-            type="text"
-            placeholder="Enter country"
-            name="country"
-            onChange={handleCountryChange}
-          />
-        </S.Label>
-        <S.UnitInput htmlFor="unitInput">
-          <input
-            type="radio"
-            name="units"
-            checked={unit === 'metric'}
-            value="metric"
-            onChange={handleUnitChange}
-          />
-          Celsius
-        </S.UnitInput>
-        <S.UnitInput htmlFor="unitInput">
-          <input
-            type="radio"
-            name="units"
-            checked={unit === 'imperial'}
-            value="imperial"
-            onChange={handleUnitChange}
-          />
-          Fahrenheit
-        </S.UnitInput>
-        <S.Button type="button" onClick={fetchData}>
-          Get Weather
-        </S.Button>
-      </S.Form>
-    </S.Wrapper>
+    </>
   );
 };
+
+//

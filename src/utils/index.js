@@ -50,19 +50,14 @@ export const getWeatherImage = (imageCode) => {
   }
 };
 
-// if icon is 01d then display - clearSkyDay.png
-// icon list
-// 01d - clear sky day
-// 01n - clear sky night
-// 02d - few clouds day
-// 02n - few clouds night
-// 03d - scattered clouds day
-// 03n - scattered clouds night
-// 04d/04n - heavy clouds day/night
-// 09d - slight rain day
-// 09n - slight rain night
-// 10d - rainy day
-// 10n - rainy night
-// 11d/11n - thunderstorm
-// 13d/13n - snowing
-// 50d/50n - fog
+export const dateConverter = (timeStamp) => {
+  const date = new Date(timeStamp * 1000);
+  const formattedDate = date.toLocaleDateString('en-GB');
+  return formattedDate;
+};
+
+export const timeConverter = (timeStamp) => {
+  const date = new Date(timeStamp * 1000);
+  const formattedDate = date.toLocaleTimeString('en-US');
+  return formattedDate;
+};
