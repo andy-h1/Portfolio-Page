@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
+  border: 1px solid #c9c9c9;
+  background: #f9f9f9;
+  border-radius: 8px;
 
   @media (min-width: 597px) {
     flex-direction: row;
@@ -32,4 +36,5 @@ export const Header = styled.th`
 
 export const Data = styled.td`
   padding: 0.25em 0.5em 0;
+  text-transform: capitalize;
 `;

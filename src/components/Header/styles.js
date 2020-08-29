@@ -14,7 +14,10 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
   justify-content: center;
-  padding: 1rem;
+
+  @media (min-width: 597px) {
+    padding: 1rem;
+  }
 `;
 
 export const Wrapper = styled.div`

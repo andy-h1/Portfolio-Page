@@ -2,18 +2,25 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
   font-size: inherit;
+  justify-content: space-between;
+  margin-left: 1rem;
 
   @media (max-width: 600px) {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 `;
 
 export const Title = styled.h2`
-  justify-content: start;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: 597px) {
+    margin: 1rem;
+    text-align: start;
+  }
 `;
 
 export const Form = styled.form`
@@ -24,7 +31,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   margin: 0;
-  width: 100%;
+  width: 250px;
 `;
 
 export const UnitInput = styled.label`
@@ -39,7 +46,7 @@ export const Input = styled.input`
   margin: 10px 0;
   border: 0;
   border-bottom: 1px solid #eee;
-  width: 300px;
+  width: 100%;
   font-family: inherit;
   font-size: inherit;
 `;

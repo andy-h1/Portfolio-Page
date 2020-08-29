@@ -58,6 +58,6 @@ export const dateConverter = (timeStamp) => {
 
 export const timeConverter = (timeStamp) => {
   const date = new Date(timeStamp * 1000);
-  const formattedDate = date.toLocaleTimeString('en-US');
-  return formattedDate;
+  const formattedTime = date.toLocaleTimeString('en-US');
+  return formattedTime;
 };
