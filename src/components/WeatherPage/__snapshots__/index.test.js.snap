@@ -2,7 +2,7 @@
 
 exports[`Weather Page Component should render 1`] = `
 <div
-  class="sc-AxjAm VCnzh"
+  class="sc-AxjAm epCPQl"
 >
   <h2
     class="sc-AxirZ jCgDWR"
@@ -13,7 +13,7 @@ exports[`Weather Page Component should render 1`] = `
     class="sc-AxiKw bhiawi"
   >
     <label
-      class="sc-AxhCb fmuXyx"
+      class="sc-AxhCb dISEPA"
       for="cityInput"
     >
       <input
@@ -24,7 +24,7 @@ exports[`Weather Page Component should render 1`] = `
       />
     </label>
     <label
-      class="sc-AxhCb fmuXyx"
+      class="sc-AxhCb dISEPA"
       for="countryInput"
     >
       <input
@@ -35,7 +35,7 @@ exports[`Weather Page Component should render 1`] = `
       />
     </label>
     <label
-      class="sc-AxhUy enhySx"
+      class="sc-AxhUy gkkdJJ"
       for="unitInput"
     >
       <input
@@ -47,7 +47,7 @@ exports[`Weather Page Component should render 1`] = `
       Celsius
     </label>
     <label
-      class="sc-AxhUy enhySx"
+      class="sc-AxhUy gkkdJJ"
       for="unitInput"
     >
       <input

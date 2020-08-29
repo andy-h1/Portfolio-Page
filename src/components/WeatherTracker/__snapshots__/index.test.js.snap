@@ -7,7 +7,7 @@ exports[`Weather Tracker Component should render 1`] = `
 >
   <img
     alt="sunny"
-    class="sc-AxirZ bcWlmz"
+    class="sc-AxirZ bxhEMV"
     height="auto"
     src="clearDay.png"
     width="250px"
@@ -23,7 +23,9 @@ exports[`Weather Tracker Component should render 1`] = `
           Current Date:
         </th>
          
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           8/29/2020
         </td>
       </tr>
@@ -33,7 +35,9 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Time of Weather:
         </th>
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           12:07:09 AM
         </td>
       </tr>
@@ -44,7 +48,9 @@ exports[`Weather Tracker Component should render 1`] = `
           Location:
         </th>
          
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           London
           , 
           England
@@ -57,7 +63,9 @@ exports[`Weather Tracker Component should render 1`] = `
           Current Temperature:
         </th>
          
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           34
           °
         </td>
@@ -68,7 +76,9 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Feels like:
         </th>
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           36
           °
         </td>
@@ -80,7 +90,9 @@ exports[`Weather Tracker Component should render 1`] = `
           Forecast:
         </th>
          
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           clear sky
         </td>
       </tr>
@@ -91,7 +103,9 @@ exports[`Weather Tracker Component should render 1`] = `
           Wind speed:
         </th>
          
-        <td>
+        <td
+          class="sc-AxhUy cwlNFR"
+        >
           1
         </td>
       </tr>
