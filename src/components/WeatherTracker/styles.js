@@ -13,7 +13,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  padding: 1em;
+  padding: 0;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0px 5px 20px -10px #111111;
 `;
 
 export const Table = styled.table`
@@ -24,5 +27,9 @@ export const Table = styled.table`
 export const Header = styled.th`
   text-align: right;
   width: max-content;
+  padding: 0.25em 0.5em 0;
+`;
+
+export const Data = styled.td`
   padding: 0.25em 0.5em 0;
 `;

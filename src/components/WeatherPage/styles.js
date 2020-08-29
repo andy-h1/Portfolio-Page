@@ -4,10 +4,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  font-size: 16px;
+  font-size: inherit;
 
   @media (max-width: 600px) {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -24,13 +23,14 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-  margin: 10px 0;
+  margin: 0;
   width: 100%;
 `;
 
 export const UnitInput = styled.label`
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
+  margin: 10px 0;
 `;
 
 export const Input = styled.input`

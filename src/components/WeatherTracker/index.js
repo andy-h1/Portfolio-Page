@@ -28,31 +28,31 @@ export const WeatherTracker = ({
         <tbody>
           <tr>
             <S.Header>Current Date:</S.Header>{' '}
-            <td>{dateConverter(timeStamp)}</td>
+            <S.Data>{dateConverter(timeStamp)}</S.Data>
           </tr>
           <tr>
             <S.Header>Time of Weather:</S.Header>
-            <td>{timeConverter(timeStamp)}</td>
+            <S.Data>{timeConverter(timeStamp)}</S.Data>
           </tr>
           <tr>
             <S.Header>Location:</S.Header>{' '}
-            <td>
+            <S.Data>
               {city}, {country}
-            </td>
+            </S.Data>
           </tr>
           <tr>
             <S.Header>Current Temperature:</S.Header>{' '}
-            <td>{Math.round(weatherTemp)}°</td>
+            <S.Data>{Math.round(weatherTemp)}°</S.Data>
           </tr>
           <tr>
             <S.Header>Feels like:</S.Header>
-            <td>{Math.round(weatherTempFeelsLike)}°</td>
+            <S.Data>{Math.round(weatherTempFeelsLike)}°</S.Data>
           </tr>
           <tr>
-            <S.Header>Forecast:</S.Header> <td>{weatherDesc}</td>
+            <S.Header>Forecast:</S.Header> <S.Data>{weatherDesc}</S.Data>
           </tr>
           <tr>
-            <S.Header>Wind speed:</S.Header> <td>{wind}</td>
+            <S.Header>Wind speed:</S.Header> <S.Data>{wind}</S.Data>
           </tr>
         </tbody>
       </S.Table>
