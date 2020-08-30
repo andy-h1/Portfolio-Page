@@ -1,68 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Weather Page Component should render 1`] = `
-<div
-  class="sc-AxjAm epCPQl"
+<h2
+  class="sc-AxirZ jWNkZK"
 >
-  <h2
-    class="sc-AxirZ jCgDWR"
-  >
-    Weather Page
-  </h2>
-  <form
-    class="sc-AxiKw bhiawi"
-  >
-    <label
-      class="sc-AxhCb dISEPA"
-      for="cityInput"
-    >
-      <input
-        class="sc-AxgMl eaiYi"
-        name="city"
-        placeholder="Enter city"
-        type="text"
-      />
-    </label>
-    <label
-      class="sc-AxhCb dISEPA"
-      for="countryInput"
-    >
-      <input
-        class="sc-AxgMl eaiYi"
-        name="country"
-        placeholder="Enter country"
-        type="text"
-      />
-    </label>
-    <label
-      class="sc-AxhUy gkkdJJ"
-      for="unitInput"
-    >
-      <input
-        checked=""
-        name="units"
-        type="radio"
-        value="metric"
-      />
-      Celsius
-    </label>
-    <label
-      class="sc-AxhUy gkkdJJ"
-      for="unitInput"
-    >
-      <input
-        name="units"
-        type="radio"
-        value="imperial"
-      />
-      Fahrenheit
-    </label>
-    <button
-      class="sc-AxheI fzLXlG"
-      type="button"
-    >
-      Get Weather
-    </button>
-  </form>
-</div>
+  Weather Page
+</h2>
 `;

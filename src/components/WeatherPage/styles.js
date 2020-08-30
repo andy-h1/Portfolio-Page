@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin: 0;
+  margin: 0 0 1rem 0;
   text-align: center;
 
   @media (min-width: 597px) {

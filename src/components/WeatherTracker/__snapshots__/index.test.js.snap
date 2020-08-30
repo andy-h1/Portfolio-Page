@@ -2,7 +2,7 @@
 
 exports[`Weather Tracker Component should render 1`] = `
 <div
-  class="sc-AxjAm jMqLJl"
+  class="sc-AxjAm iehzaf"
   data-testid="weatherTracker"
 >
   <img
@@ -22,9 +22,8 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Current Date:
         </th>
-         
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           8/29/2020
         </td>
@@ -36,7 +35,7 @@ exports[`Weather Tracker Component should render 1`] = `
           Time of Weather:
         </th>
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           12:07:09 AM
         </td>
@@ -47,9 +46,8 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Location:
         </th>
-         
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           London
           , 
@@ -62,9 +60,8 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Current Temperature:
         </th>
-         
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           34
           °
@@ -77,7 +74,7 @@ exports[`Weather Tracker Component should render 1`] = `
           Feels like:
         </th>
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           36
           °
@@ -89,9 +86,8 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Forecast:
         </th>
-         
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           clear sky
         </td>
@@ -102,9 +98,8 @@ exports[`Weather Tracker Component should render 1`] = `
         >
           Wind speed:
         </th>
-         
         <td
-          class="sc-AxhUy cwlNFR"
+          class="sc-AxhUy kdhlSK"
         >
           1
         </td>

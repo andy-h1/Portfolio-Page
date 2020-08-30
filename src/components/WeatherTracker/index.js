@@ -27,7 +27,7 @@ export const WeatherTracker = ({
       <S.Table>
         <tbody>
           <tr>
-            <S.Header>Current Date:</S.Header>{' '}
+            <S.Header>Current Date:</S.Header>
             <S.Data>{dateConverter(timeStamp)}</S.Data>
           </tr>
           <tr>
@@ -35,13 +35,13 @@ export const WeatherTracker = ({
             <S.Data>{timeConverter(timeStamp)}</S.Data>
           </tr>
           <tr>
-            <S.Header>Location:</S.Header>{' '}
+            <S.Header>Location:</S.Header>
             <S.Data>
               {city}, {country}
             </S.Data>
           </tr>
           <tr>
-            <S.Header>Current Temperature:</S.Header>{' '}
+            <S.Header>Current Temperature:</S.Header>
             <S.Data>{Math.round(weatherTemp)}°</S.Data>
           </tr>
           <tr>
@@ -49,10 +49,12 @@ export const WeatherTracker = ({
             <S.Data>{Math.round(weatherTempFeelsLike)}°</S.Data>
           </tr>
           <tr>
-            <S.Header>Forecast:</S.Header> <S.Data>{weatherDesc}</S.Data>
+            <S.Header>Forecast:</S.Header>
+            <S.Data>{weatherDesc}</S.Data>
           </tr>
           <tr>
-            <S.Header>Wind speed:</S.Header> <S.Data>{wind}</S.Data>
+            <S.Header>Wind speed:</S.Header>
+            <S.Data>{wind}</S.Data>
           </tr>
         </tbody>
       </S.Table>

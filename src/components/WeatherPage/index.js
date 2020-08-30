@@ -57,6 +57,23 @@ export const WeatherPage = () => {
       <S.Title>Weather Page</S.Title>
 
       <S.Wrapper>
+        {isLoading && <h3 data-testid="loading">Loading...</h3>}
+        {isError && <h3 data-testid="error">{isError}</h3>}
+
+        {!isError && weatherData && (
+          <WeatherTracker
+            city={weatherData.name}
+            country={weatherData.sys.country}
+            image={weatherData.weather[0].icon}
+            imgAlt={weatherData.weather[0].main}
+            timeStamp={weatherData.dt}
+            weatherDesc={weatherData.weather[0].description}
+            weatherTemp={weatherData.main.temp}
+            weatherTempFeelsLike={weatherData.main.feels_like}
+            wind={weatherData.wind.speed}
+            unit={unit}
+          />
+        )}
         <S.Form>
           <S.Label htmlFor="cityInput">
             <S.Input
@@ -98,24 +115,6 @@ export const WeatherPage = () => {
             Get Weather
           </S.Button>
         </S.Form>
-
-        {isLoading && <h3 data-testid="loading">Loading...</h3>}
-        {isError && <h3 data-testid="error">{isError}</h3>}
-
-        {!isError && weatherData && (
-          <WeatherTracker
-            city={weatherData.name}
-            country={weatherData.sys.country}
-            image={weatherData.weather[0].icon}
-            imgAlt={weatherData.weather[0].main}
-            timeStamp={weatherData.dt}
-            weatherDesc={weatherData.weather[0].description}
-            weatherTemp={weatherData.main.temp}
-            weatherTempFeelsLike={weatherData.main.feels_like}
-            wind={weatherData.wind.speed}
-            unit={unit}
-          />
-        )}
       </S.Wrapper>
     </>
   );
