@@ -4,43 +4,51 @@ exports[`User Card component should render 1`] = `
 <div
   class="sc-AxjAm ckPHgQ"
 >
-  <ul
-    class="sc-AxhUy CnrnL"
-  >
-    <li>
-      Name: 
-      usernameTest
-    </li>
-    <li>
-      Email: 
-      test@gmail.com
-    </li>
-    <li>
-      Age: 
-      25
-    </li>
-  </ul>
-  <span
-    class="sc-AxiKw cZpmuP"
-  >
-    <button
-      class="sc-AxhCb jtyclr"
-      type="hidden"
+  <div>
+    <table>
+      <tbody>
+        <tr>
+          <th>
+            Name:
+          </th>
+          <td>
+            usernameTest
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Email:
+          </th>
+          <td>
+            test@gmail.com
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Age:
+          </th>
+          <td>
+            25
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <span
+      class="sc-AxiKw cZpmuP"
     >
-      Submit
-    </button>
-    <button
-      class="sc-AxhCb jtyclr"
-      type="button"
-    >
-      Edit
-    </button>
-    <button
-      class="sc-AxhCb jtyclr"
-      type="button"
-    >
-      X
-    </button>
-  </span>
+      <button
+        class="sc-AxhCb jtyclr"
+        type="button"
+      >
+        Edit
+      </button>
+      <button
+        class="sc-AxhCb jtyclr"
+        type="button"
+      >
+        Delete
+      </button>
+    </span>
+  </div>
 </div>
 `;
