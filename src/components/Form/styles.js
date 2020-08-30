@@ -4,7 +4,11 @@ import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 597px;
+  place-items: center;
+
+  @media (min-width: 597px) {
+    place-items: flex-start;
+  }
 `;
 
 export const Input = styled.input`
@@ -13,7 +17,7 @@ export const Input = styled.input`
   margin: 10px 0;
   border: 0;
   border-bottom: 1px solid #eee;
-  width: 100%;
+  width: 250px;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -25,7 +29,7 @@ export const Button = styled.button`
   border-radius: 8px;
   margin: 10px 0;
   padding: 0.5rem 0;
-  max-width: 50%;
+  width: 250px;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -52,7 +56,7 @@ export const ShowPasswordButton = styled.button`
   border: none;
   position: absolute;
   top: 25%;
-  right: 3%;
+  right: 5%;
   cursor: pointer;
   height: 32px;
   width: 32px;

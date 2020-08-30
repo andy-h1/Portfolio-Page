@@ -15,9 +15,8 @@ export const Form = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleClick = (event) => {
+  const addUserData = (event) => {
     event.preventDefault();
-    console.log({ name, age, email, password });
 
     firebase
       .firestore()
@@ -37,7 +36,7 @@ export const Form = () => {
   };
 
   useEffect(() => {
-    firebase
+    const unsubscribe = firebase
       .firestore()
       .collection('users')
       .onSnapshot((snapshot) => {
@@ -49,6 +48,8 @@ export const Form = () => {
         setUserList(newUserList);
         console.log(newUserList);
       });
+
+    return () => unsubscribe();
   }, []);
 
   const handleAgeChange = (event) => {
@@ -70,10 +71,10 @@ export const Form = () => {
   return (
     <>
       <h2>Sign Up Form</h2>
-      <S.Form onSubmit={handleClick}>
+      <S.Form onSubmit={addUserData}>
         <S.Input
           id="name"
-          name={name}
+          value={name}
           type="text"
           placeholder="Username"
           onChange={handleNameChange}
@@ -81,7 +82,7 @@ export const Form = () => {
         />
         <S.Input
           id="age"
-          name={age}
+          value={age}
           type="number"
           placeholder="Age"
           min="18"
@@ -90,7 +91,7 @@ export const Form = () => {
         />
         <S.Input
           id="email"
-          name={email}
+          value={email}
           type="email"
           placeholder="Email Address"
           onChange={handleEmailChange}
@@ -99,7 +100,7 @@ export const Form = () => {
         <S.PasswordWrapper>
           <S.Input
             id="password"
-            name={password}
+            value={password}
             type={showPassword ? 'text' : 'password'}
             placeholder="Password"
             onChange={handlePasswordChange}

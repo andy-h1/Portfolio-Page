@@ -120,4 +120,6 @@ export const WeatherPage = () => {
   );
 };
 
-//
+// setCity('');
+// setCountry('');
+// setUnit('metric');
