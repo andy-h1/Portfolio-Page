@@ -1,7 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Component should render 1`] = `
-<h2>
-  Sign Up Form
-</h2>
+<div
+  class="sc-Axmtr cyLvQO"
+>
+  <h2
+    class="sc-AxmLO kiXqQT"
+  >
+    Sign Up Form
+  </h2>
+  <form
+    class="sc-fzozJi cMLbRq"
+  >
+    <input
+      class="sc-fzoLsD MiuOd"
+      id="name"
+      placeholder="Username"
+      required=""
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-fzoLsD MiuOd"
+      id="email"
+      placeholder="Email Address"
+      required=""
+      type="email"
+      value=""
+    />
+    <input
+      class="sc-fzoLsD MiuOd"
+      id="age"
+      max="60"
+      min="18"
+      placeholder="Age"
+      type="number"
+      value=""
+    />
+    <div
+      class="sc-fzplWN fSywvf"
+    >
+      <input
+        class="sc-fzoLsD MiuOd"
+        id="password"
+        placeholder="Password"
+        required=""
+        type="password"
+        value=""
+      />
+      <button
+        class="sc-fznKkj hDOazO"
+        type="button"
+      />
+    </div>
+    <button
+      class="sc-fzpans kARrdO"
+      type="submit"
+    >
+      Register
+    </button>
+  </form>
+  <h2
+    class="sc-AxmLO kiXqQT"
+  >
+    User List
+  </h2>
+  <div
+    class="sc-fznyAO ggHHYr"
+  />
+</div>
 `;

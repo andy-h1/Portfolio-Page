@@ -2,48 +2,62 @@
 
 exports[`User Card component should render 1`] = `
 <div
-  class="sc-AxjAm ckPHgQ"
+  class="sc-AxjAm bBiDig"
 >
   <div>
-    <table>
+    <table
+      class="sc-AxhUy egQxim"
+    >
       <tbody>
         <tr>
-          <th>
+          <th
+            class="sc-AxgMl hhCNqj"
+          >
             Name:
           </th>
-          <td>
+          <td
+            class="sc-AxheI ewAITl"
+          >
             usernameTest
           </td>
         </tr>
         <tr>
-          <th>
+          <th
+            class="sc-AxgMl hhCNqj"
+          >
             Email:
           </th>
-          <td>
+          <td
+            class="sc-AxheI ewAITl"
+          >
             test@gmail.com
           </td>
         </tr>
         <tr>
-          <th>
+          <th
+            class="sc-AxgMl hhCNqj"
+          >
             Age:
           </th>
-          <td>
+          <td
+            class="sc-AxheI ewAITl"
+          >
             25
           </td>
         </tr>
       </tbody>
     </table>
     <span
-      class="sc-AxiKw cZpmuP"
+      class="sc-AxiKw bLKSBM"
     >
       <button
-        class="sc-AxhCb jtyclr"
+        class="sc-AxhCb gDVvlY"
         type="button"
       >
         Edit
       </button>
       <button
-        class="sc-AxhCb jtyclr"
+        class="sc-AxhCb gDVvlY"
         type="button"
       >
         Delete
