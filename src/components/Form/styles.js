@@ -1,6 +1,20 @@
 import styled from 'styled-components';
 import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 
+export const PageWrapper = styled.div`
+  padding: 0;
+  margin-left: 1em;
+`;
+
+export const Title = styled.h2`
+  text-align: center;
+
+  @media (min-width: 597px) {
+    text-align: start;
+    margin-top: 1em;
+  }
+`;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -42,12 +56,13 @@ export const PasswordWrapper = styled.div`
 
 export const UserCardWrapper = styled.div`
   display: grid;
-  grid-gap: 1rem;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-row-gap: 1em;
 
-  @media (min-width: 597px) {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
-  }
+  /* @media (min-width: 597px) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  } */
 `;
 
 export const ShowPasswordButton = styled.button`

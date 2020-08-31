@@ -69,8 +69,8 @@ export const Form = () => {
   };
 
   return (
-    <>
-      <h2>Sign Up Form</h2>
+    <S.PageWrapper>
+      <S.Title>Sign Up Form</S.Title>
       <S.Form onSubmit={addUserData}>
         <S.Input
           id="name"
@@ -81,6 +81,14 @@ export const Form = () => {
           required
         />
         <S.Input
+          id="email"
+          value={email}
+          type="email"
+          placeholder="Email Address"
+          onChange={handleEmailChange}
+          required
+        />
+        <S.Input
           id="age"
           value={age}
           type="number"
@@ -88,14 +96,6 @@ export const Form = () => {
           min="18"
           max="60"
           onChange={handleAgeChange}
-        />
-        <S.Input
-          id="email"
-          value={email}
-          type="email"
-          placeholder="Email Address"
-          onChange={handleEmailChange}
-          required
         />
         <S.PasswordWrapper>
           <S.Input
@@ -111,7 +111,7 @@ export const Form = () => {
         <S.Button type="submit">Register</S.Button>
       </S.Form>
 
-      <h2>User List</h2>
+      <S.Title>User List</S.Title>
       <S.UserCardWrapper>
         {userList &&
           userList.map((user) => (
@@ -124,7 +124,7 @@ export const Form = () => {
             />
           ))}
       </S.UserCardWrapper>
-    </>
+    </S.PageWrapper>
   );
 };
 

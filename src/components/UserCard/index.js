@@ -13,13 +13,20 @@ export const UserCard = ({ age, email, id, name }) => {
     firebase.firestore().collection('users').doc(id).delete();
   };
 
-  const handleUpdate = () => {
-    console.log('CLICKED');
-    firebase.firestore().collection('users').doc(id).update({
-      name: updateName,
-      email: updateEmail,
-      age: updateAge
-    });
+  const handleUpdate = (event) => {
+    event.preventDefault();
+    firebase
+      .firestore()
+      .collection('users')
+      .doc(id)
+      .update({
+        name: updateName,
+        email: updateEmail,
+        age: updateAge
+      })
+      .then(() => {
+        setEdit(false);
+      });
   };
 
   const handleUpdateName = (event) => {
@@ -41,7 +48,7 @@ export const UserCard = ({ age, email, id, name }) => {
   return (
     <S.UserCardWrapper>
       {edit ? (
-        <div>
+        <form onSubmit={handleUpdate}>
           <S.Input
             type="text"
             placeholder="Username"
@@ -49,28 +56,26 @@ export const UserCard = ({ age, email, id, name }) => {
           />
           <S.Input type="text" placeholder="Email" onChange={handleUpdateAge} />
           <S.Input type="text" placeholder="Age" onChange={handleUpdateEmail} />
-          <S.Button type="button" onClick={handleUpdate}>
-            Submit
-          </S.Button>
-        </div>
+          <S.Button type="submit">Submit</S.Button>
+        </form>
       ) : (
         <div>
-          <table>
+          <S.Table>
             <tbody>
               <tr>
-                <th>Name:</th>
-                <td>{name}</td>
+                <S.Header>Name:</S.Header>
+                <S.Data>{name}</S.Data>
               </tr>
               <tr>
-                <th>Email:</th>
-                <td>{email}</td>
+                <S.Header>Email:</S.Header>
+                <S.Data>{email}</S.Data>
               </tr>
               <tr>
-                <th>Age:</th>
-                <td>{age}</td>
+                <S.Header>Age:</S.Header>
+                <S.Data>{age}</S.Data>
               </tr>
             </tbody>
-          </table>
+          </S.Table>
           <S.ButtonWrapper>
             <S.Button type="button" onClick={handleEditClick}>
               Edit

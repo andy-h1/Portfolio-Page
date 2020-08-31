@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const UserCardWrapper = styled.div`
   background: #f9f9f9;
   border: 1px solid #c9c9c9;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 8px;
-  width: 80vw;
-  max-width: 400px;
+  width: 260px;
+  height: auto;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -23,12 +23,8 @@ export const Input = styled.input`
 `;
 
 export const ButtonWrapper = styled.span`
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  padding: 0;
-  font-family: inherit;
-  font-size: inherit;
 `;
 
 export const Button = styled.button`
@@ -36,20 +32,29 @@ export const Button = styled.button`
   border: none;
   color: white;
   border-radius: 8px;
-  margin: 5px 5px;
+  margin: 1em;
   padding: 0.25em 0.75em;
   text-align: center;
   line-height: 1.1;
   min-width: 10ch;
-  min-height: 44px;
+  min-height: 39px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   cursor: pointer;
 `;
 
-export const List = styled.ul`
-  list-style: none;
-  padding: 10px;
-  margin: 10px 0;
+export const Table = styled.table`
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
 `;
 
-export const ListField = styled.li``;
+export const Header = styled.th`
+  width: max-content;
+  padding: 0.5em;
+`;
+
+export const Data = styled.td`
+  margin: 5em;
+  padding: 0.25em 0.5em 0;
+`;
