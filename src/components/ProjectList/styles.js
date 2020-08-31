@@ -18,18 +18,18 @@ export const Title = styled.h2`
 `;
 
 export const ProjectLink = styled(NavLink)`
-  margin: 0;
+  margin: 0 1em 0 0;
   color: initial;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
 `;
 
-export const GridWrapper = styled.div`
+export const ProjectWrapper = styled.div`
   display: grid;
   place-items: center;
   padding: 1rem;
   transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #e5e5e5;
 
   :hover {
     background: #f9f9f9;
@@ -91,4 +91,11 @@ export const Image = styled.img`
   :hover {
     transform: scale(1.1);
   }
+`;
+
+export const FormImage = styled.img`
+  height: 250px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
