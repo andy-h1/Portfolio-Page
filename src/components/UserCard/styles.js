@@ -17,7 +17,7 @@ export const Input = styled.input`
   margin: 10px 0;
   border: 0;
   border-bottom: 1px solid #eee;
-  width: 100%;
+  width: 65%;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -57,4 +57,12 @@ export const Header = styled.th`
 export const Data = styled.td`
   margin: 5em;
   padding: 0.25em 0.5em 0;
+`;
+
+export const Label = styled.label`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 `;

@@ -34,7 +34,7 @@ export const Label = styled.label`
   width: 250px;
 `;
 
-export const UnitInput = styled.label`
+export const UnitLabel = styled.label`
   display: inline-flex;
   flex-direction: row;
   margin: 10px 0;
@@ -49,6 +49,7 @@ export const Input = styled.input`
   width: 100%;
   font-family: inherit;
   font-size: inherit;
+  text-transform: capitalize;
 `;
 
 export const Button = styled.button`

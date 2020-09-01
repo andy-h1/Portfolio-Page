@@ -26,8 +26,14 @@ export const WeatherPage = () => {
     setUnit(event.target.value);
   };
 
-  const fetchData = useCallback(async () => {
+  const clearState = () => {
     setisError('');
+    setCity('');
+    setCountry('');
+    setUnit('metric');
+  };
+
+  const fetchData = useCallback(async () => {
     // try and fetch the data
     try {
       // if no issues then do below
@@ -38,6 +44,7 @@ export const WeatherPage = () => {
       const { weather, main, sys, name, wind, dt } = data;
       setWeatherData({ weather, main, sys, name, wind, dt });
       setisLoading(false);
+      clearState();
     } catch (error) {
       // something went wrong
       setisLoading(false);
@@ -80,6 +87,7 @@ export const WeatherPage = () => {
               type="text"
               placeholder="Enter city"
               name="city"
+              value={city}
               onChange={handleCityChange}
             />
           </S.Label>
@@ -88,10 +96,11 @@ export const WeatherPage = () => {
               type="text"
               placeholder="Enter country"
               name="country"
+              value={country}
               onChange={handleCountryChange}
             />
           </S.Label>
-          <S.UnitInput htmlFor="unitInput">
+          <S.UnitLabel htmlFor="unitInput">
             <input
               type="radio"
               name="units"
@@ -100,8 +109,8 @@ export const WeatherPage = () => {
               onChange={handleUnitChange}
             />
             Celsius
-          </S.UnitInput>
-          <S.UnitInput htmlFor="unitInput">
+          </S.UnitLabel>
+          <S.UnitLabel htmlFor="unitInput">
             <input
               type="radio"
               name="units"
@@ -110,7 +119,7 @@ export const WeatherPage = () => {
               onChange={handleUnitChange}
             />
             Fahrenheit
-          </S.UnitInput>
+          </S.UnitLabel>
           <S.Button type="button" onClick={fetchData}>
             Get Weather
           </S.Button>
@@ -119,7 +128,3 @@ export const WeatherPage = () => {
     </>
   );
 };
-
-// setCity('');
-// setCountry('');
-// setUnit('metric');

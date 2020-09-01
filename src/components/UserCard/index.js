@@ -49,13 +49,33 @@ export const UserCard = ({ age, email, id, name }) => {
     <S.UserCardWrapper>
       {edit ? (
         <form onSubmit={handleUpdate}>
-          <S.Input
-            type="text"
-            placeholder="Username"
-            onChange={handleUpdateName}
-          />
-          <S.Input type="text" placeholder="Email" onChange={handleUpdateAge} />
-          <S.Input type="text" placeholder="Age" onChange={handleUpdateEmail} />
+          <S.Label htmlFor="usernameInput">
+            Username:
+            <S.Input
+              type="text"
+              value={updateName}
+              placeholder="username"
+              onChange={handleUpdateName}
+            />
+          </S.Label>
+          <S.Label htmlFor="emailInput">
+            Email:
+            <S.Input
+              type="email"
+              value={updateEmail}
+              placeholder="email"
+              onChange={handleUpdateEmail}
+            />
+          </S.Label>
+          <S.Label htmlFor="ageInput">
+            Age:
+            <S.Input
+              type="age"
+              value={updateAge}
+              placeholder="age"
+              onChange={handleUpdateAge}
+            />
+          </S.Label>
           <S.Button type="submit">Submit</S.Button>
         </form>
       ) : (
@@ -63,7 +83,7 @@ export const UserCard = ({ age, email, id, name }) => {
           <S.Table>
             <tbody>
               <tr>
-                <S.Header>Name:</S.Header>
+                <S.Header>Username:</S.Header>
                 <S.Data>{name}</S.Data>
               </tr>
               <tr>
