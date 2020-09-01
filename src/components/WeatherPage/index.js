@@ -27,6 +27,7 @@ export const WeatherPage = () => {
   };
 
   const fetchData = useCallback(async () => {
+    setisError('');
     // try and fetch the data
     try {
       // if no issues then do below
@@ -41,7 +42,6 @@ export const WeatherPage = () => {
       // something went wrong
       setisLoading(false);
       setisError('Sorry there is a problem getting your weather');
-      // console.log({ error: error.response.data.message });
     }
   }, [city, country, unit]);
 
