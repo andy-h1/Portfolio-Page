@@ -2,18 +2,18 @@
 
 exports[`Form Component should render 1`] = `
 <div
-  class="sc-Axmtr cyLvQO"
+  class="sc-AxmLO fmfsWf"
 >
   <h2
-    class="sc-AxmLO kiXqQT"
+    class="sc-fzozJi fvRlLu"
   >
     Sign Up Form
   </h2>
   <form
-    class="sc-fzozJi cMLbRq"
+    class="sc-fzoLsD fjzFJs"
   >
     <input
-      class="sc-fzoLsD MiuOd"
+      class="sc-fzpans idaupV"
       id="name"
       placeholder="Username"
       required=""
@@ -21,7 +21,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzoLsD MiuOd"
+      class="sc-fzpans idaupV"
       id="email"
       placeholder="Email Address"
       required=""
@@ -29,7 +29,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzoLsD MiuOd"
+      class="sc-fzpans idaupV"
       id="age"
       max="60"
       min="18"
@@ -38,10 +38,10 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <div
-      class="sc-fzplWN fSywvf"
+      class="sc-fznyAO XyPLH"
     >
       <input
-        class="sc-fzoLsD MiuOd"
+        class="sc-fzpans idaupV"
         id="password"
         placeholder="Password"
         required=""
@@ -49,24 +49,24 @@ exports[`Form Component should render 1`] = `
         value=""
       />
       <button
-        class="sc-fznKkj hDOazO"
+        class="sc-fznZeY YWaki"
         type="button"
       />
     </div>
     <button
-      class="sc-fzpans kARrdO"
+      class="sc-fzplWN fViOlb"
       type="submit"
     >
       Register
     </button>
   </form>
   <h2
-    class="sc-AxmLO kiXqQT"
+    class="sc-fzozJi fvRlLu"
   >
     User List
   </h2>
   <div
-    class="sc-fznyAO ggHHYr"
+    class="sc-fznKkj erwKkS"
   />
 </div>
 `;
