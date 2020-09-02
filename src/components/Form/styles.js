@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 
 export const PageWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: max-content;
   padding: 0;
   margin-left: 1em;
 `;
@@ -19,6 +22,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
+  grid-row-start: 2;
 
   @media (min-width: 597px) {
     place-items: flex-start;

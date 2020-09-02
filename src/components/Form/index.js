@@ -111,7 +111,6 @@ export const Form = () => {
         <S.Button type="submit">Register</S.Button>
       </S.Form>
 
-      <S.Title>User List</S.Title>
       <S.UserCardWrapper>
         {userList &&
           userList.map((user) => (
