@@ -11,7 +11,7 @@ export const WeatherPage = () => {
   const [country, setCountry] = useState('GB');
   const [unit, setUnit] = useState('metric');
   const [isLoading, setisLoading] = useState(true);
-  const [isError, setisError] = useState('');
+  const [errors, setErrors] = useState('');
 
   // in the future move to one function
   const handleCityChange = (event) => {
@@ -27,7 +27,7 @@ export const WeatherPage = () => {
   };
 
   const clearState = () => {
-    setisError('');
+    setErrors('');
     setCity('');
     setCountry('');
     setUnit('metric');
@@ -48,7 +48,7 @@ export const WeatherPage = () => {
     } catch (error) {
       // something went wrong
       setisLoading(false);
-      setisError('Sorry there is a problem getting your weather');
+      setErrors('Sorry there is a problem getting your weather');
     }
   }, [city, country, unit]);
 
@@ -65,9 +65,9 @@ export const WeatherPage = () => {
 
       <S.Wrapper>
         {isLoading && <h3 data-testid="loading">Loading...</h3>}
-        {isError && <h3 data-testid="error">{isError}</h3>}
+        {errors && <h3 data-testid="error">{errors}</h3>}
 
-        {!isError && weatherData && (
+        {!errors && weatherData && (
           <WeatherTracker
             city={weatherData.name}
             country={weatherData.sys.country}
