@@ -2,7 +2,7 @@
 
 exports[`Form Component should render 1`] = `
 <div
-  class="sc-AxmLO fmfsWf"
+  class="sc-AxmLO jPFMJW"
 >
   <h2
     class="sc-fzozJi fvRlLu"
@@ -10,7 +10,7 @@ exports[`Form Component should render 1`] = `
     Sign Up Form
   </h2>
   <form
-    class="sc-fzoLsD fjzFJs"
+    class="sc-fzoLsD gxuKiv"
   >
     <input
       class="sc-fzpans idaupV"
@@ -60,11 +60,6 @@ exports[`Form Component should render 1`] = `
       Register
     </button>
   </form>
-  <h2
-    class="sc-fzozJi fvRlLu"
-  >
-    User List
-  </h2>
   <div
     class="sc-fznKkj erwKkS"
   />
