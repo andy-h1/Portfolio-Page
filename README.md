@@ -7,12 +7,12 @@ Common Scripts:
 - yarn start run the project locally
 - yarn test run the test suite
 - yarn lint to lint the project
-- yarn storybook run Storybook to see the component library
 
 To Do:
 
-- remove inline styles
 - 404 page
-- Add styled components to both Form and FormTracker
-- Create function where you can update all fields, not just name
-- Build inline editable UI 
+- Add form validation 
+- Add weather page validation
+- Add tests to util functions 
+- Fix layout of Form component
+- Add Storybook

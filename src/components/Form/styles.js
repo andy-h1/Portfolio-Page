@@ -38,6 +38,7 @@ export const Input = styled.input`
   width: 250px;
   font-family: inherit;
   font-size: inherit;
+  text-transform: capitalize;
 `;
 
 export const Button = styled.button`

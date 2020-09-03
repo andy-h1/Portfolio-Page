@@ -54,7 +54,7 @@ export const UserCard = ({ age, email, id, name }) => {
             <S.Input
               type="text"
               value={updateName}
-              placeholder="username"
+              placeholder="Username"
               onChange={handleUpdateName}
             />
           </S.Label>
@@ -63,7 +63,7 @@ export const UserCard = ({ age, email, id, name }) => {
             <S.Input
               type="email"
               value={updateEmail}
-              placeholder="email"
+              placeholder="Email"
               onChange={handleUpdateEmail}
             />
           </S.Label>
@@ -72,11 +72,11 @@ export const UserCard = ({ age, email, id, name }) => {
             <S.Input
               type="age"
               value={updateAge}
-              placeholder="age"
+              placeholder="Age"
               onChange={handleUpdateAge}
             />
           </S.Label>
-          <S.Button type="submit">Submit</S.Button>
+          <S.Button type="submit">Save</S.Button>
         </form>
       ) : (
         <div>
