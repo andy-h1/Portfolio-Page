@@ -13,7 +13,7 @@ exports[`Form Component should render 1`] = `
     class="sc-fzoLsD gxuKiv"
   >
     <input
-      class="sc-fzpans idaupV"
+      class="sc-fzpans dsoNqO"
       id="name"
       placeholder="Username"
       required=""
@@ -21,7 +21,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzpans idaupV"
+      class="sc-fzpans dsoNqO"
       id="email"
       placeholder="Email Address"
       required=""
@@ -29,7 +29,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzpans idaupV"
+      class="sc-fzpans dsoNqO"
       id="age"
       max="60"
       min="18"
@@ -41,7 +41,7 @@ exports[`Form Component should render 1`] = `
       class="sc-fznyAO XyPLH"
     >
       <input
-        class="sc-fzpans idaupV"
+        class="sc-fzpans dsoNqO"
         id="password"
         placeholder="Password"
         required=""
