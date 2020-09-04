@@ -9,7 +9,7 @@ exports[`CV Page Component should render 1`] = `
     href="Andy-Huynh-CV.pdf"
   >
     <button
-      class="sc-AxheI dHMShw"
+      class="sc-AxheI fjJHNw"
       type="button"
     >
       Download CV
