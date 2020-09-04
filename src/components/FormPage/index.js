@@ -3,7 +3,7 @@ import firebase from '../../firebase';
 import { UserCard } from '../UserCard';
 import * as S from './styles';
 
-export const Form = () => {
+export const FormPage = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');

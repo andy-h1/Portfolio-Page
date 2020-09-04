@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Form } from '.';
+import { FormPage } from '.';
 
 describe('Form Component', () => {
   it('should render', () => {
-    const { container } = render(<Form />);
+    const { container } = render(<FormPage />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

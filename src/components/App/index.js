@@ -5,7 +5,7 @@ import { Header } from '../Header';
 import { HomePage } from '../HomePage';
 import { CVPage } from '../CVPage';
 import { WeatherPage } from '../WeatherPage';
-import { Form } from '../Form';
+import { FormPage } from '../FormPage';
 import * as S from './styles';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
           <Route exact path="/" component={HomePage} />
           <Route path="/cv" component={CVPage} />
           <Route path="/weather" component={WeatherPage} />
-          <Route path="/form" component={Form} />
+          <Route path="/form" component={FormPage} />
         </Switch>
       </S.Wrapper>
     </BrowserRouter>
