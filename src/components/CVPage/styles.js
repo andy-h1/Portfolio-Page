@@ -21,7 +21,7 @@ export const Button = styled.button`
   border: none;
   color: white;
   border-radius: 5px;
-  margin: 1rem;
+  margin: 0 1rem;
   padding: 10px;
   max-width: 300px;
   font-family: inherit;

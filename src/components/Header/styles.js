@@ -6,10 +6,6 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 0 0 1rem;
-
-  @media (min-width: 597px) {
-    margin: 0 0 3rem;
-  }
 `;
 
 export const Title = styled.h1`
