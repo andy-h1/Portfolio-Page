@@ -11,28 +11,30 @@ exports[`Form Component should render 1`] = `
   </h2>
   <form
     class="sc-fzoLsD gxuKiv"
+    novalidate=""
   >
     <input
-      class="sc-fzpans dsoNqO"
-      id="name"
+      class="sc-fzpans idaupV"
+      id="username"
+      name="username"
       placeholder="Username"
       required=""
       type="text"
       value=""
     />
     <input
-      class="sc-fzpans dsoNqO"
+      class="sc-fzpans idaupV"
       id="email"
-      placeholder="Email Address"
+      name="email"
+      placeholder="Email"
       required=""
       type="email"
       value=""
     />
     <input
-      class="sc-fzpans dsoNqO"
+      class="sc-fzpans idaupV"
       id="age"
-      max="60"
-      min="18"
+      name="age"
       placeholder="Age"
       type="number"
       value=""
@@ -41,8 +43,9 @@ exports[`Form Component should render 1`] = `
       class="sc-fznyAO XyPLH"
     >
       <input
-        class="sc-fzpans dsoNqO"
+        class="sc-fzpans idaupV"
         id="password"
+        name="password"
         placeholder="Password"
         required=""
         type="password"
