@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import firebase from '../../firebase';
 import { UserCard } from '../UserCard';
+import { useForm } from '../UseForm';
 import * as S from './styles';
 
 export const FormPage = () => {
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // eslint-disable-next-line no-use-before-define
+  const { handleChange, handleSubmit, values } = useForm(addUserData);
   const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
 
@@ -15,25 +14,14 @@ export const FormPage = () => {
     setShowPassword(!showPassword);
   };
 
-  const addUserData = (event) => {
-    event.preventDefault();
-
-    firebase
-      .firestore()
-      .collection('users')
-      .add({
-        name,
-        age,
-        email,
-        password
-      })
-      .then(() => {
-        setName('');
-        setAge('');
-        setEmail('');
-        setPassword('');
-      });
-  };
+  function addUserData() {
+    firebase.firestore().collection('users').add({
+      values
+    });
+    // .then(() => {
+    //   values('');
+    // });
+  }
 
   useEffect(() => {
     const unsubscribe = firebase
@@ -52,58 +40,44 @@ export const FormPage = () => {
     return () => unsubscribe();
   }, []);
 
-  const handleAgeChange = (event) => {
-    setAge(event.target.value);
-  };
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
   return (
     <S.PageWrapper>
       <S.Title>Sign Up Form</S.Title>
-      <S.Form onSubmit={addUserData}>
+      <S.Form onSubmit={handleSubmit} noValidate>
         <S.Input
-          id="name"
-          value={name}
+          id="username"
+          value={values.name}
+          name="username"
           type="text"
           placeholder="Username"
-          onChange={handleNameChange}
+          onChange={handleChange}
           required
         />
         <S.Input
           id="email"
-          value={email}
+          name="email"
+          value={values.email}
           type="email"
-          placeholder="Email Address"
-          onChange={handleEmailChange}
+          placeholder="Email"
+          onChange={handleChange}
           required
         />
         <S.Input
           id="age"
-          value={age}
+          name="age"
+          value={values.age}
           type="number"
           placeholder="Age"
-          min="18"
-          max="60"
-          onChange={handleAgeChange}
+          onChange={handleChange}
         />
         <S.PasswordWrapper>
           <S.Input
             id="password"
-            value={password}
+            name="password"
+            value={values.password}
             type={showPassword ? 'text' : 'password'}
             placeholder="Password"
-            onChange={handlePasswordChange}
+            onChange={handleChange}
             required
           />
           <S.ShowPasswordButton type="button" onClick={togglePassword} />
@@ -117,9 +91,9 @@ export const FormPage = () => {
             <UserCard
               key={user.id}
               id={user.id}
-              age={user.age}
-              email={user.email}
-              name={user.name}
+              age={user.values.age}
+              email={user.values.email}
+              name={user.values.username}
             />
           ))}
       </S.UserCardWrapper>
