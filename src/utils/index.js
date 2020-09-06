@@ -61,3 +61,32 @@ export const timeConverter = (timeStamp) => {
   const formattedTime = date.toLocaleTimeString('en-US');
   return formattedTime;
 };
+
+export const validateInput = (values) => {
+  const errors = {};
+  if (!values.username) {
+    errors.username = 'Username is required';
+  }
+  if (!values.age) {
+    errors.age = 'Age is required';
+  } else if (values.age < 18) {
+    errors.age = 'You must be at least 18 years old';
+  }
+  if (!values.email) {
+    errors.email = 'Email address is required';
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = 'Email address is invalid';
+  }
+  if (!values.password) {
+    errors.password = 'Password is required';
+  } else if (
+    !/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm.test(
+      values.password
+    )
+  ) {
+    errors.password =
+      'At least 8 characters - must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number';
+  }
+
+  return errors;
+};

@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import firebase from '../../firebase';
 import { UserCard } from '../UserCard';
 import { useForm } from '../UseForm';
+import { validateInput } from '../../utils';
 import * as S from './styles';
 
 export const FormPage = () => {
-  // eslint-disable-next-line no-use-before-define
-  const { handleChange, handleSubmit, values } = useForm(addUserData);
+  const { handleChange, handleSubmit, values, errors } = useForm(
+    // eslint-disable-next-line no-use-before-define
+    addUserData,
+    validateInput
+  );
   const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
 
@@ -53,6 +57,7 @@ export const FormPage = () => {
           onChange={handleChange}
           required
         />
+        {errors.username && <p>{errors.username}</p>}
         <S.Input
           id="email"
           name="email"
@@ -62,6 +67,7 @@ export const FormPage = () => {
           onChange={handleChange}
           required
         />
+        {errors.email && <p>{errors.email}</p>}
         <S.Input
           id="age"
           name="age"
@@ -70,6 +76,7 @@ export const FormPage = () => {
           placeholder="Age"
           onChange={handleChange}
         />
+        {errors.age && <p>{errors.age}</p>}
         <S.PasswordWrapper>
           <S.Input
             id="password"
@@ -80,8 +87,10 @@ export const FormPage = () => {
             onChange={handleChange}
             required
           />
+
           <S.ShowPasswordButton type="button" onClick={togglePassword} />
         </S.PasswordWrapper>
+        {errors.password && <p>{errors.password}</p>}
         <S.Button type="submit">Register</S.Button>
       </S.Form>
 
