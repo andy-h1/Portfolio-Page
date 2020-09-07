@@ -1,12 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-export const useForm = (callback, validateInput) => {
-  const [values, setValues] = useState({
-    username: '',
-    age: '',
-    email: '',
-    password: ''
-  });
+export const useForm = (callback, validateInput, initialValues = {}) => {
+  const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -18,22 +13,30 @@ export const useForm = (callback, validateInput) => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setErrors(validateInput(values));
-    setIsSubmitting(true);
-  };
 
-  useEffect(() => {
-    if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
+    const specialErrors = validateInput(values);
+
+    setErrors(specialErrors);
+
+    if (Object.keys(specialErrors).length === 0) {
+      setIsSubmitting(true);
+      try {
+        await callback(values, setValues);
+      } catch (error) {
+        console.log({ error });
+      }
+      setIsSubmitting(false);
     }
-  }, [errors, isSubmitting]);
+  };
 
   return {
     handleChange,
     handleSubmit,
+    isSubmitting,
     values,
+    setValues,
     errors
   };
 };

@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 import { string } from 'prop-types';
 import firebase from '../../firebase';
 import * as S from './styles';
+// import { useForm } from '../UseForm';
+// import { validateInput } from '../../utils';
 
 export const UserCard = ({ age, email, id, name }) => {
   const [edit, setEdit] = useState(false);
   const [updateName, setUpdateName] = useState();
   const [updateEmail, setUpdateEmail] = useState();
   const [updateAge, setUpdateAge] = useState();
+  // const { handleChange, handleSubmit, values, errors } = useForm(
+  //   // eslint-disable-next-line no-use-before-define
+  //   updateData,
+  //   validateInput
+  // );
 
   const handleDeleteClick = () => {
     firebase.firestore().collection('users').doc(id).delete();
   };
 
-  const handleUpdate = (event) => {
+  const updateData = (event) => {
     event.preventDefault();
     firebase
       .firestore()
@@ -48,7 +55,7 @@ export const UserCard = ({ age, email, id, name }) => {
   return (
     <S.UserCardWrapper>
       {edit ? (
-        <form onSubmit={handleUpdate}>
+        <form onSubmit={updateData}>
           <S.Label htmlFor="usernameInput">
             Username:
             <S.Input

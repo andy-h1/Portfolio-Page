@@ -81,3 +81,9 @@ export const ShowPasswordButton = styled.button`
   width: 32px;
   object-fit: contain;
 `;
+
+export const ErrorMessage = styled.p`
+  color: red;
+  padding: 0;
+  margin: 0;
+`;

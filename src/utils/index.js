@@ -85,8 +85,7 @@ export const validateInput = (values) => {
     )
   ) {
     errors.password =
-      'At least 8 characters - must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number';
+      'At least 8 characters - must contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character';
   }
-
   return errors;
 };

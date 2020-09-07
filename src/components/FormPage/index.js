@@ -5,11 +5,30 @@ import { useForm } from '../UseForm';
 import { validateInput } from '../../utils';
 import * as S from './styles';
 
+const initialValues = {
+  username: '',
+  password: '',
+  email: '',
+  age: ''
+};
+
+const addUserData = (values, setValues) => {
+  firebase
+    .firestore()
+    .collection('users')
+    .add({
+      values
+    })
+    .then(() => {
+      setValues(initialValues);
+    });
+};
+
 export const FormPage = () => {
   const { handleChange, handleSubmit, values, errors } = useForm(
-    // eslint-disable-next-line no-use-before-define
     addUserData,
-    validateInput
+    validateInput,
+    initialValues
   );
   const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
@@ -17,15 +36,6 @@ export const FormPage = () => {
   const togglePassword = () => {
     setShowPassword(!showPassword);
   };
-
-  function addUserData() {
-    firebase.firestore().collection('users').add({
-      values
-    });
-    // .then(() => {
-    //   values('');
-    // });
-  }
 
   useEffect(() => {
     const unsubscribe = firebase
@@ -50,14 +60,14 @@ export const FormPage = () => {
       <S.Form onSubmit={handleSubmit} noValidate>
         <S.Input
           id="username"
-          value={values.name}
+          value={values.username}
           name="username"
           type="text"
           placeholder="Username"
           onChange={handleChange}
           required
         />
-        {errors.username && <p>{errors.username}</p>}
+        {errors.username && <S.ErrorMessage>{errors.username}</S.ErrorMessage>}
         <S.Input
           id="email"
           name="email"
@@ -67,7 +77,7 @@ export const FormPage = () => {
           onChange={handleChange}
           required
         />
-        {errors.email && <p>{errors.email}</p>}
+        {errors.email && <S.ErrorMessage>{errors.email}</S.ErrorMessage>}
         <S.Input
           id="age"
           name="age"
@@ -76,7 +86,7 @@ export const FormPage = () => {
           placeholder="Age"
           onChange={handleChange}
         />
-        {errors.age && <p>{errors.age}</p>}
+        {errors.age && <S.ErrorMessage>{errors.age}</S.ErrorMessage>}
         <S.PasswordWrapper>
           <S.Input
             id="password"
@@ -90,7 +100,7 @@ export const FormPage = () => {
 
           <S.ShowPasswordButton type="button" onClick={togglePassword} />
         </S.PasswordWrapper>
-        {errors.password && <p>{errors.password}</p>}
+        {errors.password && <S.ErrorMessage>{errors.password}</S.ErrorMessage>}
         <S.Button type="submit">Register</S.Button>
       </S.Form>
 
