@@ -2,59 +2,59 @@
 
 exports[`Header component should render 1`] = `
 <header
-  class="sc-AxjAm dsjZOX"
+  class="sc-bdnylx iHpMwu"
 >
   <h1
-    class="sc-AxirZ jSGNZu"
+    class="sc-gtssRu fBCOod"
   >
     Andy Huynh
   </h1>
   <div
-    class="sc-AxiKw cXgIdV"
+    class="sc-dlnjPT iqTQWy"
   >
     <a
       aria-current="page"
-      class="sc-AxhCb biVdMa active"
+      class="sc-hKFyIo bqbGzb active"
       href="/"
     >
       home
     </a>
     <a
-      class="sc-AxhCb biVdMa"
+      class="sc-hKFyIo bqbGzb"
       href="/cv"
     >
       cv
     </a>
     <a
-      class="sc-AxhUy famNCz"
+      class="sc-eCApGN hQRkCD"
       href="https://github.com/andy-h1"
       target="_blank"
     >
       <img
         alt="github"
-        class="sc-AxgMl dewwFw"
+        class="sc-jSFkmK eXLFQa"
         src="github.png"
       />
     </a>
     <a
-      class="sc-AxhUy famNCz"
+      class="sc-eCApGN hQRkCD"
       href="https://twitter.com/andyh_1_"
       target="_blank"
     >
       <img
         alt="twitter"
-        class="sc-AxgMl dewwFw"
+        class="sc-jSFkmK eXLFQa"
         src="twitter.svg"
       />
     </a>
     <a
-      class="sc-AxhUy famNCz"
+      class="sc-eCApGN hQRkCD"
       href="https://www.linkedin.com/in/andyhuynh1/"
       target="_blank"
     >
       <img
         alt="linkedin"
-        class="sc-AxgMl dewwFw"
+        class="sc-jSFkmK eXLFQa"
         src="linkedin.png"
       />
     </a>

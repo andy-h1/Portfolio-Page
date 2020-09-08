@@ -2,7 +2,7 @@
 
 exports[`CV Experience component should render 1`] = `
 <li
-  class="sc-AxjAm dPRGBU"
+  class="sc-bdnylx lpqsMp"
 >
   <a
     href="https://deliveroo.co.uk/"
@@ -17,27 +17,27 @@ exports[`CV Experience component should render 1`] = `
     />
   </a>
   <h3
-    class="sc-AxirZ fDOJrF"
+    class="sc-gtssRu gORUoG"
   >
     Tech Recruiter
   </h3>
   <h3
-    class="sc-AxiKw gyIrqT"
+    class="sc-dlnjPT bUgsmE"
   >
     Nov 2018 - Present
   </h3>
   <p
-    class="sc-AxhCb bOmpDp"
+    class="sc-hKFyIo fKwaFs"
   >
     I joined the Deliveroo recruitment team focused on hiring Product Managers, Product Marketing Managers and Software Engineers. When I joined we were around 20+ in the team and now have grown to over 60+ internationally
   </p>
   <p
-    class="sc-AxhCb bOmpDp"
+    class="sc-hKFyIo fKwaFs"
   >
     I have been involved in hiring across different levels of seniority but mostly focused on Senior/L6+.
   </p>
   <p
-    class="sc-AxhCb bOmpDp"
+    class="sc-hKFyIo fKwaFs"
   >
     Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.
   </p>

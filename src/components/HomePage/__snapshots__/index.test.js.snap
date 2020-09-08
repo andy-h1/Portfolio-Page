@@ -2,142 +2,142 @@
 
 exports[`Home Page Component shoulder render 1`] = `
 <div
-  class="sc-fznKkj iDLDLE"
+  class="sc-dIsAE iysA-DJ"
 >
   <div
-    class="sc-fzplWN gOAnAS"
+    class="sc-iqAbSa cBNNvV"
   >
     <img
       alt="andy"
-      class="sc-fznyAO dSDlBX"
+      class="sc-crzoUp fsLiCE"
       src="profile.jpg"
     />
     <p
-      class="sc-fznZeY edopax"
+      class="sc-bqGHjH eLeRws"
     >
       Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
     </p>
     <p
-      class="sc-fznZeY edopax"
+      class="sc-bqGHjH eLeRws"
     >
       I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
     </p>
   </div>
   <div
-    class="sc-AxjAm bfLLc"
+    class="sc-bdnylx hDHndV"
   >
     <h2
-      class="sc-AxirZ dDfKVJ"
+      class="sc-gtssRu kxGmyu"
     >
       Projects
     </h2>
     <a
-      class="sc-AxiKw cCebkB"
+      class="sc-dlnjPT iOPFCG"
       href="/weather"
     >
       <div
-        class="sc-AxhCb cVoiXz"
+        class="sc-hKFyIo ctUsAO"
       >
         <h3
-          class="sc-AxhUy iAIcNb"
+          class="sc-eCApGN dRWiLv"
         >
           Weather App
         </h3>
         <p
-          class="sc-AxgMl eOWHjm"
+          class="sc-jSFkmK ckCOxE"
         >
           I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
         </p>
         <div
-          class="sc-AxheI fpnsVe"
+          class="sc-gKAblj gXzKPF"
         >
           <ul
-            class="sc-fzoLsD ihFyfP"
+            class="sc-jrsJCI iMYrWP"
           >
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               react
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               styled-components
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               jest
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               react-testing-library
             </li>
           </ul>
         </div>
         <span
-          class="sc-Axmtr hAhsOL"
+          class="sc-iCoHVE edUa-dc"
         >
           <img
             alt="cloudy"
-            class="sc-AxmLO VXOhf"
+            class="sc-fujyUd sxsSW"
             src="lightCloudsDay.png"
           />
         </span>
       </div>
     </a>
     <a
-      class="sc-AxiKw cCebkB"
+      class="sc-dlnjPT iOPFCG"
       href="/Form"
     >
       <div
-        class="sc-AxhCb cVoiXz"
+        class="sc-hKFyIo ctUsAO"
       >
         <h3
-          class="sc-AxhUy iAIcNb"
+          class="sc-eCApGN dRWiLv"
         >
           Sign-Up Form
         </h3>
         <p
-          class="sc-AxgMl eOWHjm"
+          class="sc-jSFkmK ckCOxE"
         >
           I built this demo sign-up form, hooking the data entries to Firebase's cloud-based database - Firestore. It has been built with React, Firebase and styled-components.
         </p>
         <div
-          class="sc-AxheI fpnsVe"
+          class="sc-gKAblj gXzKPF"
         >
           <ul
-            class="sc-fzoLsD ihFyfP"
+            class="sc-jrsJCI iMYrWP"
           >
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               react
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               styled-components
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               jest
             </li>
             <li
-              class="sc-fzpans eoBJOd"
+              class="sc-kEqYlL bXljHU"
             >
               react-testing-library
             </li>
           </ul>
         </div>
         <span
-          class="sc-Axmtr hAhsOL"
+          class="sc-iCoHVE edUa-dc"
         >
           <img
             alt="form"
-            class="sc-fzozJi dlipve"
+            class="sc-pNWxx bxdWZW"
             src="formImage.png"
           />
         </span>

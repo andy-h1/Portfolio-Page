@@ -2,52 +2,52 @@
 
 exports[`Weather Tracker Component should render 1`] = `
 <div
-  class="sc-AxjAm iehzaf"
+  class="sc-bdnylx beJXai"
   data-testid="weatherTracker"
 >
   <img
     alt="sunny"
-    class="sc-AxirZ bxhEMV"
+    class="sc-gtssRu elwtZW"
     height="auto"
     src="clearDay.png"
     width="250px"
   />
   <table
-    class="sc-AxiKw hwcIqX"
+    class="sc-dlnjPT gzXsMk"
   >
     <tbody>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Current Date:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           8/29/2020
         </td>
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Time of Weather:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           12:07:09 AM
         </td>
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Location:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           London
           , 
@@ -56,12 +56,12 @@ exports[`Weather Tracker Component should render 1`] = `
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Current Temperature:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           34
           °
@@ -69,12 +69,12 @@ exports[`Weather Tracker Component should render 1`] = `
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Feels like:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           36
           °
@@ -82,24 +82,24 @@ exports[`Weather Tracker Component should render 1`] = `
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Forecast:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           clear sky
         </td>
       </tr>
       <tr>
         <th
-          class="sc-AxhCb jRGsGb"
+          class="sc-hKFyIo gEEmla"
         >
           Wind speed:
         </th>
         <td
-          class="sc-AxhUy kdhlSK"
+          class="sc-eCApGN khAxfC"
         >
           1
         </td>

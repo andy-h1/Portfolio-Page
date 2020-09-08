@@ -2,6 +2,7 @@ import React from 'react';
 import axiosMock from 'axios';
 import { render, cleanup, waitFor } from '@testing-library/react';
 import { WeatherPage } from '.';
+import '@testing-library/jest-dom/extend-expect';
 
 afterEach(cleanup);
 

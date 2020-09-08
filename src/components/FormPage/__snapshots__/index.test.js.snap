@@ -2,19 +2,19 @@
 
 exports[`Form Component should render 1`] = `
 <div
-  class="sc-AxmLO jPFMJW"
+  class="sc-fujyUd kVvZcf"
 >
   <h2
-    class="sc-fzozJi fvRlLu"
+    class="sc-pNWxx jatnQK"
   >
     Sign Up Form
   </h2>
   <form
-    class="sc-fzoLsD gxuKiv"
+    class="sc-jrsJCI ibREEP"
     novalidate=""
   >
     <input
-      class="sc-fzpans idaupV"
+      class="sc-kEqYlL ttapo"
       id="username"
       name="username"
       placeholder="Username"
@@ -23,7 +23,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzpans idaupV"
+      class="sc-kEqYlL ttapo"
       id="email"
       name="email"
       placeholder="Email"
@@ -32,7 +32,7 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <input
-      class="sc-fzpans idaupV"
+      class="sc-kEqYlL ttapo"
       id="age"
       name="age"
       placeholder="Age"
@@ -40,10 +40,10 @@ exports[`Form Component should render 1`] = `
       value=""
     />
     <div
-      class="sc-fznyAO XyPLH"
+      class="sc-crzoUp ihsEbs"
     >
       <input
-        class="sc-fzpans idaupV"
+        class="sc-kEqYlL ttapo"
         id="password"
         name="password"
         placeholder="Password"
@@ -52,19 +52,19 @@ exports[`Form Component should render 1`] = `
         value=""
       />
       <button
-        class="sc-fznZeY YWaki"
+        class="sc-bqGHjH hHSCJX"
         type="button"
       />
     </div>
     <button
-      class="sc-fzplWN fViOlb"
+      class="sc-iqAbSa gmsiQs"
       type="submit"
     >
       Register
     </button>
   </form>
   <div
-    class="sc-fznKkj erwKkS"
+    class="sc-dIsAE bSBGZL"
   />
 </div>
 `;
