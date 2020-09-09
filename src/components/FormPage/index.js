@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import firebase from '../../firebase';
 import { UserCard } from '../UserCard';
 import { useForm } from '../UseForm';
@@ -63,51 +62,70 @@ export const FormPage = () => {
     <S.PageWrapper>
       <S.Title>Sign Up Form</S.Title>
       <S.Form onSubmit={handleSubmit} noValidate>
-        <S.Input
-          id="username"
-          value={values.username}
-          name="username"
-          type="text"
-          placeholder="Username"
-          onBlur={handleBlur}
-          onChange={handleChange}
-          required
-        />
-        {errors.username && <S.ErrorMessage>{errors.username}</S.ErrorMessage>}
-        <S.Input
-          id="email"
-          name="email"
-          value={values.email}
-          type="email"
-          placeholder="Email"
-          onBlur={handleBlur}
-          onChange={handleChange}
-          required
-        />
-        {errors.email && <S.ErrorMessage>{errors.email}</S.ErrorMessage>}
-        <S.Input
-          id="age"
-          name="age"
-          value={values.age}
-          type="number"
-          placeholder="Age"
-          onBlur={handleBlur}
-          onChange={handleChange}
-        />
-        {errors.age && <S.ErrorMessage>{errors.age}</S.ErrorMessage>}
-        <S.PasswordWrapper>
+        <S.Label htmlFor="username">
           <S.Input
-            id="password"
-            name="password"
-            value={values.password}
-            type={showPassword ? 'text' : 'password'}
-            placeholder="Password"
+            id="username"
+            value={values.username}
+            name="username"
+            type="text"
+            placeholder="Username"
             onBlur={handleBlur}
             onChange={handleChange}
             required
           />
+        </S.Label>
+        {errors.username && <S.ErrorMessage>{errors.username}</S.ErrorMessage>}
 
-          <S.ShowPasswordButton type="button" onClick={togglePassword} />
+        <S.Label htmlFor="email">
+          <S.Input
+            id="email"
+            name="email"
+            value={values.email}
+            type="email"
+            placeholder="Email"
+            onBlur={handleBlur}
+            onChange={handleChange}
+            required
+          />
+        </S.Label>
+        {errors.email && <S.ErrorMessage>{errors.email}</S.ErrorMessage>}
+
+        <S.Label htmlFor="age">
+          <S.Input
+            id="age"
+            name="age"
+            value={values.age}
+            type="number"
+            placeholder="Age"
+            onBlur={handleBlur}
+            onChange={handleChange}
+          />
+        </S.Label>
+        {errors.age && <S.ErrorMessage>{errors.age}</S.ErrorMessage>}
+
+        <S.PasswordWrapper>
+          <S.Label htmlFor="password">
+            <S.Input
+              id="password"
+              name="password"
+              value={values.password}
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Password"
+              onBlur={handleBlur}
+              onChange={handleChange}
+              required
+            />
+          </S.Label>
+
+          <S.Label htmlFor="showPasswordInput">
+            <S.Checkbox
+              type="checkbox"
+              id="showPassword"
+              name="showPassword"
+              onClick={togglePassword}
+            />
+            Show password
+          </S.Label>
         </S.PasswordWrapper>
         {errors.password && <S.ErrorMessage>{errors.password}</S.ErrorMessage>}
         <S.Button type="submit" disabled={isSubmitting}>
@@ -130,15 +148,3 @@ export const FormPage = () => {
     </S.PageWrapper>
   );
 };
-
-// Name - capitalize name
-// Age - can only be between 18-60
-// Password - must include capital letter, number and be 8 characters long
-// Retype password - must match password
-// Email verification sent?
-// Form validation
-
-// Update data on Firestore - option to edit on user card
-// Empty update state that takes in the changes
-// Pushes the changes to Firestore
-// Re-render the updated changes

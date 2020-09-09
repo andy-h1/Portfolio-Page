@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
+// import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 
 export const PageWrapper = styled.div`
   display: grid;
@@ -29,6 +29,10 @@ export const Form = styled.form`
   }
 `;
 
+export const Label = styled.label`
+  margin: 0;
+`;
+
 export const Input = styled.input`
   box-sizing: border-box;
   padding: 10px;
@@ -38,6 +42,10 @@ export const Input = styled.input`
   width: 250px;
   font-family: inherit;
   font-size: inherit;
+`;
+
+export const Checkbox = styled.input`
+  margin: 0 1em 0 0;
 `;
 
 export const Button = styled.button`
@@ -54,8 +62,7 @@ export const Button = styled.button`
 
 export const PasswordWrapper = styled.div`
   display: flex;
-  position: relative;
-  z-index: 0;
+  flex-direction: column;
 `;
 
 export const UserCardWrapper = styled.div`
@@ -69,18 +76,18 @@ export const UserCardWrapper = styled.div`
   } */
 `;
 
-export const ShowPasswordButton = styled.button`
-  background-image: url(${passwordIcon});
-  background-color: white;
-  border: none;
-  position: absolute;
-  top: 25%;
-  right: 5%;
-  cursor: pointer;
-  height: 32px;
-  width: 32px;
-  object-fit: contain;
-`;
+// export const ShowPasswordButton = styled.button`
+//   background-image: url(${passwordIcon});
+//   background-color: white;
+//   border: none;
+//   position: absolute;
+//   top: 25%;
+//   right: 5%;
+//   cursor: pointer;
+//   height: 32px;
+//   width: 32px;
+//   object-fit: contain;
+// `;
 
 export const ErrorMessage = styled.p`
   margin: 0.25em 0 0 0;

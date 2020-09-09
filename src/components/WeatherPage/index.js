@@ -84,6 +84,7 @@ export const WeatherPage = () => {
         <S.Form>
           <S.Label htmlFor="cityInput">
             <S.Input
+              id="cityInput"
               type="text"
               placeholder="Enter city"
               name="city"
@@ -93,6 +94,7 @@ export const WeatherPage = () => {
           </S.Label>
           <S.Label htmlFor="countryInput">
             <S.Input
+              id="countryInput"
               type="text"
               placeholder="Enter country"
               name="country"
@@ -102,6 +104,7 @@ export const WeatherPage = () => {
           </S.Label>
           <S.UnitLabel htmlFor="unitInput">
             <input
+              id="unitInput"
               type="radio"
               name="units"
               checked={unit === 'metric'}
@@ -112,6 +115,7 @@ export const WeatherPage = () => {
           </S.UnitLabel>
           <S.UnitLabel htmlFor="unitInput">
             <input
+              id="unitInput"
               type="radio"
               name="units"
               checked={unit === 'imperial'}
