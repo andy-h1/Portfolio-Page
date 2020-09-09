@@ -17,10 +17,9 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
     event.preventDefault();
 
     const specialErrors = validateInput(values);
-
     setErrors(specialErrors);
 
-    if (Object.keys(specialErrors).length === 0) {
+    if (Object.keys(specialErrors).length === 0 && isSubmitting) {
       setIsSubmitting(true);
       try {
         await callback(values, setValues);
@@ -31,9 +30,15 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
     }
   };
 
+  const handleBlur = () => {
+    const specialErrors = validateInput(values);
+    setErrors(specialErrors);
+  };
+
   return {
     handleChange,
     handleSubmit,
+    handleBlur,
     isSubmitting,
     values,
     setValues,

@@ -22,15 +22,19 @@ const addUserData = (values, setValues) => {
     })
     .then(() => {
       setValues(initialValues);
+      console.log(values);
     });
 };
 
 export const FormPage = () => {
-  const { handleChange, handleSubmit, values, errors } = useForm(
-    addUserData,
-    validateInput,
-    initialValues
-  );
+  const {
+    handleBlur,
+    handleChange,
+    handleSubmit,
+    isSubmitting,
+    values,
+    errors
+  } = useForm(addUserData, validateInput, initialValues);
   const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
 
@@ -65,6 +69,7 @@ export const FormPage = () => {
           name="username"
           type="text"
           placeholder="Username"
+          onBlur={handleBlur}
           onChange={handleChange}
           required
         />
@@ -75,6 +80,7 @@ export const FormPage = () => {
           value={values.email}
           type="email"
           placeholder="Email"
+          onBlur={handleBlur}
           onChange={handleChange}
           required
         />
@@ -85,6 +91,7 @@ export const FormPage = () => {
           value={values.age}
           type="number"
           placeholder="Age"
+          onBlur={handleBlur}
           onChange={handleChange}
         />
         {errors.age && <S.ErrorMessage>{errors.age}</S.ErrorMessage>}
@@ -95,6 +102,7 @@ export const FormPage = () => {
             value={values.password}
             type={showPassword ? 'text' : 'password'}
             placeholder="Password"
+            onBlur={handleBlur}
             onChange={handleChange}
             required
           />
@@ -102,7 +110,9 @@ export const FormPage = () => {
           <S.ShowPasswordButton type="button" onClick={togglePassword} />
         </S.PasswordWrapper>
         {errors.password && <S.ErrorMessage>{errors.password}</S.ErrorMessage>}
-        <S.Button type="submit">Register</S.Button>
+        <S.Button type="submit" disabled={isSubmitting}>
+          Register
+        </S.Button>
       </S.Form>
 
       <S.UserCardWrapper>
