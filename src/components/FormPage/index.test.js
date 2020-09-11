@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import { FormPage } from '.';
 
 describe('Form Component', () => {
@@ -54,24 +54,24 @@ describe('Form Component', () => {
   //   getByText('Password is required');
   // });
 
-  it.each`
-    errorMessage
-    ${'Email address'}
-    ${'Password'}
-    ${'Username'}
-    ${'Age'}
-  `('should show an error if no $errorMessage', ({ errorMessage }) => {
-    // SETUP => render FormPage
-    const { getByText } = render(<FormPage />);
+  // it.each`
+  //   errorMessage
+  //   ${'Email address'}
+  //   ${'Password'}
+  //   ${'Username'}
+  //   ${'Age'}
+  // `('should show an error if no $errorMessage', ({ errorMessage }) => {
+  //   // SETUP => render FormPage
+  //   const { getByText } = render(<FormPage />);
 
-    // ACTION => do whatever user actions your test
+  //   // ACTION => do whatever user actions your test
 
-    // click submit button
-    const button = getByText('Register');
-    userEvent.click(button);
+  //   // click submit button
+  //   const button = getByText('Register');
+  //   userEvent.click(button);
 
-    // ASSERTION => asserting on what you expect to happen
-    // check that the error is showing
-    getByText(`${errorMessage} is required`);
-  });
+  //   // ASSERTION => asserting on what you expect to happen
+  //   // check that the error is showing
+  //   getByText(`${errorMessage} is required`);
+  // });
 });

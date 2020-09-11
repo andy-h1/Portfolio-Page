@@ -24,6 +24,7 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
         console.log({ error });
       }
       setIsSubmitting(true);
+      setErrors(errors);
     }
   };
 
