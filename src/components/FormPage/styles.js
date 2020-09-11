@@ -2,19 +2,22 @@ import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(4, 1fr); */
   column-gap: 1em;
   row-gap: 1em;
   padding: 0;
   margin-left: 1em;
+
+  @media (min-width: 597px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 export const Title = styled.h2`
-  grid-column: 1 / span 3;
   text-align: center;
 
   @media (min-width: 597px) {
+    grid-column: 1 / span 3;
     text-align: start;
     margin-top: 1em;
   }
@@ -24,10 +27,9 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
-  grid-column-start: 3;
 
   @media (min-width: 597px) {
-    justify-self: end;
+    grid-column-start: 3;
     grid-area: 2 / 3 / 2 / 3;
   }
 `;
@@ -72,32 +74,22 @@ export const UserCardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(260px, 1fr));
-  grid-row-start: 2;
   grid-row-gap: 1em;
-  align-self: center;
+  grid-column-gap: 1em;
+  place-items: center;
 
-  /* @media (min-width: 597px) {
+  @media (min-width: 597px) {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  } */
+    grid-column: span 2;
+    grid-row-start: 2;
+    place-items: end;
+  }
 `;
 
-// export const ShowPasswordButton = styled.button`
-//   background-image: url(${passwordIcon});
-//   background-color: white;
-//   border: none;
-//   position: absolute;
-//   top: 25%;
-//   right: 5%;
-//   cursor: pointer;
-//   height: 32px;
-//   width: 32px;
-//   object-fit: contain;
-// `;
-
 export const ErrorMessage = styled.p`
-  margin: 0.25em 0 0 0;
+  margin: 0;
   padding: 0;
   color: red;
   font-style: bold;
-  font-size: 0.75rem;
+  font-size: 0.8em;
 `;

@@ -2,15 +2,15 @@
 
 exports[`Form Component should render 1`] = `
 <div
-  class="sc-fujyUd bBqIAs"
+  class="sc-fujyUd bXGsHN"
 >
   <h2
-    class="sc-pNWxx idMNcD"
+    class="sc-pNWxx ddvKrb"
   >
     Sign Up Form
   </h2>
   <form
-    class="sc-jrsJCI bQMtZu"
+    class="sc-jrsJCI enTlsd"
     novalidate=""
   >
     <label
@@ -93,7 +93,7 @@ exports[`Form Component should render 1`] = `
     </button>
   </form>
   <div
-    class="sc-ksluoS jzmsuI"
+    class="sc-ksluoS kzfBfI"
   />
 </div>
 `;
