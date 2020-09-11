@@ -1,15 +1,17 @@
 import styled from 'styled-components';
-// import passwordIcon from '../../tokens/Icons/passwordIcon.svg';
 
 export const PageWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  grid-template-rows: max-content;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  column-gap: 1em;
+  row-gap: 1em;
   padding: 0;
   margin-left: 1em;
 `;
 
 export const Title = styled.h2`
+  grid-column: 1 / span 3;
   text-align: center;
 
   @media (min-width: 597px) {
@@ -22,10 +24,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
-  grid-row-start: 2;
+  grid-column-start: 3;
 
   @media (min-width: 597px) {
-    place-items: flex-start;
+    justify-self: end;
+    grid-area: 2 / 3 / 2 / 3;
   }
 `;
 
@@ -67,9 +70,11 @@ export const PasswordWrapper = styled.div`
 
 export const UserCardWrapper = styled.div`
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(260px, 1fr));
+  grid-row-start: 2;
   grid-row-gap: 1em;
+  align-self: center;
 
   /* @media (min-width: 597px) {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

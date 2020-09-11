@@ -10,11 +10,6 @@ export const UserCard = ({ age, email, id, name }) => {
   const [updateName, setUpdateName] = useState();
   const [updateEmail, setUpdateEmail] = useState();
   const [updateAge, setUpdateAge] = useState();
-  // const { handleChange, handleSubmit, values, errors } = useForm(
-  //   // eslint-disable-next-line no-use-before-define
-  //   updateData,
-  //   validateInput
-  // );
 
   const handleDeleteClick = () => {
     firebase.firestore().collection('users').doc(id).delete();

@@ -3,7 +3,7 @@ import { useState } from 'react';
 export const useForm = (callback, validateInput, initialValues = {}) => {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(true);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -16,23 +16,26 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const specialErrors = validateInput(values);
-    setErrors(specialErrors);
-
-    if (Object.keys(specialErrors).length === 0 && isSubmitting) {
-      setIsSubmitting(true);
+    if (Object.keys(errors).length === 0) {
+      setIsSubmitting(false);
       try {
         await callback(values, setValues);
       } catch (error) {
         console.log({ error });
       }
-      setIsSubmitting(false);
+      setIsSubmitting(true);
     }
   };
 
   const handleBlur = () => {
     const specialErrors = validateInput(values);
     setErrors(specialErrors);
+    if (Object.keys(specialErrors).length > 0) {
+      setIsSubmitting(true);
+    } else {
+      setIsSubmitting(false);
+      setErrors({});
+    }
   };
 
   return {
