@@ -3,7 +3,7 @@ import { useState } from 'react';
 export const useForm = (callback, validateInput, initialValues = {}) => {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -11,19 +11,23 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
       ...values,
       [name]: value
     });
+    setErrors({
+      ...errors,
+      [name]: ''
+    });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true);
 
     if (Object.keys(errors).length === 0) {
-      setIsSubmitting(false);
       try {
         await callback(values, setValues);
       } catch (error) {
         console.log({ error });
       }
-      setIsSubmitting(true);
+      setIsSubmitting(false);
       setErrors(errors);
     }
   };
@@ -32,7 +36,7 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
     const specialErrors = validateInput(values);
     setErrors(specialErrors);
     if (Object.keys(specialErrors).length > 0) {
-      setIsSubmitting(true);
+      setIsSubmitting(false);
     } else {
       setIsSubmitting(false);
       setErrors({});

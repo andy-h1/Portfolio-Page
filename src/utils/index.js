@@ -89,3 +89,21 @@ export const validateInput = (values) => {
   }
   return errors;
 };
+
+export const validateEditInput = (values) => {
+  const errors = {};
+  if (!values.username) {
+    errors.username = 'Username is required';
+  }
+  if (!values.age) {
+    errors.age = 'Age is required';
+  } else if (values.age < 18) {
+    errors.age = 'You must be at least 18 years old';
+  }
+  if (!values.email) {
+    errors.email = 'Email address is required';
+  } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    errors.email = 'Email address is invalid';
+  }
+  return errors;
+};

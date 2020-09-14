@@ -9,6 +9,7 @@ export const UserCardWrapper = styled.div`
   height: auto;
   font-family: inherit;
   font-size: inherit;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 `;
 
 export const Input = styled.input`
@@ -19,7 +20,7 @@ export const Input = styled.input`
   border-bottom: 1px solid #eee;
   width: 65%;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 14px;
 `;
 
 export const ButtonWrapper = styled.span`
@@ -43,20 +44,19 @@ export const Button = styled.button`
 `;
 
 export const Table = styled.table`
-  padding: 1em;
+  padding: 0.5em;
   margin: 1em;
-  display: flex;
-  justify-content: center;
+  font-size: 15px;
 `;
 
 export const Header = styled.th`
-  width: max-content;
-  padding: 0.5em;
+  text-align: end;
+  padding: 0;
+  margin: 0;
 `;
 
 export const Data = styled.td`
-  margin: 5em;
-  padding: 0.25em 0.5em 0;
+  padding: 0.5em;
 `;
 
 export const Label = styled.label`
@@ -65,4 +65,21 @@ export const Label = styled.label`
   justify-content: space-between;
   align-items: center;
   margin: 0;
+`;
+
+export const ErrorMessage = styled.p`
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-style: bold;
+  font-size: 0.8em;
+`;
+
+export const Checkbox = styled.input`
+  margin: 0 1em 0 0;
+`;
+
+export const PasswordWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
