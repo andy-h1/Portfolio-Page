@@ -2,45 +2,45 @@
 
 exports[`User Card component should render 1`] = `
 <div
-  class="sc-bdnylx cgnZNF"
+  class="sc-bdnylx bCvxhi"
 >
   <div>
     <table
-      class="sc-eCApGN eHUFhS"
+      class="sc-eCApGN keGeQA"
     >
       <tbody>
         <tr>
           <th
-            class="sc-jSFkmK gvAWUR"
+            class="sc-jSFkmK dNFMYP"
           >
             Username:
           </th>
           <td
-            class="sc-gKAblj kJjQBq"
+            class="sc-gKAblj cxybNj"
           >
             usernameTest
           </td>
         </tr>
         <tr>
           <th
-            class="sc-jSFkmK gvAWUR"
+            class="sc-jSFkmK dNFMYP"
           >
             Email:
           </th>
           <td
-            class="sc-gKAblj kJjQBq"
+            class="sc-gKAblj cxybNj"
           >
             test@gmail.com
           </td>
         </tr>
         <tr>
           <th
-            class="sc-jSFkmK gvAWUR"
+            class="sc-jSFkmK dNFMYP"
           >
             Age:
           </th>
           <td
-            class="sc-gKAblj kJjQBq"
+            class="sc-gKAblj cxybNj"
           >
             25
           </td>
