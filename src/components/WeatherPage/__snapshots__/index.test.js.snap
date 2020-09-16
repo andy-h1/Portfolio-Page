@@ -2,7 +2,7 @@
 
 exports[`Weather Page Component should render 1`] = `
 <h2
-  class="sc-gtssRu cThPJp"
+  class="sc-gtssRu iZEEwn"
 >
   Weather Page
 </h2>
