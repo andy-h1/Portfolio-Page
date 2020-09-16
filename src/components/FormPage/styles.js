@@ -6,7 +6,6 @@ export const PageWrapper = styled.div`
   column-gap: 1em;
   row-gap: 1em;
   padding: 0;
-  margin-left: 1em;
 
   @media (min-width: 597px) {
     grid-template-columns: repeat(3, 1fr);

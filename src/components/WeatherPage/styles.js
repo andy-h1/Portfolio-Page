@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   display: flex;
   font-size: inherit;
   justify-content: space-between;
-  margin-left: 1rem;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -18,7 +17,6 @@ export const Title = styled.h2`
   text-align: center;
 
   @media (min-width: 597px) {
-    margin: 1rem;
     text-align: start;
   }
 `;
