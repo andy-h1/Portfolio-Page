@@ -1,29 +1,40 @@
 import React, { useState } from 'react';
 import { IdeaCard } from '../IdeaCard';
+import * as S from './styles';
 
 export const IdeaBoardPage = () => {
-  const [values, setValues] = useState('');
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
   const [addCard, setaddCard] = useState(false);
+
+  const handleFocus = (event) => {
+    if (addCard === true) {
+      event.target.focus();
+    }
+  };
 
   const handleClick = () => {
     setaddCard(!addCard);
+    handleFocus();
   };
 
   const handleList = () => {
     console.log('clicked!');
   };
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setValues({
-      ...values,
-      [name]: value
-    });
-    console.log({ values });
+  const handleTitleChange = (event) => {
+    setTitle(event.target.value);
+    console.log(title);
   };
+
+  const handleDescChange = (event) => {
+    setDescription(event.target.value);
+    console.log(description);
+  };
+
   return (
     <div>
-      <h1>Idea Board</h1>
+      <h2>Idea Board</h2>
       <button type="button" onClick={handleList}>
         + Add List
       </button>
@@ -32,14 +43,14 @@ export const IdeaBoardPage = () => {
       </button>
 
       {addCard && (
-        <form>
+        <S.Form autoComplete="off">
           <label htmlFor="title">
             <input
               name="title"
               type="text"
               placeholder="Idea title"
-              onChange={handleChange}
-              value={values.title}
+              onChange={handleTitleChange}
+              value={title}
             />
           </label>
           <label htmlFor="description">
@@ -47,11 +58,11 @@ export const IdeaBoardPage = () => {
               name="description"
               type="text-area"
               placeholder="What's the big idea..."
-              onChange={handleChange}
-              values={values.description}
+              onChange={handleDescChange}
+              values={description}
             />
           </label>
-        </form>
+        </S.Form>
       )}
       <IdeaCard />
     </div>
