@@ -2,9 +2,9 @@
 
 exports[`Form Component should render 1`] = `
 <div>
-  <h1>
+  <h2>
     Idea Board
-  </h1>
+  </h2>
   <button
     type="button"
   >
