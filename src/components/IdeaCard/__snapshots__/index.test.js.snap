@@ -3,10 +3,10 @@
 exports[`Form Component should render 1`] = `
 <div>
   <h3>
-    Title
+    Title:
   </h3>
   <p>
-    Here is where the description will go...
+    Description: 
   </p>
 </div>
 `;
