@@ -8,9 +8,9 @@ export const GridWrapper = styled.div`
   @media (min-width: 600px) {
     grid-auto-flow: column;
     grid-column-gap: 1em;
-    margin: 0;
+    margin: 1em 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 7em);
+    grid-template-rows: repeat(3, 5em);
   }
 `;
 
