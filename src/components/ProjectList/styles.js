@@ -17,6 +17,13 @@ export const Title = styled.h2`
   }
 `;
 
+export const Link = styled.a`
+  margin: 0 1em 0 0;
+  color: initial;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
 export const ProjectLink = styled(NavLink)`
   margin: 0 1em 0 0;
   color: initial;

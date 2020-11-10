@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../../tokens/profile.jpg';
 import { ProjectList } from '../ProjectList';
+import CV from '../../tokens/Andy-Huynh-CV.pdf';
 import * as S from './styles';
 
 export const HomePage = () => (
@@ -8,18 +9,18 @@ export const HomePage = () => (
     <S.GridWrapper>
       <S.Image src={profile} alt="andy" />
 
+      <a href={CV} download="Andy Huynh CV">
+        <S.Button type="button">Download CV</S.Button>
+      </a>
+
       <S.Text>
-        Hey! Welcome to my website that I&apos;ve built in React. Currently I am
-        working as a tech recruiter at Deliveroo but hoping to create enough
-        React projects to make the move over to becoming a dev.
+        I am a Front End Developer that loves JS, User Experience, and
+        animations. I am currently looking into TypeScript, GraphQL, Cypress.
       </S.Text>
 
       <S.Text>
-        I&apos;ve had a very fruitful career so far, coming from a nursing
-        background to becoming a recruiter and now looking to make my final move
-        over to development where my interests lies. My end goal is to build
-        something useful for the healthcare sector but in the meantime I&apos;m
-        honing my skills in everything front-end.
+        I am currently learning new technologies and will be using this website
+        as a playground to demonstrate what I&apos;ve learnt so far.
       </S.Text>
     </S.GridWrapper>
 

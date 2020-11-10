@@ -6,7 +6,6 @@ import { HomePage } from '../HomePage';
 import { CVPage } from '../CVPage';
 import { WeatherPage } from '../WeatherPage';
 import { FormPage } from '../FormPage';
-import { IdeaBoardPage } from '../IdeaBoardPage';
 import * as S from './styles';
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
           <Route path="/cv" component={CVPage} />
           <Route path="/weather" component={WeatherPage} />
           <Route path="/form" component={FormPage} />
-          <Route path="/ideaboard" component={IdeaBoardPage} />
         </Switch>
       </S.Wrapper>
     </BrowserRouter>

@@ -26,6 +26,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
+  border: 1px solid black;
 
   @media (min-width: 597px) {
     grid-column-start: 3;

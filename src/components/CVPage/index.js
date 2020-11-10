@@ -9,6 +9,7 @@ export const CVPage = () => (
     <a href={CV} download="Andy Huynh CV">
       <S.Button type="button">Download CV</S.Button>
     </a>
+
     <S.List>
       {data.map((item) => (
         <CVExperience

@@ -15,7 +15,7 @@ export const Header = ({ open, setOpen }) => {
 
       <S.Wrapper open={open} onClick={handleClickChange}>
         <S.PageLink to="/">home</S.PageLink>
-        <S.PageLink to="/cv">cv</S.PageLink>
+        {/* <S.PageLink to="/cv">cv</S.PageLink> */}
 
         <S.Link href="https://github.com/andy-h1" target="_blank">
           <S.Image src={github} alt="github" />

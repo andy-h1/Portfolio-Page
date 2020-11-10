@@ -11,8 +11,9 @@ export const List = styled.ul`
 
 export const Pill = styled.li`
   background-color: #17a589;
+  font-size: 0.8em;
   color: white;
-  border-radius: 2em;
+  border-radius: 1em;
   padding: 0.25rem 0.5rem;
   margin: 0 0 0.5rem 0.5rem;
 `;
