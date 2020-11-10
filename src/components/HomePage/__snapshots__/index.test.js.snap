@@ -2,25 +2,36 @@
 
 exports[`Home Page Component shoulder render 1`] = `
 <div
-  class="sc-dIsAE iysA-DJ"
+  class="sc-bqGHjH iZClpN"
 >
   <div
-    class="sc-iqAbSa cBNNvV"
+    class="sc-crzoUp cnwAYb"
   >
     <img
       alt="andy"
-      class="sc-crzoUp fsLiCE"
+      class="sc-dIsAE bPCYuR"
       src="profile.jpg"
     />
-    <p
-      class="sc-bqGHjH eLeRws"
+    <a
+      download="Andy Huynh CV"
+      href="Andy-Huynh-CV.pdf"
     >
-      Hey! Welcome to my website that I've built in React. Currently I am working as a tech recruiter at Deliveroo but hoping to create enough React projects to make the move over to becoming a dev.
+      <button
+        class="sc-hBMVcZ fpMHde"
+        type="button"
+      >
+        Download CV
+      </button>
+    </a>
+    <p
+      class="sc-ksluoS hxtfkl"
+    >
+      I am a Front End Developer that loves JS, User Experience, and animations. I am currently looking into TypeScript, GraphQL, Cypress.
     </p>
     <p
-      class="sc-bqGHjH eLeRws"
+      class="sc-ksluoS hxtfkl"
     >
-      I've had a very fruitful career so far, coming from a nursing background to becoming a recruiter and now looking to make my final move over to development where my interests lies. My end goal is to build something useful for the healthcare sector but in the meantime I'm honing my skills in everything front-end.
+      I am currently learning new technologies and will be using this website as a playground to demonstrate what I've learnt so far.
     </p>
   </div>
   <div
@@ -33,112 +44,189 @@ exports[`Home Page Component shoulder render 1`] = `
     </h2>
     <a
       class="sc-dlnjPT iOPFCG"
-      href="/weather"
+      href="https://pandy-idea-board.netlify.app/"
+      target="_blank"
     >
       <div
-        class="sc-hKFyIo ctUsAO"
+        class="sc-eCApGN gKrcDW"
       >
         <h3
-          class="sc-eCApGN dRWiLv"
+          class="sc-jSFkmK iMSgzb"
         >
-          Weather App
+          ClearScore Tech Test
         </h3>
         <p
-          class="sc-jSFkmK ckCOxE"
+          class="sc-gKAblj hVAqTn"
         >
-          I built this weather app using OpenWeatherMap API to get the current weather data in your location. It has been built with React using styled-components.
+          The idea board was built with React and Styled-components. LocalStorage was used for the storage of the data on the web browser and I used useContext for global state management.
         </p>
         <div
-          class="sc-gKAblj gXzKPF"
+          class="sc-iCoHVE ddqPYm"
         >
           <ul
-            class="sc-jrsJCI iMYrWP"
+            class="sc-kEqYlL kjKfkC"
           >
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               react
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               styled-components
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
+            >
+              localStorage API
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              react-hooks
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
             >
               jest
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               react-testing-library
             </li>
           </ul>
         </div>
         <span
-          class="sc-iCoHVE edUa-dc"
+          class="sc-fujyUd jwlflL"
         >
           <img
-            alt="cloudy"
-            class="sc-fujyUd sxsSW"
-            src="lightCloudsDay.png"
+            alt="ideaBoard"
+            class="sc-jrsJCI hxagQg"
+            src="ideaBoardImage.png"
           />
         </span>
       </div>
     </a>
     <a
-      class="sc-dlnjPT iOPFCG"
+      class="sc-hKFyIo gubifo"
       href="/Form"
     >
       <div
-        class="sc-hKFyIo ctUsAO"
+        class="sc-eCApGN gKrcDW"
       >
         <h3
-          class="sc-eCApGN dRWiLv"
+          class="sc-jSFkmK iMSgzb"
         >
           Sign-Up Form
         </h3>
         <p
-          class="sc-jSFkmK ckCOxE"
+          class="sc-gKAblj hVAqTn"
         >
-          I built this demo sign-up form, hooking the data entries to Firebase's cloud-based database - Firestore. It has been built with React, Firebase and styled-components.
+          I built this demo sign-up form, hooking the data entries to Firebase's cloud-based database - Firestore. It is built with React, Firebase and styled-components.
         </p>
         <div
-          class="sc-gKAblj gXzKPF"
+          class="sc-iCoHVE ddqPYm"
         >
           <ul
-            class="sc-jrsJCI iMYrWP"
+            class="sc-kEqYlL kjKfkC"
           >
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               react
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
+            >
+              react-hooks
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
             >
               styled-components
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               jest
             </li>
             <li
-              class="sc-kEqYlL bXljHU"
+              class="sc-iqAbSa kXMyRK"
             >
               react-testing-library
             </li>
           </ul>
         </div>
         <span
-          class="sc-iCoHVE edUa-dc"
+          class="sc-fujyUd jwlflL"
         >
           <img
             alt="form"
-            class="sc-pNWxx bxdWZW"
+            class="sc-jrsJCI hxagQg"
             src="formImage.png"
+          />
+        </span>
+      </div>
+    </a>
+    <a
+      class="sc-hKFyIo gubifo"
+      href="/weather"
+    >
+      <div
+        class="sc-eCApGN gKrcDW"
+      >
+        <h3
+          class="sc-jSFkmK iMSgzb"
+        >
+          Weather App
+        </h3>
+        <p
+          class="sc-gKAblj hVAqTn"
+        >
+          I built this weather app using OpenWeatherMap API to get the current weather data in your location. It is built with React using styled-components.
+        </p>
+        <div
+          class="sc-iCoHVE ddqPYm"
+        >
+          <ul
+            class="sc-kEqYlL kjKfkC"
+          >
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              react
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              react-hooks
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              styled-components
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              jest
+            </li>
+            <li
+              class="sc-iqAbSa kXMyRK"
+            >
+              react-testing-library
+            </li>
+          </ul>
+        </div>
+        <span
+          class="sc-fujyUd jwlflL"
+        >
+          <img
+            alt="cloudy"
+            class="sc-pNWxx cydRpC"
+            src="lightCloudsDay.png"
           />
         </span>
       </div>

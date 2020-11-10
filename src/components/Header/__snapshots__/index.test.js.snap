@@ -20,12 +20,6 @@ exports[`Header component should render 1`] = `
       home
     </a>
     <a
-      class="sc-hKFyIo bqbGzb"
-      href="/cv"
-    >
-      cv
-    </a>
-    <a
       class="sc-eCApGN hQRkCD"
       href="https://github.com/andy-h1"
       target="_blank"

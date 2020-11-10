@@ -48,16 +48,6 @@ exports[`CV Page Component should render 1`] = `
       >
         I joined the Deliveroo recruitment team focused on hiring Product Managers, Product Marketing Managers and Software Engineers. When I joined we were around 20+ in the team and now have grown to over 60+ internationally.
       </p>
-      <p
-        class="sc-hKFyIo fKwaFs"
-      >
-        I have been involved in hiring across different levels of seniority but mostly focused on Senior/L6+.
-      </p>
-      <p
-        class="sc-hKFyIo fKwaFs"
-      >
-        Aside from recruiting for the Engineering team at Deliveroo, I have been heavily involved in onboarding, training and building out our recruitment team.
-      </p>
     </li>
     <li
       class="sc-bdnylx lpqsMp"
@@ -89,16 +79,6 @@ exports[`CV Page Component should render 1`] = `
       >
         When I joined ClearScore, I was 1 out of 3 recruiters in the team. We grew the team from 100 employees to over 200 internationally when I left.
       </p>
-      <p
-        class="sc-hKFyIo fKwaFs"
-      >
-        I was focused on hiring across all areas of the Engineering team, mainly focused in Mobile, Backend, QAs and Product Managers.
-      </p>
-      <p
-        class="sc-hKFyIo fKwaFs"
-      >
-        During my time at ClearScore, I was heavily involved in interview training, building out the ClearScore brand and diversity hiring with over 65% of my hires being in this category.
-      </p>
     </li>
     <li
       class="sc-bdnylx lpqsMp"
@@ -129,11 +109,6 @@ exports[`CV Page Component should render 1`] = `
         class="sc-hKFyIo fKwaFs"
       >
         After working 4 years as a neonatal nurse, I wanted to pursue my interest in the world of tech and started this journey working as a Tech recruiter for Arrows Group.
-      </p>
-      <p
-        class="sc-hKFyIo fKwaFs"
-      >
-        Working at Arrows Group gave me a thorough insight into how tech companies ran and the different specialities each company had. I was initially involved in hiring DevOps Engineers and transitioned into software engineering.
       </p>
     </li>
     <li

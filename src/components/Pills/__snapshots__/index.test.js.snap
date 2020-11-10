@@ -5,22 +5,22 @@ exports[`Pills Component should render 1`] = `
   class="sc-bdnylx ghfpFB"
 >
   <li
-    class="sc-gtssRu bqqzki"
+    class="sc-gtssRu ivTguT"
   >
     react
   </li>
   <li
-    class="sc-gtssRu bqqzki"
+    class="sc-gtssRu ivTguT"
   >
     styled-components
   </li>
   <li
-    class="sc-gtssRu bqqzki"
+    class="sc-gtssRu ivTguT"
   >
     jest
   </li>
   <li
-    class="sc-gtssRu bqqzki"
+    class="sc-gtssRu ivTguT"
   >
     react-testing-library
   </li>
