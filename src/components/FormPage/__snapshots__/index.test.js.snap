@@ -10,7 +10,7 @@ exports[`Form Component should render 1`] = `
     Sign Up Form
   </h2>
   <form
-    class="sc-crzoUp IkXDH"
+    class="sc-crzoUp hTAehk"
     novalidate=""
   >
     <label
@@ -18,7 +18,7 @@ exports[`Form Component should render 1`] = `
       for="username"
     >
       <input
-        class="sc-bqGHjH bNSRSc"
+        class="sc-bqGHjH hZPnVS"
         id="username"
         name="username"
         placeholder="Username"
@@ -32,7 +32,7 @@ exports[`Form Component should render 1`] = `
       for="email"
     >
       <input
-        class="sc-bqGHjH bNSRSc"
+        class="sc-bqGHjH hZPnVS"
         id="email"
         name="email"
         placeholder="Email"
@@ -46,7 +46,7 @@ exports[`Form Component should render 1`] = `
       for="age"
     >
       <input
-        class="sc-bqGHjH bNSRSc"
+        class="sc-bqGHjH hZPnVS"
         id="age"
         name="age"
         placeholder="Age"
@@ -62,7 +62,7 @@ exports[`Form Component should render 1`] = `
         for="password"
       >
         <input
-          class="sc-bqGHjH bNSRSc"
+          class="sc-bqGHjH hZPnVS"
           id="password"
           name="password"
           placeholder="Password"
@@ -85,7 +85,7 @@ exports[`Form Component should render 1`] = `
       </label>
     </div>
     <button
-      class="sc-hBMVcZ DLRJV"
+      class="sc-hBMVcZ edXlaU"
       type="submit"
     >
       Register
