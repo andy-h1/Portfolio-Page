@@ -26,11 +26,12 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
-  border: 1px solid black;
+  border: 1px solid #d7dbdd;
+  border-radius: 5px;
+  background-color: #e5e7e9;
 
   @media (min-width: 597px) {
-    grid-column-start: 3;
-    grid-area: 2 / 3 / 2 / 3;
+    grid-area: 2 / 1 / 2 / 2;
   }
 `;
 
@@ -40,7 +41,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0.5em;
   margin: 10px 0;
   border: 0;
   border-bottom: 1px solid #eee;
@@ -60,7 +61,7 @@ export const Button = styled.button`
   border-radius: 8px;
   margin: 10px 0;
   padding: 0.5rem 0;
-  width: 250px;
+  width: 200px;
   font-family: inherit;
   font-size: inherit;
 `;
