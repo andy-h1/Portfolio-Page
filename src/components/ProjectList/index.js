@@ -16,7 +16,7 @@ export const ProjectList = () => (
         <S.Text>
           The idea board was built with React and Styled-components.
           LocalStorage was used for the storage of the data on the web browser
-          and I used useContext for global state management.
+          and useContext for global state management.
         </S.Text>
 
         <S.PillsWrapper>
