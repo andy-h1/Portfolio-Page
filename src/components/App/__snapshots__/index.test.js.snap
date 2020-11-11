@@ -93,14 +93,14 @@ exports[`App component should render 1`] = `
         </button>
       </a>
       <p
-        class="sc-dlMBXb lfqnJx"
+        class="sc-dlMBXb iarSJz"
       >
-        I am a Front End Developer that loves JS, User Experience, and animations. I am currently looking into TypeScript, GraphQL, Cypress.
+        I am a Front End Developer that loves JS, User Experience, and animations. Below are some projects I've recently built, I'm currently working on a new app as an excuse to get stronger with TypeScript, Cypress and Redux
       </p>
       <p
-        class="sc-dlMBXb lfqnJx"
+        class="sc-dlMBXb iarSJz"
       >
-        I am currently learning new technologies and will be using this website as a playground to demonstrate what I've learnt so far.
+        My website is used as a playground for me to test out new and exciting technologies.
       </p>
     </div>
     <div
