@@ -10,7 +10,7 @@ exports[`Form Component should render 1`] = `
     Sign Up Form
   </h2>
   <form
-    class="sc-crzoUp hTAehk"
+    class="sc-crzoUp RAPPG"
     novalidate=""
   >
     <label
@@ -18,7 +18,7 @@ exports[`Form Component should render 1`] = `
       for="username"
     >
       <input
-        class="sc-bqGHjH hZPnVS"
+        class="sc-bqGHjH eMuZeS"
         id="username"
         name="username"
         placeholder="Username"
@@ -32,7 +32,7 @@ exports[`Form Component should render 1`] = `
       for="email"
     >
       <input
-        class="sc-bqGHjH hZPnVS"
+        class="sc-bqGHjH eMuZeS"
         id="email"
         name="email"
         placeholder="Email"
@@ -46,7 +46,7 @@ exports[`Form Component should render 1`] = `
       for="age"
     >
       <input
-        class="sc-bqGHjH hZPnVS"
+        class="sc-bqGHjH eMuZeS"
         id="age"
         name="age"
         placeholder="Age"
@@ -62,7 +62,7 @@ exports[`Form Component should render 1`] = `
         for="password"
       >
         <input
-          class="sc-bqGHjH hZPnVS"
+          class="sc-bqGHjH eMuZeS"
           id="password"
           name="password"
           placeholder="Password"
@@ -76,7 +76,7 @@ exports[`Form Component should render 1`] = `
         for="showPasswordInput"
       >
         <input
-          class="sc-ksluoS itPcfW"
+          class="sc-ksluoS MNfnP"
           id="showPassword"
           name="showPassword"
           type="checkbox"
@@ -85,7 +85,7 @@ exports[`Form Component should render 1`] = `
       </label>
     </div>
     <button
-      class="sc-hBMVcZ edXlaU"
+      class="sc-hBMVcZ dImxSk"
       type="submit"
     >
       Register
