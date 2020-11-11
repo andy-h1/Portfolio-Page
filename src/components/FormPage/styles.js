@@ -26,12 +26,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   place-items: center;
-  border: 1px solid #d7dbdd;
-  border-radius: 5px;
-  background-color: #e5e7e9;
+  height: 100%;
 
   @media (min-width: 597px) {
-    grid-area: 2 / 1 / 2 / 2;
+    grid-area: 2 / 1 / 3 / 2;
+    place-items: flex-start;
   }
 `;
 
@@ -42,16 +41,15 @@ export const Label = styled.label`
 export const Input = styled.input`
   box-sizing: border-box;
   padding: 0.5em;
-  margin: 10px 0;
-  border: 0;
-  border-bottom: 1px solid #eee;
-  width: 250px;
+  margin: 0.5em 0;
+  border: 1px solid #d7dbdd;
+  width: 100%;
   font-family: inherit;
   font-size: inherit;
 `;
 
 export const Checkbox = styled.input`
-  margin: 0 1em 0 0;
+  margin: 1em 1em 0 0;
 `;
 
 export const Button = styled.button`
@@ -59,9 +57,9 @@ export const Button = styled.button`
   border: none;
   color: white;
   border-radius: 8px;
-  margin: 10px 0;
-  padding: 0.5rem 0;
-  width: 200px;
+  margin: 1em 0;
+  padding: 0.5em;
+  width: 150px;
   font-family: inherit;
   font-size: inherit;
 `;
@@ -92,5 +90,5 @@ export const ErrorMessage = styled.p`
   padding: 0;
   color: red;
   font-style: bold;
-  font-size: 0.8em;
+  font-size: 0.7em;
 `;
