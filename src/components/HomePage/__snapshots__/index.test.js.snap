@@ -58,7 +58,7 @@ exports[`Home Page Component shoulder render 1`] = `
         <p
           class="sc-gKAblj hVAqTn"
         >
-          The idea board was built with React and Styled-components. LocalStorage was used for the storage of the data on the web browser and I used useContext for global state management.
+          The idea board was built with React and Styled-components. LocalStorage was used for the storage of the data on the web browser and useContext for global state management.
         </p>
         <div
           class="sc-iCoHVE ddqPYm"
