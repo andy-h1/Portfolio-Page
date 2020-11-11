@@ -15,12 +15,14 @@ export const HomePage = () => (
 
       <S.Text>
         I am a Front End Developer that loves JS, User Experience, and
-        animations. I am currently looking into TypeScript, GraphQL, Cypress.
+        animations. Below are some projects I&apos;ve recently built, I&apos;m
+        currently working on a new app as an excuse to get stronger with
+        TypeScript, Cypress and Redux
       </S.Text>
 
       <S.Text>
-        I am currently learning new technologies and will be using this website
-        as a playground to demonstrate what I&apos;ve learnt so far.
+        My website is used as a playground for me to test out new and exciting
+        technologies.
       </S.Text>
     </S.GridWrapper>
 

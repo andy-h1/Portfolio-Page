@@ -41,6 +41,7 @@ export const Text = styled.p`
 
   @media (min-width: 600px) {
     grid-column: 2/3;
+    text-align: start;
   }
 `;
 
