@@ -9,7 +9,7 @@ const initialValues = {
   username: '',
   password: '',
   email: '',
-  age: ''
+  age: 0
 };
 
 const addUserData = (values, setValues) => {

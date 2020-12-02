@@ -34,6 +34,11 @@ export const Header = ({ open, setOpen }) => {
 };
 
 Header.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired
+  open: bool,
+  setOpen: func
+};
+
+Header.defaultProps = {
+  open: false,
+  setOpen: () => null
 };

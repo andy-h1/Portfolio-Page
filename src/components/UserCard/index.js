@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { string } from 'prop-types';
+import { number, string } from 'prop-types';
 import firebase from '../../firebase';
 import * as S from './styles';
 import { useForm } from '../UseForm';
@@ -9,7 +9,7 @@ const initialValues = {
   username: '',
   password: '',
   email: '',
-  age: ''
+  age: 0
 };
 
 export const UserCard = ({ age, email, id, name }) => {
@@ -58,7 +58,7 @@ export const UserCard = ({ age, email, id, name }) => {
         <S.Form onSubmit={handleSubmit}>
           <S.Label htmlFor="usernameInput">
             <S.Input
-              type="text"
+              type="string"
               value={values.username}
               placeholder="Username"
               onBlur={handleBlur}
@@ -73,7 +73,7 @@ export const UserCard = ({ age, email, id, name }) => {
 
           <S.Label htmlFor="emailInput">
             <S.Input
-              type="email"
+              type="string"
               value={values.email}
               placeholder="Email"
               onBlur={handleBlur}
@@ -86,7 +86,7 @@ export const UserCard = ({ age, email, id, name }) => {
 
           <S.Label htmlFor="ageInput">
             <S.Input
-              type="age"
+              type="number"
               value={values.age}
               placeholder="Age"
               name="age"
@@ -165,7 +165,7 @@ export const UserCard = ({ age, email, id, name }) => {
 };
 
 UserCard.propTypes = {
-  age: string.isRequired,
+  age: number.isRequired,
   email: string.isRequired,
   id: string.isRequired,
   name: string.isRequired
