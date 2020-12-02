@@ -2,23 +2,23 @@
 
 exports[`Form Component should render 1`] = `
 <div
-  class="sc-kEqYlL cohHlQ"
+  class="sc-iqAbSa ldFRMr"
 >
   <h2
-    class="sc-iqAbSa hXvNon"
+    class="sc-crzoUp cNGWrP"
   >
     Sign Up Form
   </h2>
   <form
-    class="sc-crzoUp RAPPG"
+    class="sc-dIsAE IBTqV"
     novalidate=""
   >
     <label
-      class="sc-dIsAE iVufnw"
+      class="sc-bqGHjH hcEzlc"
       for="username"
     >
       <input
-        class="sc-bqGHjH eMuZeS"
+        class="sc-ksluoS TJGAN"
         id="username"
         name="username"
         placeholder="Username"
@@ -28,11 +28,11 @@ exports[`Form Component should render 1`] = `
       />
     </label>
     <label
-      class="sc-dIsAE iVufnw"
+      class="sc-bqGHjH hcEzlc"
       for="email"
     >
       <input
-        class="sc-bqGHjH eMuZeS"
+        class="sc-ksluoS TJGAN"
         id="email"
         name="email"
         placeholder="Email"
@@ -42,11 +42,11 @@ exports[`Form Component should render 1`] = `
       />
     </label>
     <label
-      class="sc-dIsAE iVufnw"
+      class="sc-bqGHjH hcEzlc"
       for="age"
     >
       <input
-        class="sc-bqGHjH eMuZeS"
+        class="sc-ksluoS TJGAN"
         id="age"
         name="age"
         placeholder="Age"
@@ -55,14 +55,14 @@ exports[`Form Component should render 1`] = `
       />
     </label>
     <div
-      class="sc-fnVYJo bqPMPF"
+      class="sc-fFSRdu kMWYlf"
     >
       <label
-        class="sc-dIsAE iVufnw"
+        class="sc-bqGHjH hcEzlc"
         for="password"
       >
         <input
-          class="sc-bqGHjH eMuZeS"
+          class="sc-ksluoS TJGAN"
           id="password"
           name="password"
           placeholder="Password"
@@ -72,11 +72,11 @@ exports[`Form Component should render 1`] = `
         />
       </label>
       <label
-        class="sc-dIsAE iVufnw"
+        class="sc-bqGHjH hcEzlc"
         for="showPasswordInput"
       >
         <input
-          class="sc-ksluoS MNfnP"
+          class="sc-hBMVcZ fAVEPu"
           id="showPassword"
           name="showPassword"
           type="checkbox"
@@ -85,14 +85,14 @@ exports[`Form Component should render 1`] = `
       </label>
     </div>
     <button
-      class="sc-hBMVcZ dImxSk"
+      class="sc-fnVYJo ewdcoi"
       type="submit"
     >
       Register
     </button>
   </form>
   <div
-    class="sc-fFSRdu gvDOxp"
+    class="sc-bkbjAj kKILMz"
   />
 </div>
 `;

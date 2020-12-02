@@ -6,41 +6,41 @@ exports[`User Card component should render 1`] = `
 >
   <div>
     <table
-      class="sc-eCApGN keGeQA"
+      class="sc-jSFkmK epQYqd"
     >
       <tbody>
         <tr>
           <th
-            class="sc-jSFkmK dNFMYP"
+            class="sc-gKAblj cma-DXQ"
           >
             Username:
           </th>
           <td
-            class="sc-gKAblj cxybNj"
+            class="sc-iCoHVE kZRoTo"
           >
             usernameTest
           </td>
         </tr>
         <tr>
           <th
-            class="sc-jSFkmK dNFMYP"
+            class="sc-gKAblj cma-DXQ"
           >
             Email:
           </th>
           <td
-            class="sc-gKAblj cxybNj"
+            class="sc-iCoHVE kZRoTo"
           >
             test@gmail.com
           </td>
         </tr>
         <tr>
           <th
-            class="sc-jSFkmK dNFMYP"
+            class="sc-gKAblj cma-DXQ"
           >
             Age:
           </th>
           <td
-            class="sc-gKAblj cxybNj"
+            class="sc-iCoHVE kZRoTo"
           >
             25
           </td>
@@ -48,16 +48,16 @@ exports[`User Card component should render 1`] = `
       </tbody>
     </table>
     <span
-      class="sc-dlnjPT cmEWJv"
+      class="sc-hKFyIo inMSbV"
     >
       <button
-        class="sc-hKFyIo dyckvF"
+        class="sc-eCApGN gVgkIF"
         type="button"
       >
         Edit
       </button>
       <button
-        class="sc-hKFyIo dyckvF"
+        class="sc-eCApGN gVgkIF"
         type="button"
       >
         Delete
