@@ -21,7 +21,6 @@ const addUserData = (values, setValues) => {
     })
     .then(() => {
       setValues(initialValues);
-      console.log(values);
     });
 };
 
@@ -52,7 +51,6 @@ export const FormPage = () => {
         }));
 
         setUserList(newUserList);
-        console.log(newUserList);
       });
 
     return () => unsubscribe();

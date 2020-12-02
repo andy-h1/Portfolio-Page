@@ -11,8 +11,6 @@ Common Scripts:
 To Do:
 
 - 404 page
-- Add form validation 
 - Add weather page validation
 - Add tests to util functions 
-- Fix layout of Form component
 - Add Storybook

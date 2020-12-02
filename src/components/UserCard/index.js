@@ -40,8 +40,6 @@ export const UserCard = ({ age, email, id, name }) => {
     errors
   } = useForm(updateData, validateInput, initialValues);
 
-  console.log({ isSubmitting });
-
   const handleDeleteClick = () => {
     firebase.firestore().collection('users').doc(id).delete();
   };

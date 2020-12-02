@@ -20,8 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --verbose --coverage --no-cache --watchAll=false --env=jest-environment-jsdom-sixteen",
-    "test:watch": "react-scripts test --verbose",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen --verbose --coverage --no-cache --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
