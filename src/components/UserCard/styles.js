@@ -12,13 +12,19 @@ export const UserCardWrapper = styled.div`
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 `;
 
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+`;
+
 export const Input = styled.input`
   box-sizing: border-box;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 1em;
+  margin: 0.5em;
   border: 0;
   border-bottom: 1px solid #eee;
-  width: 65%;
+  width: 100%;
   font-family: inherit;
   font-size: 14px;
 `;
@@ -44,13 +50,14 @@ export const Button = styled.button`
 `;
 
 export const Table = styled.table`
-  padding: 0.5em;
-  margin: 1em;
+  padding: 1em;
+  margin: 3em;
   font-size: 15px;
+  text-align: space-between;
 `;
 
 export const Header = styled.th`
-  text-align: end;
+  text-align: center;
   padding: 0;
   margin: 0;
 `;
@@ -81,5 +88,4 @@ export const Checkbox = styled.input`
 
 export const PasswordWrapper = styled.div`
   display: flex;
-  flex-direction: column;
 `;
