@@ -2,7 +2,7 @@
 
 exports[`App component should render 1`] = `
 <div
-  class="sc-fbIXFq dtzdkd"
+  class="sc-FRqcf dkzRwr"
 >
   <button
     class="sc-bdnylx fhaOQb"
@@ -71,14 +71,14 @@ exports[`App component should render 1`] = `
     </div>
   </header>
   <div
-    class="sc-hHEjAm bUSKwg"
+    class="sc-dlMBXb fYpgLC"
   >
     <div
-      class="sc-iemXMA kxZpPc"
+      class="sc-dIvqjp bVOEid"
     >
       <img
         alt="andy"
-        class="sc-dIvqjp cDjTpv"
+        class="sc-hHEjAm gqPMKs"
         src="profile.jpg"
       />
       <a
@@ -86,19 +86,19 @@ exports[`App component should render 1`] = `
         href="Andy-Huynh-CV.pdf"
       >
         <button
-          class="sc-kfYqjs dUfdza"
+          class="sc-fKgIGh bZHJFy"
           type="button"
         >
           Download CV
         </button>
       </a>
       <p
-        class="sc-dlMBXb iarSJz"
+        class="sc-kfYqjs iEWtNy"
       >
         I am a Front End Developer that loves JS, User Experience, and animations. Below are some projects I've recently built, I'm currently working on a new app as an excuse to get stronger with TypeScript, Cypress and Redux
       </p>
       <p
-        class="sc-dlMBXb iarSJz"
+        class="sc-kfYqjs iEWtNy"
       >
         My website is used as a playground for me to test out new and exciting technologies.
       </p>
@@ -111,6 +111,74 @@ exports[`App component should render 1`] = `
       >
         Projects
       </h2>
+      <a
+        class="sc-jrsJCI dgAyHp"
+        href="https://seldon.netlify.app/"
+        target="blank"
+      >
+        <div
+          class="sc-iqAbSa fFKDyZ"
+        >
+          <h3
+            class="sc-crzoUp kGOODc"
+          >
+            Data Visualization Dashboard
+          </h3>
+          <p
+            class="sc-dIsAE GjRYQ"
+          >
+            This dashboard was built with React, D3 and Material UI. The line graph currently takes mock data which updates every 1.5 seconds and rerenders when the data is updated using useEffect.
+          </p>
+          <ul
+            class="sc-bkbjAj fRrYDu"
+          >
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              react
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              material-ui
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              react-hooks
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              svg
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              d3
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              jest
+            </li>
+            <li
+              class="sc-iemXMA XgEdG"
+            >
+              react-testing-library
+            </li>
+          </ul>
+          <span
+            class="sc-ksluoS eXizVb"
+          >
+            <img
+              alt="line graph image"
+              class="sc-fFSRdu fonvRo"
+              src="linegraph.png"
+            />
+          </span>
+        </div>
+      </a>
       <a
         class="sc-jrsJCI dgAyHp"
         href="https://pandy-idea-board.netlify.app/"
@@ -130,38 +198,38 @@ exports[`App component should render 1`] = `
             The idea board was built with React and Styled-components. LocalStorage was used for the storage of the data on the web browser and useContext for global state management.
           </p>
           <div
-            class="sc-bqGHjH bKucFy"
+            class="sc-bqGHjH drdSAP"
           >
             <ul
-              class="sc-fFSRdu vbbxg"
+              class="sc-bkbjAj fRrYDu"
             >
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 styled-components
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 localStorage API
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-hooks
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 jest
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-testing-library
               </li>
@@ -196,33 +264,33 @@ exports[`App component should render 1`] = `
             I built this demo sign-up form, hooking the data entries to Firebase's cloud-based database - Firestore. It is built with React, Firebase and styled-components.
           </p>
           <div
-            class="sc-bqGHjH bKucFy"
+            class="sc-bqGHjH drdSAP"
           >
             <ul
-              class="sc-fFSRdu vbbxg"
+              class="sc-bkbjAj fRrYDu"
             >
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-hooks
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 styled-components
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 jest
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-testing-library
               </li>
@@ -257,33 +325,33 @@ exports[`App component should render 1`] = `
             I built this weather app using OpenWeatherMap API to get the current weather data in your location. It is built with React using styled-components.
           </p>
           <div
-            class="sc-bqGHjH bKucFy"
+            class="sc-bqGHjH drdSAP"
           >
             <ul
-              class="sc-fFSRdu vbbxg"
+              class="sc-bkbjAj fRrYDu"
             >
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-hooks
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 styled-components
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 jest
               </li>
               <li
-                class="sc-bkbjAj kKcwrp"
+                class="sc-iemXMA XgEdG"
               >
                 react-testing-library
               </li>
