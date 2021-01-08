@@ -11,6 +11,74 @@ exports[`Project List Component should render 1`] = `
   </h2>
   <a
     class="sc-dlnjPT iOPFCG"
+    href="https://seldon.netlify.app/"
+    target="blank"
+  >
+    <div
+      class="sc-eCApGN gKrcDW"
+    >
+      <h3
+        class="sc-jSFkmK iMSgzb"
+      >
+        Data Visualization Dashboard
+      </h3>
+      <p
+        class="sc-gKAblj hVAqTn"
+      >
+        This dashboard was built with React, D3 and Material UI. The line graph currently takes mock data which updates every 1.5 seconds and rerenders when the data is updated using useEffect.
+      </p>
+      <ul
+        class="sc-iqAbSa bhMFhF"
+      >
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          react
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          material-ui
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          react-hooks
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          svg
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          d3
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          jest
+        </li>
+        <li
+          class="sc-crzoUp uAfui"
+        >
+          react-testing-library
+        </li>
+      </ul>
+      <span
+        class="sc-fujyUd jwlflL"
+      >
+        <img
+          alt="line graph image"
+          class="sc-kEqYlL cKeYNG"
+          src="linegraph.png"
+        />
+      </span>
+    </div>
+  </a>
+  <a
+    class="sc-dlnjPT iOPFCG"
     href="https://pandy-idea-board.netlify.app/"
     target="_blank"
   >
@@ -28,38 +96,38 @@ exports[`Project List Component should render 1`] = `
         The idea board was built with React and Styled-components. LocalStorage was used for the storage of the data on the web browser and useContext for global state management.
       </p>
       <div
-        class="sc-iCoHVE ddqPYm"
+        class="sc-iCoHVE jYyfPn"
       >
         <ul
-          class="sc-kEqYlL kjKfkC"
+          class="sc-iqAbSa bhMFhF"
         >
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             styled-components
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             localStorage API
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-hooks
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             jest
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-testing-library
           </li>
@@ -94,33 +162,33 @@ exports[`Project List Component should render 1`] = `
         I built this demo sign-up form, hooking the data entries to Firebase's cloud-based database - Firestore. It is built with React, Firebase and styled-components.
       </p>
       <div
-        class="sc-iCoHVE ddqPYm"
+        class="sc-iCoHVE jYyfPn"
       >
         <ul
-          class="sc-kEqYlL kjKfkC"
+          class="sc-iqAbSa bhMFhF"
         >
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-hooks
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             styled-components
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             jest
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-testing-library
           </li>
@@ -155,33 +223,33 @@ exports[`Project List Component should render 1`] = `
         I built this weather app using OpenWeatherMap API to get the current weather data in your location. It is built with React using styled-components.
       </p>
       <div
-        class="sc-iCoHVE ddqPYm"
+        class="sc-iCoHVE jYyfPn"
       >
         <ul
-          class="sc-kEqYlL kjKfkC"
+          class="sc-iqAbSa bhMFhF"
         >
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-hooks
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             styled-components
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             jest
           </li>
           <li
-            class="sc-iqAbSa kXMyRK"
+            class="sc-crzoUp uAfui"
           >
             react-testing-library
           </li>
