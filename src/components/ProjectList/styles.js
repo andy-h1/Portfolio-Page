@@ -77,7 +77,7 @@ export const Text = styled.p`
 export const PillsWrapper = styled.div`
   @media (min-width: 600px) {
     grid-row-start: 3;
-    justify-self: start;
+    justify-content: start;
     align-self: start;
   }
 `;
@@ -100,4 +100,9 @@ export const FormImage = styled.img`
   width: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+`;
+
+export const LineGraphImage = styled.img`
+  height: 175px;
+  width: 500px;
 `;
