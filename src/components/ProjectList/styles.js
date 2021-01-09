@@ -103,6 +103,6 @@ export const FormImage = styled.img`
 `;
 
 export const LineGraphImage = styled.img`
-  height: 175px;
-  width: 500px;
+  height: 150px;
+  width: 300px;
 `;
