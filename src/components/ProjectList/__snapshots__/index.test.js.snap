@@ -71,7 +71,7 @@ exports[`Project List Component should render 1`] = `
       >
         <img
           alt="line graph image"
-          class="sc-kEqYlL cKeYNG"
+          class="sc-kEqYlL dSVOrz"
           src="linegraph.png"
         />
       </span>

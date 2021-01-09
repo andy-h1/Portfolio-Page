@@ -173,7 +173,7 @@ exports[`App component should render 1`] = `
           >
             <img
               alt="line graph image"
-              class="sc-fFSRdu fonvRo"
+              class="sc-fFSRdu bkhcBF"
               src="linegraph.png"
             />
           </span>

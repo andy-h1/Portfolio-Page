@@ -104,7 +104,7 @@ exports[`Home Page Component shoulder render 1`] = `
         >
           <img
             alt="line graph image"
-            class="sc-kEqYlL cKeYNG"
+            class="sc-kEqYlL dSVOrz"
             src="linegraph.png"
           />
         </span>
