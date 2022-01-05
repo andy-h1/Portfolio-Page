@@ -3,6 +3,7 @@
 This is the repo for my current website which I am using as a playground to learn more about building React-based projects.
 
 Common Scripts:
+
 - yarn install dependencies
 - yarn start run the project locally
 - yarn test run the test suite
@@ -12,6 +13,6 @@ To Do:
 
 - 404 page
 - Add weather page validation
-- Add tests to util functions 
-- Add Storybook
-- Prefill input values with prior data
+- Add tests to util functions
+- Refactor portfolio page to TypeScript
+- Add Tailwind CSS
