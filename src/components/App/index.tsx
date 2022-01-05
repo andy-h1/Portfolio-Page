@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, {useState, FC} from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import { Burger } from '../Burger';
 import { Header } from '../Header';
 import { HomePage } from '../HomePage';
@@ -8,8 +8,8 @@ import { WeatherPage } from '../WeatherPage';
 import { FormPage } from '../FormPage';
 import * as S from './styles';
 
-const App = () => {
-  const [open, setOpen] = useState(false);
+const App : FC = () => {
+    const [open, setOpen] = useState(false);
   return (
     <BrowserRouter>
       <S.GlobalStyle />

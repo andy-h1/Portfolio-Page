@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from '.';
+import App from './index.tsx';
 
 describe('App component', () => {
   it('should render', () => {
