@@ -9,7 +9,6 @@ export const Burger = ({ open, setOpen }) => {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Escape') {
-      console.log('Key pressed');
       handleClickChange();
     }
   };
