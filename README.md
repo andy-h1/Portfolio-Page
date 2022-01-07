@@ -16,3 +16,5 @@ To Do:
 - Add tests to util functions
 - Refactor portfolio page to TypeScript
 - Add Tailwind CSS
+- Add Netlify
+- Fix Eslint

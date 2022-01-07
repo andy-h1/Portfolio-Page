@@ -22,6 +22,68 @@ exports[`CV Page Component should render 1`] = `
       class="sc-bdnylx lpqsMp"
     >
       <a
+        href="https://www.seldon.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="seldon"
+          height="auto"
+          src="seldon.jpeg"
+          width="100px"
+        />
+      </a>
+      <h3
+        class="sc-gtssRu gORUoG"
+      >
+        Front End Developer 
+      </h3>
+      <h3
+        class="sc-dlnjPT bUgsmE"
+      >
+        Feb 2021 - Present
+      </h3>
+      <p
+        class="sc-hKFyIo fKwaFs"
+      >
+        Currently I working as one of two front end developers focused on data visualisation, building out new features for our data science team and refactoring our codebase.
+      </p>
+    </li>
+    <li
+      class="sc-bdnylx lpqsMp"
+    >
+      <a
+        href="https://lix-it.com//"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="lix-it"
+          height="auto"
+          src="lix-logo.png"
+          width="60px"
+        />
+      </a>
+      <h3
+        class="sc-gtssRu gORUoG"
+      >
+        Front End Developer
+      </h3>
+      <h3
+        class="sc-dlnjPT bUgsmE"
+      >
+        Nov 2020 - Feb 2021
+      </h3>
+      <p
+        class="sc-hKFyIo fKwaFs"
+      >
+        At Lix-it I was focused on updating the UI into the new designs and refactoring our code from class components into functional components.
+      </p>
+    </li>
+    <li
+      class="sc-bdnylx lpqsMp"
+    >
+      <a
         href="https://deliveroo.co.uk/"
         rel="noopener noreferrer"
         target="_blank"

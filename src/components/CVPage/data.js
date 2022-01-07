@@ -1,9 +1,37 @@
 import arrowsgroup from '../../tokens/CompanyLogos/arrowsgroup.png';
 import clearscore from '../../tokens/CompanyLogos/clearscore.png';
 import deliveroo from '../../tokens/CompanyLogos/deliveroo.png';
+import seldon from '../../tokens/CompanyLogos/seldon.jpeg';
+import lix from '../../tokens/CompanyLogos/lix-logo.png';
 import nhs from '../../tokens/CompanyLogos/nhs.png';
 
 export default [
+  {
+    dates: 'Feb 2021 - Present',
+    description: [
+      'Currently I working as one of two front end developers focused on data visualisation, building out new features for our data science team and refactoring our codebase.'
+    ],
+    image: seldon,
+    imageAlt: 'seldon',
+    imageHeight: 'auto',
+    imageWidth: '100px',
+    jobTitle: 'Front End Developer ',
+    website: 'https://www.seldon.io/'
+  },
+
+  {
+    dates: 'Nov 2020 - Feb 2021',
+    description: [
+      'At Lix-it I was focused on updating the UI into the new designs and refactoring our code from class components into functional components.'
+    ],
+    image: lix,
+    imageAlt: 'lix-it',
+    imageHeight: 'auto',
+    imageWidth: '60px',
+    jobTitle: 'Front End Developer',
+    website: 'https://lix-it.com//'
+  },
+
   {
     dates: 'Nov 2018 - Present',
     description: [

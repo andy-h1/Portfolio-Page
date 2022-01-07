@@ -1,13 +1,17 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
 import * as S from './styles';
 
-export const Burger = ({ open, setOpen }) => {
+interface Props {
+  open: Boolean;
+  setOpen: Function;
+}
+
+export const Burger = ({ open, setOpen } : Props) => {
   const handleClickChange = () => {
     setOpen(!open);
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event : KeyboardEvent) => {
     if (event.key === 'Escape') {
       handleClickChange();
     }
@@ -19,9 +23,4 @@ export const Burger = ({ open, setOpen }) => {
       <S.Div open={open} />
     </S.Burger>
   );
-};
-
-Burger.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired
 };
