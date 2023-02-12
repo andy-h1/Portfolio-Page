@@ -12,7 +12,7 @@ const initialValues = {
   age: 0
 };
 
-export const UserCard = ({ age, email, id, name }) => {
+export function UserCard({ age, email, id, name }) {
   const [edit, setEdit] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -162,7 +162,7 @@ export const UserCard = ({ age, email, id, name }) => {
       )}
     </S.UserCardWrapper>
   );
-};
+}
 
 UserCard.propTypes = {
   age: number.isRequired,

@@ -5,7 +5,7 @@ import linkedin from '../../tokens/Icons/linkedin.png';
 import twitter from '../../tokens/Icons/twitter.svg';
 import * as S from './styles';
 
-export const Header = ({ open, setOpen }) => {
+export function Header({ open, setOpen }) {
   const handleClickChange = () => {
     setOpen(!open);
   };
@@ -31,7 +31,7 @@ export const Header = ({ open, setOpen }) => {
       </S.Wrapper>
     </S.Header>
   );
-};
+}
 
 Header.propTypes = {
   open: bool,

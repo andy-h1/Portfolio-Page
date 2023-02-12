@@ -3,7 +3,7 @@ import { number, string } from 'prop-types';
 import { getWeatherImage, dateConverter, timeConverter } from '../../utils';
 import * as S from './styles';
 
-export const WeatherTracker = ({
+export function WeatherTracker({
   city,
   country,
   image,
@@ -14,7 +14,7 @@ export const WeatherTracker = ({
   weatherTempFeelsLike,
   width,
   wind
-}) => {
+}) {
   return (
     <S.Wrapper data-testid="weatherTracker">
       <S.Image
@@ -60,7 +60,7 @@ export const WeatherTracker = ({
       </S.Table>
     </S.Wrapper>
   );
-};
+}
 
 WeatherTracker.propTypes = {
   city: string.isRequired,

@@ -1,5 +1,5 @@
 import React, {useState, FC} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Burger } from '../Burger';
 import { Header } from '../Header';
 import { HomePage } from '../HomePage';
@@ -17,12 +17,12 @@ const App : FC = () => {
       <S.Wrapper>
         <Burger open={open} setOpen={setOpen} />
         <Header open={open} setOpen={setOpen} />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/cv" component={CVPage} />
-          <Route path="/weather" component={WeatherPage} />
-          <Route path="/form" component={FormPage} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cv" element={<CVPage />} />
+          <Route path="/weather" element={<WeatherPage />} />
+          <Route path="/form" element={<FormPage />} />
+        </Routes>
       </S.Wrapper>
     </BrowserRouter>
   );

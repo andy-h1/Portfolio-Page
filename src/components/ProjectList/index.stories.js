@@ -6,4 +6,6 @@ export default {
   title: 'Project List'
 };
 
-export const Template = (args) => <ProjectList {...args} />;
+export function Template(args) {
+  return <ProjectList {...args} />;
+}

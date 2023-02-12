@@ -5,7 +5,7 @@ import { WeatherTracker } from '../WeatherTracker';
 
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
-export const WeatherPage = () => {
+export function WeatherPage() {
   const [weatherData, setWeatherData] = useState();
   const [city, setCity] = useState('Croydon');
   const [country, setCountry] = useState('GB');
@@ -131,4 +131,4 @@ export const WeatherPage = () => {
       </S.Wrapper>
     </>
   );
-};
+}

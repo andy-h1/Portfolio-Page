@@ -24,7 +24,7 @@ const addUserData = (values, setValues) => {
     });
 };
 
-export const FormPage = () => {
+export function FormPage() {
   const {
     handleBlur,
     handleChange,
@@ -145,4 +145,4 @@ export const FormPage = () => {
       </S.UserCardWrapper>
     </S.PageWrapper>
   );
-};
+}
