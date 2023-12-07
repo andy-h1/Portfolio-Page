@@ -40,7 +40,6 @@ export function WeatherPage() {
       const { data } = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${unit}&APPID=${API_KEY}`
       );
-      console.log(data);
       const { weather, main, sys, name, wind, dt } = data;
       setWeatherData({ weather, main, sys, name, wind, dt });
       setisLoading(false);
