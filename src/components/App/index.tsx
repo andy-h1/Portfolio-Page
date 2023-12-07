@@ -1,4 +1,4 @@
-import React, {useState, FC} from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Burger } from '../Burger';
 import { Header } from '../Header';
@@ -8,7 +8,7 @@ import { WeatherPage } from '../WeatherPage';
 import { FormPage } from '../FormPage';
 import * as S from './styles';
 
-const App : FC = () => {
+export const App = () => {
     const [open, setOpen] = useState(false);
   return (
     <BrowserRouter>
@@ -27,5 +27,3 @@ const App : FC = () => {
     </BrowserRouter>
   );
 };
-
-export default App;

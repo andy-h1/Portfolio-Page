@@ -1,13 +1,19 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended"],
-  "parser": "@babel/eslint-parser",
-  "plugins": ["@babel"],
+  "extends": [
+    "airbnb", 
+    "plugin:prettier/recommended", 
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"],
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true,
     "jest": true,
     "node": true
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"]
   },
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
