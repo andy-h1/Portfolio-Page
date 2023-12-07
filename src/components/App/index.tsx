@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { Burger } from '../Burger';
 import { Header } from '../Header';
 import { HomePage } from '../HomePage';
@@ -11,10 +11,8 @@ import * as S from './styles';
 export const App = () => {
     const [open, setOpen] = useState(false);
   return (
-    <BrowserRouter>
-      <S.GlobalStyle />
-
       <S.Wrapper>
+         <S.GlobalStyle />
         <Burger open={open} setOpen={setOpen} />
         <Header open={open} setOpen={setOpen} />
         <Routes>
@@ -24,6 +22,5 @@ export const App = () => {
           <Route path="/form" element={<FormPage />} />
         </Routes>
       </S.Wrapper>
-    </BrowserRouter>
   );
 };

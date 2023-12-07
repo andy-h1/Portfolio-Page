@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import * as S from './styles';
 import lightCloudsDay from '../../tokens/weatherImages/lightCloudsDay.png';
 import formImage from '../../tokens/formImage.png';
@@ -9,7 +8,6 @@ import { Pills } from '../Pills';
 
 export function ProjectList() {
   return (
-    <BrowserRouter>
       <S.Wrapper>
         <S.Title>Projects</S.Title>
 
@@ -126,6 +124,5 @@ export function ProjectList() {
           </S.ProjectWrapper>
         </S.ProjectLink>
       </S.Wrapper>
-    </BrowserRouter>
   );
 }
