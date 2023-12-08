@@ -1,8 +1,8 @@
-import React from 'react';
-import data from './data';
-import { CVExperience } from '../CVExperience';
-import CV from '../../tokens/Andy-Huynh-CV.pdf';
-import * as S from './styles';
+import React from "react";
+import data from "./data";
+import { CVExperience } from "../CVExperience";
+import CV from "../../tokens/Andy-Huynh-CV.pdf";
+import * as S from "./styles";
 
 export function CVPage() {
   return (

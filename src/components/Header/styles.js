@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Header = styled.header`
   display: flex;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
     right: 0;
     transition: transform 0.3s ease-in-out;
     background: white;
-    transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
+    transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   }
 `;
 

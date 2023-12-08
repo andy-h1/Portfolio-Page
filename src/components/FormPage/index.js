@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import firebase from '../../firebase';
-import { UserCard } from '../UserCard';
-import { useForm } from '../UseForm';
-import { validateInput } from '../../utils';
-import * as S from './styles';
+import React, { useState, useEffect } from "react";
+import firebase from "../../firebase";
+import { UserCard } from "../UserCard";
+import { useForm } from "../UseForm";
+import { validateInput } from "../../utils";
+import * as S from "./styles";
 
 const initialValues = {
-  username: '',
-  password: '',
-  email: '',
-  age: 0
+  username: "",
+  password: "",
+  email: "",
+  age: 0,
 };
 
 const addUserData = (values, setValues) => {
   firebase
     .firestore()
-    .collection('users')
+    .collection("users")
     .add({
-      values
+      values,
     })
     .then(() => {
       setValues(initialValues);
@@ -31,7 +31,7 @@ export function FormPage() {
     handleSubmit,
     isSubmitting,
     values,
-    errors
+    errors,
   } = useForm(addUserData, validateInput, initialValues);
   const [showPassword, setShowPassword] = useState(false);
   const [userList, setUserList] = useState([]);
@@ -43,11 +43,11 @@ export function FormPage() {
   useEffect(() => {
     const unsubscribe = firebase
       .firestore()
-      .collection('users')
+      .collection("users")
       .onSnapshot((snapshot) => {
         const newUserList = snapshot.docs.map((doc) => ({
           id: doc.id,
-          ...doc.data()
+          ...doc.data(),
         }));
 
         setUserList(newUserList);
@@ -107,7 +107,7 @@ export function FormPage() {
               id="password"
               name="password"
               value={values.password}
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               onBlur={handleBlur}
               onChange={handleChange}

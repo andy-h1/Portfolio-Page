@@ -1,5 +1,5 @@
-import { initializeApp } from 'firebase/app';
-import 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import "firebase/firestore";
 
 // Web App's Firebase config
 const firebaseConfig = {
@@ -10,7 +10,7 @@ const firebaseConfig = {
   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
   appId: process.env.REACT_APP_APPID,
-  measurementId: process.env.REACT_APP_MEASUREMENTID
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 // Initialize firebase

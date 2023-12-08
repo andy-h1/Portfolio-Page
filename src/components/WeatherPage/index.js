@@ -1,17 +1,17 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import axios from 'axios';
-import * as S from './styles';
-import { WeatherTracker } from '../WeatherTracker';
+import React, { useEffect, useState, useCallback } from "react";
+import axios from "axios";
+import * as S from "./styles";
+import { WeatherTracker } from "../WeatherTracker";
 
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export function WeatherPage() {
   const [weatherData, setWeatherData] = useState();
-  const [city, setCity] = useState('Croydon');
-  const [country, setCountry] = useState('GB');
-  const [unit, setUnit] = useState('metric');
+  const [city, setCity] = useState("Croydon");
+  const [country, setCountry] = useState("GB");
+  const [unit, setUnit] = useState("metric");
   const [isLoading, setisLoading] = useState(true);
-  const [errors, setErrors] = useState('');
+  const [errors, setErrors] = useState("");
 
   // in the future move to one function
   const handleCityChange = (event) => {
@@ -27,10 +27,10 @@ export function WeatherPage() {
   };
 
   const clearState = () => {
-    setErrors('');
-    setCity('');
-    setCountry('');
-    setUnit('metric');
+    setErrors("");
+    setCity("");
+    setCountry("");
+    setUnit("metric");
   };
 
   const fetchData = useCallback(async () => {
@@ -47,7 +47,7 @@ export function WeatherPage() {
     } catch (error) {
       // something went wrong
       setisLoading(false);
-      setErrors('Sorry there is a problem getting your weather');
+      setErrors("Sorry there is a problem getting your weather");
     }
   }, [city, country, unit]);
 
@@ -106,7 +106,7 @@ export function WeatherPage() {
               id="unitInput"
               type="radio"
               name="units"
-              checked={unit === 'metric'}
+              checked={unit === "metric"}
               value="metric"
               onChange={handleUnitChange}
             />
@@ -117,7 +117,7 @@ export function WeatherPage() {
               id="unitInput"
               type="radio"
               name="units"
-              checked={unit === 'imperial'}
+              checked={unit === "imperial"}
               value="imperial"
               onChange={handleUnitChange}
             />

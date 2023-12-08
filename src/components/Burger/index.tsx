@@ -1,18 +1,18 @@
-import React from 'react';
-import * as S from './styles';
+import React from "react";
+import * as S from "./styles";
 
 interface Props {
-  open: Boolean;
-  setOpen: Function;
+  open: boolean;
+  setOpen: (open: boolean) => void;
 }
 
-export const Burger = ({ open, setOpen } : Props) => {
-  const handleClickChange = () => {
+export const Burger = ({ open, setOpen }: Props): JSX.Element => {
+  const handleClickChange = (): void => {
     setOpen(!open);
   };
 
-  const handleKeyDown = (event : KeyboardEvent) => {
-    if (event.key === 'Escape') {
+  const handleKeyDown = (event: KeyboardEvent): void => {
+    if (event.key === "Escape") {
       handleClickChange();
     }
   };

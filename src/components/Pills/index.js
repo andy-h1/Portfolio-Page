@@ -1,6 +1,6 @@
-import React from 'react';
-import { arrayOf, string } from 'prop-types';
-import * as S from './styles';
+import React from "react";
+import { arrayOf, string } from "prop-types";
+import * as S from "./styles";
 
 export function Pills({ items }) {
   return (
@@ -13,5 +13,5 @@ export function Pills({ items }) {
 }
 
 Pills.propTypes = {
-  items: arrayOf(string).isRequired
+  items: arrayOf(string).isRequired,
 };

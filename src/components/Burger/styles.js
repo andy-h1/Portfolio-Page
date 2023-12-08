@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Burger = styled.button`
   position: absolute;
@@ -34,15 +34,15 @@ export const Div = styled.div`
   transform-origin: 1px;
 
   &:first-child {
-    transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+    transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
   }
 
   &:nth-child(2) {
-    opacity: ${({ open }) => (open ? '0' : '1')};
-    transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
+    opacity: ${({ open }) => (open ? "0" : "1")};
+    transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
   }
 
   &:nth-child(3) {
-    transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+    transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
   }
 `;

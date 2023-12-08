@@ -1,10 +1,10 @@
-import React from 'react';
-import * as S from './styles';
-import lightCloudsDay from '../../tokens/weatherImages/lightCloudsDay.png';
-import formImage from '../../tokens/formImage.png';
-import ideaBoardImage from '../../tokens/ideaBoardImage.png';
-import linegraph from '../../tokens/linegraph.png';
-import { Pills } from '../Pills';
+import React from "react";
+import * as S from "./styles";
+import lightCloudsDay from "../../tokens/weatherImages/lightCloudsDay.png";
+import formImage from "../../tokens/formImage.png";
+import ideaBoardImage from "../../tokens/ideaBoardImage.png";
+import linegraph from "../../tokens/linegraph.png";
+import { Pills } from "../Pills";
 
 export function ProjectList() {
   return (
@@ -23,13 +23,13 @@ export function ProjectList() {
 
           <Pills
             items={[
-              'react',
-              'material-ui',
-              'react-hooks',
-              'svg',
-              'd3',
-              'jest',
-              'react-testing-library'
+              "react",
+              "material-ui",
+              "react-hooks",
+              "svg",
+              "d3",
+              "jest",
+              "react-testing-library",
             ]}
           />
 
@@ -52,12 +52,12 @@ export function ProjectList() {
           <S.PillsWrapper>
             <Pills
               items={[
-                'react',
-                'styled-components',
-                'localStorage API',
-                'react-hooks',
-                'jest',
-                'react-testing-library'
+                "react",
+                "styled-components",
+                "localStorage API",
+                "react-hooks",
+                "jest",
+                "react-testing-library",
               ]}
             />
           </S.PillsWrapper>
@@ -81,11 +81,11 @@ export function ProjectList() {
           <S.PillsWrapper>
             <Pills
               items={[
-                'react',
-                'react-hooks',
-                'styled-components',
-                'jest',
-                'react-testing-library'
+                "react",
+                "react-hooks",
+                "styled-components",
+                "jest",
+                "react-testing-library",
               ]}
             />
           </S.PillsWrapper>
@@ -109,11 +109,11 @@ export function ProjectList() {
           <S.PillsWrapper>
             <Pills
               items={[
-                'react',
-                'react-hooks',
-                'styled-components',
-                'jest',
-                'react-testing-library'
+                "react",
+                "react-hooks",
+                "styled-components",
+                "jest",
+                "react-testing-library",
               ]}
             />
           </S.PillsWrapper>

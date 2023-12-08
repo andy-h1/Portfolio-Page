@@ -1,9 +1,9 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './index.tsx';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from ".";
 
-describe('App component', () => {
-  it('should render', () => {
+describe("App component", () => {
+  it("should render", () => {
     const { container } = render(<App />);
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -1,45 +1,45 @@
-import React from 'react';
-import axiosMock from 'axios';
-import { render, cleanup, waitFor } from '@testing-library/react';
-import { WeatherPage } from '.';
-import '@testing-library/jest-dom/extend-expect';
+import React from "react";
+import axiosMock from "axios";
+import { render, cleanup, waitFor } from "@testing-library/react";
+import { WeatherPage } from ".";
+import "@testing-library/jest-dom/extend-expect";
 
 afterEach(cleanup);
 
-jest.mock('axios');
+jest.mock("axios");
 
 const mockData = {
   dt: 1598656029,
   main: {
     temp: 27.9,
-    feels_like: 25.9
+    feels_like: 25.9,
   },
-  name: 'London',
+  name: "London",
   sys: {
-    country: 'GB'
+    country: "GB",
   },
   weather: [
     {
-      description: 'few clouds',
-      icon: '02d',
-      main: 'Clouds'
-    }
+      description: "few clouds",
+      icon: "02d",
+      main: "Clouds",
+    },
   ],
   wind: {
-    speed: 5.0
-  }
+    speed: 5.0,
+  },
 };
 
-describe('Weather Page Component', () => {
-  it('should render', () => {
+describe("Weather Page Component", () => {
+  it("should render", () => {
     const { container } = render(<WeatherPage />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should fetch and return weather data', async () => {
+  it("should fetch and return weather data", async () => {
     axiosMock.get.mockResolvedValue({ data: mockData });
     const { getByTestId } = render(<WeatherPage />);
-    await waitFor(() => expect(getByTestId('weatherTracker')));
+    await waitFor(() => expect(getByTestId("weatherTracker")));
   });
 });
 

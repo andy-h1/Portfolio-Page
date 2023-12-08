@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useForm = (callback, validateInput, initialValues = {}) => {
   const [values, setValues] = useState(initialValues);
@@ -9,11 +9,11 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
     const { name, value } = event.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
     setErrors({
       ...errors,
-      [name]: ''
+      [name]: "",
     });
   };
 
@@ -50,6 +50,6 @@ export const useForm = (callback, validateInput, initialValues = {}) => {
     isSubmitting,
     values,
     setValues,
-    errors
+    errors,
   };
 };

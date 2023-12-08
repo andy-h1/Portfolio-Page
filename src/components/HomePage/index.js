@@ -1,8 +1,8 @@
-import React from 'react';
-import profile from '../../tokens/profile.jpg';
-import { ProjectList } from '../ProjectList';
-import CV from '../../tokens/Andy-Huynh-CV.pdf';
-import * as S from './styles';
+import React from "react";
+import profile from "../../tokens/profile.jpg";
+import { ProjectList } from "../ProjectList";
+import CV from "../../tokens/Andy-Huynh-CV.pdf";
+import * as S from "./styles";
 
 export function HomePage() {
   return (

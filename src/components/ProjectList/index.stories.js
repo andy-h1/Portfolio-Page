@@ -1,9 +1,9 @@
-import React from 'react';
-import { ProjectList } from '.';
+import React from "react";
+import { ProjectList } from ".";
 
 export default {
   component: ProjectList,
-  title: 'Project List'
+  title: "Project List",
 };
 
 export function Template(args) {

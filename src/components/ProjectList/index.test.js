@@ -1,10 +1,10 @@
-import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
-import { render } from '@testing-library/react';
-import { ProjectList } from '.';
+import React from "react";
+import { MemoryRouter } from "react-router-dom";
+import { render } from "@testing-library/react";
+import { ProjectList } from ".";
 
-describe('Project List Component', () => {
-  it('should render', () => {
+describe("Project List Component", () => {
+  it("should render", () => {
     const { container } = render(
       <MemoryRouter>
         <ProjectList />

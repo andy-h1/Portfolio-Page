@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { number, string } from 'prop-types';
-import firebase from '../../firebase';
-import * as S from './styles';
-import { useForm } from '../UseForm';
-import { validateInput } from '../../utils';
+import React, { useState } from "react";
+import { number, string } from "prop-types";
+import firebase from "../../firebase";
+import * as S from "./styles";
+import { useForm } from "../UseForm";
+import { validateInput } from "../../utils";
 
 const initialValues = {
-  username: '',
-  password: '',
-  email: '',
-  age: 0
+  username: "",
+  password: "",
+  email: "",
+  age: 0,
 };
 
 export function UserCard({ age, email, id, name }) {
@@ -19,10 +19,10 @@ export function UserCard({ age, email, id, name }) {
   const updateData = (values, setValues) => {
     firebase
       .firestore()
-      .collection('users')
+      .collection("users")
       .doc(id)
       .update({
-        values
+        values,
       })
       .then(() => {
         setEdit(false);
@@ -37,11 +37,11 @@ export function UserCard({ age, email, id, name }) {
     handleSubmit,
     isSubmitting,
     values,
-    errors
+    errors,
   } = useForm(updateData, validateInput, initialValues);
 
   const handleDeleteClick = () => {
-    firebase.firestore().collection('users').doc(id).delete();
+    firebase.firestore().collection("users").doc(id).delete();
   };
 
   const handleEditClick = () => {
@@ -100,7 +100,7 @@ export function UserCard({ age, email, id, name }) {
               id="password"
               name="password"
               value={values.password}
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               onBlur={handleBlur}
               onChange={handleChange}
@@ -168,5 +168,5 @@ UserCard.propTypes = {
   age: number.isRequired,
   email: string.isRequired,
   id: string.isRequired,
-  name: string.isRequired
+  name: string.isRequired,
 };

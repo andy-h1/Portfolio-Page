@@ -1,6 +1,6 @@
-import React from 'react';
-import { arrayOf, string } from 'prop-types';
-import * as S from './styles';
+import React from "react";
+import { arrayOf, string } from "prop-types";
+import * as S from "./styles";
 
 export function CVExperience({
   dates,
@@ -10,7 +10,7 @@ export function CVExperience({
   imageHeight,
   imageWidth,
   jobTitle,
-  website
+  website,
 }) {
   return (
     <S.GridItem>
@@ -39,5 +39,5 @@ CVExperience.propTypes = {
   imageHeight: string.isRequired,
   imageWidth: string.isRequired,
   jobTitle: string.isRequired,
-  website: string.isRequired
+  website: string.isRequired,
 };

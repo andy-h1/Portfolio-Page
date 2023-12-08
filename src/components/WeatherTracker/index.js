@@ -1,7 +1,7 @@
-import React from 'react';
-import { number, string } from 'prop-types';
-import { getWeatherImage, dateConverter, timeConverter } from '../../utils';
-import * as S from './styles';
+import React from "react";
+import { number, string } from "prop-types";
+import { getWeatherImage, dateConverter, timeConverter } from "../../utils";
+import * as S from "./styles";
 
 export function WeatherTracker({
   city,
@@ -13,7 +13,7 @@ export function WeatherTracker({
   weatherTemp,
   weatherTempFeelsLike,
   width,
-  wind
+  wind,
 }) {
   return (
     <S.Wrapper data-testid="weatherTracker">
@@ -72,9 +72,9 @@ WeatherTracker.propTypes = {
   weatherTemp: number.isRequired,
   weatherTempFeelsLike: number.isRequired,
   wind: number.isRequired,
-  width: string
+  width: string,
 };
 
 WeatherTracker.defaultProps = {
-  width: '250px'
+  width: "250px",
 };

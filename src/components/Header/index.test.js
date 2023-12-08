@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 // MemoryRouter === BrowserRouter but for testing
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter } from "react-router-dom";
 // a testing version of rendering
-import { render } from '@testing-library/react';
+import { render } from "@testing-library/react";
 // your actual component to render
-import { Header } from '.';
+import { Header } from ".";
 
-describe('Header component', () => {
-  it('should render', () => {
+describe("Header component", () => {
+  it("should render", () => {
     // render the component
     const { container } = render(
       <MemoryRouter>

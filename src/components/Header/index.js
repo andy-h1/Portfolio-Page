@@ -1,9 +1,9 @@
-import React from 'react';
-import { bool, func } from 'prop-types';
-import github from '../../tokens/Icons/github.png';
-import linkedin from '../../tokens/Icons/linkedin.png';
-import twitter from '../../tokens/Icons/twitter.svg';
-import * as S from './styles';
+import React from "react";
+import { bool, func } from "prop-types";
+import github from "../../tokens/Icons/github.png";
+import linkedin from "../../tokens/Icons/linkedin.png";
+import twitter from "../../tokens/Icons/twitter.svg";
+import * as S from "./styles";
 
 export function Header({ open, setOpen }) {
   const handleClickChange = () => {
@@ -35,10 +35,10 @@ export function Header({ open, setOpen }) {
 
 Header.propTypes = {
   open: bool,
-  setOpen: func
+  setOpen: func,
 };
 
 Header.defaultProps = {
   open: false,
-  setOpen: () => null
+  setOpen: () => null,
 };

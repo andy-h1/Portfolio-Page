@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Burger } from '../Burger';
-import { Header } from '../Header';
-import { HomePage } from '../HomePage';
-import { CVPage } from '../CVPage';
-import { WeatherPage } from '../WeatherPage';
-import { FormPage } from '../FormPage';
-import * as S from './styles';
+import React, { ReactElement, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import { Burger } from "../Burger";
+import { Header } from "../Header";
+import { HomePage } from "../HomePage";
+import { CVPage } from "../CVPage";
+import { WeatherPage } from "../WeatherPage";
+import { FormPage } from "../FormPage";
+import * as S from "./styles";
 
-const App = () => {
+const App = (): ReactElement => {
   const [open, setOpen] = useState(false);
   return (
     <S.Wrapper>
