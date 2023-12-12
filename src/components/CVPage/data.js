@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import arrowsgroup from "../../tokens/CompanyLogos/arrowsgroup.png";
 import clearscore from "../../tokens/CompanyLogos/clearscore.png";
 import deliveroo from "../../tokens/CompanyLogos/deliveroo.png";

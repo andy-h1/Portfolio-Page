@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import clearDay from "../tokens/weatherImages/clearDay.png";
 import clearNight from "../tokens/weatherImages/clearNight.png";
 import fog from "../tokens/weatherImages/fog.png";
