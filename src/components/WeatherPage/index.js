@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import * as S from "./styles";
 import { WeatherTracker } from "../WeatherTracker";

@@ -1,4 +1,3 @@
-import React from "react";
 import profile from "../../tokens/profile.jpg";
 import { ProjectList } from "../ProjectList";
 import CV from "../../tokens/Andy-Huynh-CV.pdf";

@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 
-import React from "react";
 import { Header } from "./Header";
 import "./page.css";
 

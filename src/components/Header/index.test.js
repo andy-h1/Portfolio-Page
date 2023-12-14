@@ -1,4 +1,3 @@
-import React from "react";
 // MemoryRouter === BrowserRouter but for testing
 import { MemoryRouter } from "react-router-dom";
 // a testing version of rendering

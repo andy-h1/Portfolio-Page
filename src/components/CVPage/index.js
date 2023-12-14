@@ -1,4 +1,3 @@
-import React from "react";
 import data from "./data";
 import { CVExperience } from "../CVExperience";
 import CV from "../../tokens/Andy-Huynh-CV.pdf";

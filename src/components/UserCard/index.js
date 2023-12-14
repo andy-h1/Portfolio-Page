@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { number, string } from "prop-types";
 import firebase from "../../firebase";
 import * as S from "./styles";

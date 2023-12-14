@@ -1,4 +1,3 @@
-import React from "react";
 import { bool, func } from "prop-types";
 import github from "../../tokens/Icons/github.png";
 import linkedin from "../../tokens/Icons/linkedin.png";

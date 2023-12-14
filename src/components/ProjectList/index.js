@@ -1,4 +1,3 @@
-import React from "react";
 import * as S from "./styles";
 import lightCloudsDay from "../../tokens/weatherImages/lightCloudsDay.png";
 import formImage from "../../tokens/formImage.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import { number, string } from "prop-types";
 import { getWeatherImage, dateConverter, timeConverter } from "../../utils";
 import * as S from "./styles";

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React from "react";
+
 import { render } from "@testing-library/react";
 import deliveroo from "../../tokens/CompanyLogos/deliveroo.png";
 import { CVExperience } from ".";

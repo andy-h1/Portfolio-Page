@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import { ReactElement, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Burger } from "../Burger";
 import { Header } from "../Header";
