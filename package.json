@@ -25,10 +25,10 @@
     "styled-components": "^5.3.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jest-environment-jsdom-sixteen --verbose --coverage --no-cache --watchAll=false",
-    "eject": "react-scripts eject",
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build/index.js",
+    "typecheck": "tsc",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\" --config ./.prettierrc.json",

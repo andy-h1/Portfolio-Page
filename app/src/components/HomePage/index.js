@@ -1,5 +1,6 @@
 import profile from "../../tokens/profile.jpg";
 import { ProjectList } from "../ProjectList";
+import CV from "../../tokens/Andy-Huynh-CV.pdf";
 import * as S from "./styles";
 
 export function HomePage() {
@@ -8,9 +9,9 @@ export function HomePage() {
       <S.GridWrapper>
         <S.Image src={profile} alt="andy" />
 
-        {/* <a href={CV} download="Andy Huynh CV">
+        <a href={CV} download="Andy Huynh CV">
           <S.Button type="button">Download CV</S.Button>
-        </a> */}
+        </a>
 
         <S.Text>
           I am a Front End Developer that loves JS, User Experience, and
