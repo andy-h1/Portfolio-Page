@@ -8,10 +8,12 @@ export default function Root() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="My beautiful React app" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Varta&display=swap"
+          rel="stylesheet"
+        />
         <link rel="manifest" href="/manifest.json" />
-        <title>My React App</title>
+        <title>Pandy</title>
       </head>
       <body>
         <div id="root">

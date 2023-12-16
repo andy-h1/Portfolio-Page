@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "GNU General Public License (GPL)",
+  "type": "module",
   "dependencies": {
     "@remix-run/node": "^2.4.0",
     "@remix-run/react": "^2.4.0",
@@ -16,6 +17,7 @@
     "@types/react-dom": "^18.0.10",
     "axios": "^1.6.2",
     "firebase": "^9.23.0",
+    "isbot": "^3.7.1",
     "lint-staged": "^13.1.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
